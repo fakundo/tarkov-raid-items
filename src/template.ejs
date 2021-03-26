@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="<%= htmlWebpackPlugin.options.lang %>">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <meta name="title" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>" />
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta name="twitter:description" content="<%= htmlWebpackPlugin.options.description %>" />
+    <meta name="twitter:image" content="<%= htmlWebpackPlugin.options.poster.url %>" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>" />
+    <meta property="og:url" content="<%= htmlWebpackPlugin.files.publicPath %>" />
+    <meta property="og:image" content="<%= htmlWebpackPlugin.options.poster.url %>" />
+    <meta property="og:image:width" content="<%= htmlWebpackPlugin.options.poster.width %>" />
+    <meta property="og:image:height" content="<%= htmlWebpackPlugin.options.poster.height %>" />
+
+    <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Organization",
+      "url" : "<%= htmlWebpackPlugin.files.publicPath %>",
+      "logo" : "<%= htmlWebpackPlugin.options.poster.url %>"
+    }
+    </script>
+
+    <% for(const { lang, href } of htmlWebpackPlugin.options.alternatives || []) { %>
+    <link rel="alternate" hreflang="<%= lang %>" href="<%= href %>" />
+    <% } %>
+
+    <% if (htmlWebpackPlugin.options.googleTagKey) { %>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<%= htmlWebpackPlugin.options.googleTagKey %>"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', '<%= htmlWebpackPlugin.options.googleTagKey %>');
+    </script>
+    <% } %>
+
+    <style>
+      body {
+        background-color: #2E3445;
+      }
+      @keyframes loader-rotation {
+        from  { transform: rotate(0deg) }
+        to    { transform: rotate(360deg) }
+      }
+      @keyframes loader-color {
+        0%    { stroke: red; }
+        33%   { stroke: green; }
+        66%   { stroke: blue; }
+        100%  { stroke: red; }
+      }
+      #loader {
+        margin: 10vh auto;
+        display: block;
+        height: 64px;
+        width: 64px;
+        fill: none;
+        stroke-width: 4px;
+        stroke-linecap: round;
+        stroke-dasharray: 132px;
+        animation: loader-rotation 1000ms linear infinite, loader-color 3000ms linear infinite;
+      }
+      #overlay {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background-image: linear-gradient(to right bottom, #2E3445, #392826);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="root"></div>
+    <svg id="loader" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="28" />
+    </svg>
+  </body>
+</html>

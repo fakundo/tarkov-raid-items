@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "assets/*": ["src/assets/*"],
+      "components/*": ["src/components/*"],
+      "constants/*": ["src/constants/*"],
+      "data/*": ["src/data/*"],
+      "hooks/*": ["src/hooks/*"],
+      "locales/*": ["src/locales/*"],
+      "providers/*": ["src/providers/*"],
+      "utils/*": ["src/utils/*"],
+    }
+  },
+  "exclude": ["node_modules", "build"]
+}

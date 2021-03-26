@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Plural-Forms: nplurals=3; plural=(n == 1 ? 0 : (n >= 2 && n <= 4) ? 1 : 2);\n"
+"Language: cs\n"
+
+#: src/components/Footer.js:16
+msgid "All images are copyrighted by BattleState Games."
+msgstr ""
+
+#: src/components/HeaderLegend.js:28
+msgid "Can be crafted"
+msgstr ""
+
+#: src/components/HeaderLegend.js:32
+msgid "Can be obtained as reward"
+msgstr ""
+
+#: src/components/DialogFilter.js:29
+msgid "Can be rewarded"
+msgstr ""
+
+#: src/components/DialogFilter.js:30
+msgid "Can't be rewarded"
+msgstr ""
+
+#: src/components/DialogItem.js:65
+msgid "Craft"
+msgstr ""
+
+#: src/components/DialogFilter.js:23
+msgid "Craftable"
+msgstr ""
+
+#: src/components/Footer.js:18
+msgid "Data taken from the [URL] under [URL] license."
+msgstr ""
+
+#: src/components/DialogFilter.js:36
+msgid "Don't need for Kappa"
+msgstr ""
+
+#: src/components/DocumentTitle.js:8
+msgid "Escape from Tarkov – [EFT] Find in Raid Items"
+msgstr ""
+
+#: src/components/DialogHeaderMenu.js:24
+#: src/components/HeaderActions.js:62
+msgid "Filter"
+msgstr ""
+
+#: src/components/DialogFilter.js:13
+msgid "Filter settings"
+msgstr ""
+
+#: src/components/Header.js:60
+msgid "Find in Raid Items"
+msgstr ""
+
+#: src/components/DialogFilter.js:17
+msgid "Found"
+msgstr ""
+
+#: src/components/DialogProgress.js:23
+msgid "Found %s item of %s"
+msgid_plural "Found %s items of %s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/components/Items.js:83
+msgid "Looks like you've found all the items! Enjoy your Kappa!"
+msgstr ""
+
+#: src/components/DialogItem.js:76
+msgid "lvl %s"
+msgstr ""
+
+#: src/components/DialogFilter.js:35
+#: src/components/HeaderLegend.js:36
+msgid "Need for Kappa"
+msgstr ""
+
+#: src/components/DialogFilter.js:24
+msgid "Not craftable"
+msgstr ""
+
+#: src/components/DialogFilter.js:18
+msgid "Not found"
+msgstr ""
+
+#: src/components/Items.js:97
+msgid "Nothing to display..."
+msgstr ""
+
+#: src/components/DialogHeaderMenu.js:19
+#: src/components/DialogProgress.js:21
+#: src/components/HeaderActions.js:46
+msgid "Progress"
+msgstr ""
+
+#: src/components/DialogItem.js:20
+msgid "Quest"
+msgid_plural "Quests"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/components/Items.js:103
+msgid "Reset filter"
+msgstr ""
+
+#: src/components/DialogProgress.js:32
+#: src/components/Items.js:89
+msgid "Reset progress"
+msgstr ""
+
+#: src/components/DialogItem.js:43
+msgid "Reward"
+msgstr ""
+
+#: src/components/DialogHeaderMenu.js:29
+#: src/components/DialogLocale.js:16
+msgid "Select language"
+msgstr ""
+
+#: src/components/DialogHeaderMenu.js:37
+msgid "Settings"
+msgstr ""
+
+#: src/components/Tag.js:35
+msgctxt "TAG_SHORT"
+msgid "Cra"
+msgstr ""
+
+#: src/components/Tag.js:37
+msgctxt "TAG_SHORT"
+msgid "Kap"
+msgstr ""
+
+#: src/components/Tag.js:36
+msgctxt "TAG_SHORT"
+msgid "Rew"
+msgstr ""

@@ -1,0 +1,35 @@
+import { memo } from 'react'
+import { createUseStyles } from 'hooks'
+
+const useStyles = createUseStyles((theme) => ({
+  '@global': {
+    '*, *::before, *::after': {
+      outline: 0,
+      boxSizing: 'border-box',
+      tapHighlightColor: 'rgba(0,0,0,0)',
+    },
+    html: {
+      fontSize: 16,
+      fontSmoothing: 'antialiased',
+      MozOsxFontSmoothing: 'grayscale',
+    },
+    body: {
+      margin: 0,
+      fontSize: '1rem',
+      userSelect: 'none',
+      fontStyle: 'normal',
+      fontWeight: 'normal',
+      textSizeAdjust: '100%',
+      color: theme.palette.text.default,
+      backgroundColor: theme.palette.background.body,
+    },
+    'html, body, #root': {
+      height: '100%',
+    },
+  },
+}))
+
+export default memo(() => {
+  useStyles()
+  return null
+})

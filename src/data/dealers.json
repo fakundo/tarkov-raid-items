@@ -1,0 +1,53 @@
+{
+  "SKIER": {
+    "name": {
+      "en": "Skier",
+      "ko": "스키어(Skier)",
+      "ru": "Лыжник"
+    }
+  },
+  "JAEGER": {
+    "name": {
+      "en": "Jaeger"
+    }
+  },
+  "MECHANIC": {
+    "name": {
+      "en": "Mechanic",
+      "fr": "Le Mécano",
+      "ru": "Механик"
+    }
+  },
+  "THERAPIST": {
+    "name": {
+      "en": "Therapist",
+      "fr": "La Toubib",
+      "ru": "Терапевт"
+    }
+  },
+  "FENCE": {
+    "name": {
+      "en": "Fence",
+      "ru": "Скупщик"
+    }
+  },
+  "RAGMAN": {
+    "name": {
+      "en": "Ragman",
+      "ru": "Барахольщик"
+    }
+  },
+  "PRAPOR": {
+    "name": {
+      "en": "Prapor",
+      "ko": "프라퍼(Prapor)",
+      "ru": "Прапор"
+    }
+  },
+  "PEACEKEEPER": {
+    "name": {
+      "en": "Peacekeeper",
+      "ru": "Миротворец"
+    }
+  }
+}

@@ -1,0 +1,152 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: src/components/Footer.js:16
+msgid "All images are copyrighted by BattleState Games."
+msgstr ""
+"Toutes les images sont protégées par les droits d’auteur de BattleState "
+"Games."
+
+#: src/components/HeaderLegend.js:28
+msgid "Can be crafted"
+msgstr "Peut être fabriqué"
+
+#: src/components/HeaderLegend.js:32
+msgid "Can be obtained as reward"
+msgstr "Peut être obtenu comme récompense"
+
+#: src/components/DialogFilter.js:29
+msgid "Can be rewarded"
+msgstr "Peut être récompensé"
+
+#: src/components/DialogFilter.js:30
+msgid "Can't be rewarded"
+msgstr "Ne peut pas être récompensé"
+
+#: src/components/DialogItem.js:65
+msgid "Craft"
+msgstr "Artisanat"
+
+#: src/components/DialogFilter.js:23
+msgid "Craftable"
+msgstr "Artisanal"
+
+#: src/components/Footer.js:18
+msgid "Data taken from the [URL] under [URL] license."
+msgstr "Données extraites de la licence [URL] sous [URL]."
+
+#: src/components/DialogFilter.js:36
+msgid "Don't need for Kappa"
+msgstr "Pas besoin de Kappa"
+
+#: src/components/DocumentTitle.js:8
+msgid "Escape from Tarkov – [EFT] Find in Raid Items"
+msgstr "Escape from Tarkov – [EFT] Objets trouvés dans le raid"
+
+#: src/components/DialogHeaderMenu.js:24
+#: src/components/HeaderActions.js:62
+msgid "Filter"
+msgstr "Filtre"
+
+#: src/components/DialogFilter.js:13
+msgid "Filter settings"
+msgstr "Paramètres de filtre"
+
+#: src/components/Header.js:60
+msgid "Find in Raid Items"
+msgstr "Trouver en raid – objets"
+
+#: src/components/DialogFilter.js:17
+msgid "Found"
+msgstr "A trouvé"
+
+#: src/components/DialogProgress.js:23
+msgid "Found %s item of %s"
+msgid_plural "Found %s items of %s"
+msgstr[0] "%s élément trouvé sur %s"
+msgstr[1] "%s éléments trouvés sur %s"
+
+#: src/components/Items.js:83
+msgid "Looks like you've found all the items! Enjoy your Kappa!"
+msgstr "On dirait que vous avez trouvé tous les articles! Profitez de votre Kappa!"
+
+#: src/components/DialogItem.js:76
+msgid "lvl %s"
+msgstr "lvl %s"
+
+#: src/components/DialogFilter.js:35
+#: src/components/HeaderLegend.js:36
+msgid "Need for Kappa"
+msgstr "Besoin de Kappa"
+
+#: src/components/DialogFilter.js:24
+msgid "Not craftable"
+msgstr "Non artisanal"
+
+#: src/components/DialogFilter.js:18
+msgid "Not found"
+msgstr "Pas trouvé"
+
+#: src/components/Items.js:97
+msgid "Nothing to display..."
+msgstr "Rien à afficher…"
+
+#: src/components/DialogHeaderMenu.js:19
+#: src/components/DialogProgress.js:21
+#: src/components/HeaderActions.js:46
+msgid "Progress"
+msgstr "Le progrès"
+
+#: src/components/DialogItem.js:20
+msgid "Quest"
+msgid_plural "Quests"
+msgstr[0] "Quête"
+msgstr[1] "Quêtes"
+
+#: src/components/Items.js:103
+msgid "Reset filter"
+msgstr "Réinitialiser le filtre"
+
+#: src/components/DialogProgress.js:32
+#: src/components/Items.js:89
+msgid "Reset progress"
+msgstr "Réinitialiser la progression"
+
+#: src/components/DialogItem.js:43
+msgid "Reward"
+msgstr "Récompense"
+
+#: src/components/DialogHeaderMenu.js:29
+#: src/components/DialogLocale.js:16
+msgid "Select language"
+msgstr "Choisir la langue"
+
+#: src/components/DialogHeaderMenu.js:37
+msgid "Settings"
+msgstr "Réglages"
+
+#: src/components/Tag.js:35
+msgctxt "TAG_SHORT"
+msgid "Cra"
+msgstr "Art"
+
+#: src/components/Tag.js:37
+msgctxt "TAG_SHORT"
+msgid "Kap"
+msgstr "Kap"
+
+#: src/components/Tag.js:36
+msgctxt "TAG_SHORT"
+msgid "Rew"
+msgstr "Réc"
