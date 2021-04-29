@@ -1,41 +1,20 @@
 import React from 'react'
-import { createUseStyles, useLocales } from 'hooks'
-import { breakpoints } from 'utils'
+import { createUseStyles, useSearch } from 'hooks'
+import TransitionGroup from 'components/TransitionGroup'
+import Fade from 'components/Fade'
 import Visible from 'components/Visible'
 import Spacer from 'components/Spacer'
-import HeaderLegend from 'components/HeaderLegend'
+import SearchBox from 'components/SearchBox'
+import Legend from 'components/Legend'
+import HeaderTitle from 'components/HeaderTitle'
 import HeaderActions from 'components/HeaderActions'
-import HeaderMenu from 'components/HeaderMenu'
+import HeaderActionsCompact from 'components/HeaderActionsCompact'
 
-const useStyles = createUseStyles((theme) => ({
+const useStyles = createUseStyles(() => ({
   root: {
     display: 'flex',
     alignItems: 'stretch',
     flexFlow: 'row nowrap',
-  },
-  title: {
-    display: 'flex',
-    flex: '1 1 auto',
-    flexFlow: 'column nowrap',
-    justifyContent: 'space-between',
-    '& > *': {
-      margin: 0,
-      padding: 0,
-      flexShrink: 0,
-      lineHeight: 1,
-    },
-    '& > h1': {
-      [breakpoints.xs]: { fontSize: '1rem' },
-      [breakpoints.sm]: { fontSize: '1.5rem' },
-      [breakpoints.mdUp]: { fontSize: '2rem' },
-      fontWeight: 'bold',
-    },
-    '& > h2': {
-      fontSize: '1rem',
-      fontWeight: 'bold',
-      marginBottom: '.25rem',
-      color: theme.palette.text.muted,
-    },
   },
   actions: {
     flexShrink: 0,
@@ -47,34 +26,65 @@ const useStyles = createUseStyles((theme) => ({
 }))
 
 export default () => {
-  const { gettext } = useLocales()
+  const { searchBoxOpen } = useSearch()
   const classes = useStyles()
   return (
     <>
-      <header className={classes.root}>
-        <div className={classes.title}>
-          <h2>
-            Escape from Tarkov
-          </h2>
-          <h1>
-            {gettext('Find in Raid Items')}
-          </h1>
-        </div>
-        <div className={classes.actions}>
-          <Visible breakpoint="mdUp">
-            <HeaderActions />
+      <Visible breakpoint="smDown">
+        <TransitionGroup>
+          {searchBoxOpen
+            ? (
+              <Fade key="search">
+                <div>
+                  <SearchBox />
+                </div>
+              </Fade>
+            )
+            : (
+              <Fade key="header">
+                <div>
+                  <header className={classes.root}>
+                    <HeaderTitle />
+                    <div className={classes.actions}>
+                      <HeaderActionsCompact />
+                    </div>
+                  </header>
+                  <Spacer />
+                  <Legend />
+                </div>
+              </Fade>
+            )
+          }
+        </TransitionGroup>
+      </Visible>
+
+      <Visible breakpoint="mdUp">
+        <header className={classes.root}>
+          <HeaderTitle />
+          <div className={classes.actions}>
+            <TransitionGroup>
+              {searchBoxOpen
+                ? (
+                  <Fade key="search">
+                    <SearchBox closeOnBlur />
+                  </Fade>
+                )
+                : (
+                  <Fade key="actions">
+                    <HeaderActions />
+                  </Fade>
+                )
+              }
+            </TransitionGroup>
             <Visible breakpoint="lg">
-              <HeaderLegend />
+              <Legend />
             </Visible>
-          </Visible>
-          <Visible breakpoint="smDown">
-            <HeaderMenu />
-          </Visible>
-        </div>
-      </header>
-      <Visible breakpoint="mdDown">
-        <Spacer />
-        <HeaderLegend />
+          </div>
+        </header>
+        <Visible breakpoint="md">
+          <Spacer />
+          <Legend />
+        </Visible>
       </Visible>
     </>
   )

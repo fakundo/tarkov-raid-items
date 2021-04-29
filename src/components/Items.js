@@ -1,39 +1,22 @@
 import React from 'react'
 import reduce from 'lodash/reduce'
 import clamp from 'lodash/clamp'
-import { createUseStyles, useAppState, useLocales } from 'hooks'
-import { DONE, CRAFT, REWARD, KAPPA } from 'constants/tags'
-import { checkFilterValue } from 'utils'
+import { useAppState, useLocales, useSearch } from 'hooks'
+import { checkFilter, checkSearchTerm } from 'utils'
 import { quests, itemsSorted } from 'data'
 import TransitionGroup from 'components/TransitionGroup'
 import Fade from 'components/Fade'
 import Item from 'components/Item'
-import Button from 'components/Button'
-import Spacer from 'components/Spacer'
+import ItemsBanner from 'components/ItemsBanner'
 import ItemsVariant from 'components/ItemsVariant'
 
-const useStyles = createUseStyles((theme) => ({
-  empty: {
-    padding: '2rem',
-    fontSize: '1.5rem',
-    borderRadius: '1rem',
-    display: 'inline-block',
-    boxShadow: theme.shadow.card,
-    background: theme.palette.background.card,
-  },
-  allDone: {
-    extend: 'empty',
-  },
-  resetButton: {
-    color: theme.palette.text.error,
-  },
-}))
-
 export default () => {
-  const classes = useStyles()
   const { gettext } = useLocales()
+  const { searchBoxOpen, searchTerm, closeSearchBox } = useSearch()
   const { progress, counters, filter, filterKey,
     resetProgress, updateCounter, updateFilter } = useAppState()
+
+  const search = searchBoxOpen && !!searchTerm
 
   const children = reduce(itemsSorted, (acc, item) => {
     const { amountNeed, kappa } = reduce(item.quest, (acc2, amount, questKey) => ({
@@ -43,14 +26,13 @@ export default () => {
 
     const amountFound = clamp(counters[item.key] || 0, 0, amountNeed)
     const done = amountFound === amountNeed
-    const craft = !!item.craft
     const reward = !!item.reward
+    const craft = !!item.craft
 
     if (
-      checkFilterValue(filter[DONE], done)
-      && checkFilterValue(filter[CRAFT], craft)
-      && checkFilterValue(filter[REWARD], reward)
-      && checkFilterValue(filter[KAPPA], kappa)
+      search
+        ? checkSearchTerm(searchTerm, item)
+        : checkFilter(filter, { done, craft, reward, kappa })
     ) {
       acc.push((
         <Fade key={item.key}>
@@ -67,44 +49,50 @@ export default () => {
 
   const empty = !children.length
   const allDone = progress.found === progress.total
+  const itemsKey = filterKey + (search ? searchTerm : '')
 
   return (
     <TransitionGroup>
       { !empty && (
-        <Fade key={filterKey}>
+        <Fade key={itemsKey}>
           <ItemsVariant>
-            { children }
+            {children}
           </ItemsVariant>
         </Fade>
-      ) }
-      { empty && allDone && (
-        <Fade>
-          <div className={classes.allDone}>
-            { gettext('Looks like you\'ve found all the items! Enjoy your Kappa!') }
-            <Spacer />
-            <Button
-              className={classes.resetButton}
-              onClick={() => resetProgress()}
-            >
-              { gettext('Reset progress') }
-            </Button>
+      )}
+      { empty && search && (
+        <Fade key="search">
+          <div>
+            <ItemsBanner
+              text={gettext('Nothing to display...')}
+              buttonText={gettext('Reset search')}
+              onReset={() => closeSearchBox()}
+            />
           </div>
         </Fade>
-      ) }
-      { empty && !allDone && (
-        <Fade>
-          <div className={classes.empty}>
-            { gettext('Nothing to display...') }
-            <Spacer />
-            <Button
-              className={classes.resetButton}
-              onClick={() => updateFilter({})}
-            >
-              { gettext('Reset filter') }
-            </Button>
+      )}
+      { empty && !search && allDone && (
+        <Fade key="done">
+          <div>
+            <ItemsBanner
+              text={gettext('Looks like you\'ve found all the items! Enjoy your Kappa!')}
+              buttonText={gettext('Reset progress')}
+              onReset={() => resetProgress()}
+            />
           </div>
         </Fade>
-      ) }
+      )}
+      { empty && !search && !allDone && (
+        <Fade key="empty">
+          <div>
+            <ItemsBanner
+              text={gettext('Nothing to display...')}
+              buttonText={gettext('Reset filter')}
+              onReset={() => updateFilter({})}
+            />
+          </div>
+        </Fade>
+      )}
     </TransitionGroup>
   )
 }

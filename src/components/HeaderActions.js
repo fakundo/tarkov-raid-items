@@ -4,6 +4,7 @@ import TransitionGroup from 'components/TransitionGroup'
 import Button from 'components/Button'
 import Group from 'components/Group'
 import { FilterIcon, LanguageIcon, CheckCircleOutlineIcon } from 'components/Icons'
+import SearchButton from 'components/SearchButton'
 import DialogFilter from 'components/DialogFilter'
 import DialogLocale from 'components/DialogLocale'
 import DialogProgress from 'components/DialogProgress'
@@ -39,54 +40,43 @@ export default () => {
     openDialog(<DialogLocale />)
   }, [])
 
-  const buttons = [
-    {
-      children: (
-        <>
-          { gettext('Progress') }
-          <TransitionGroup>
-            <Fade key={progress.found}>
-              <span className={classes.progress}>
-                {` ${((progress.found / progress.total) * 100).toFixed(2)}%`}
-              </span>
-            </Fade>
-          </TransitionGroup>
-        </>
-      ),
-      icon: <CheckCircleOutlineIcon />,
-      onClick: handleProgressClick,
-    },
-    {
-      children: (
-        <>
-          { gettext('Filter')}
-          <TransitionGroup>
-            <Fade key={filterCount}>
-              <span className={classes.filter}>
-                { !!filterCount && ` ${filterCount}` }
-              </span>
-            </Fade>
-          </TransitionGroup>
-        </>
-      ),
-      icon: <FilterIcon />,
-      onClick: handleFilterClick,
-    },
-    {
-      children: localeName,
-      icon: <LanguageIcon />,
-      onClick: handleLocaleClick,
-    },
-  ]
-
   return (
     <Group className={classes.root}>
-      { buttons.map((button, index) => (
-        <Button
-          key={index} // eslint-disable-line
-          {...button}
-        />
-      )) }
+      <SearchButton>
+        {gettext('Search')}
+      </SearchButton>
+      <Button
+        icon={<CheckCircleOutlineIcon />}
+        onClick={handleProgressClick}
+      >
+        {gettext('Progress')}
+        <TransitionGroup>
+          <Fade key={progress.found}>
+            <span className={classes.progress}>
+              {` ${((progress.found / progress.total) * 100).toFixed(2)}%`}
+            </span>
+          </Fade>
+        </TransitionGroup>
+      </Button>
+      <Button
+        icon={<FilterIcon />}
+        onClick={handleFilterClick}
+      >
+        {gettext('Filter')}
+        <TransitionGroup>
+          <Fade key={filterCount}>
+            <span className={classes.filter}>
+              {!!filterCount && ` ${filterCount}`}
+            </span>
+          </Fade>
+        </TransitionGroup>
+      </Button>
+      <Button
+        icon={<LanguageIcon />}
+        onClick={handleLocaleClick}
+      >
+        {localeName}
+      </Button>
     </Group>
   )
 }

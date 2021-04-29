@@ -1,20 +1,16 @@
 import React, { memo, cloneElement, useCallback } from 'react'
 import noop from 'lodash/noop'
 import { createUseStyles, useClassNames } from 'hooks'
-import { createTransition } from 'utils'
+import { createTransition, resetAppearance } from 'utils'
 
 const useStyles = createUseStyles((theme) => ({
   root: {
+    ...resetAppearance(),
     ...createTransition(theme, 'opacity', 'fast'),
-    border: 0,
-    margin: 0,
-    padding: 0,
-    font: 'inherit',
+    color: theme.palette.text.default,
     display: 'flex',
-    color: 'inherit',
+    fontSize: '1rem',
     cursor: 'pointer',
-    background: 'none',
-    appearance: 'none',
     alignItems: 'center',
     justifyContent: 'center',
     '&:hover': {
@@ -59,8 +55,8 @@ export default memo(({ className, icon, children, onClick = noop, ...rest }) => 
       onClick={handleClick}
       {...rest}
     >
-      { !!icon && cloneElement(icon, { className: classes.icon }) }
-      { !!children && <div className={classes.children}>{children}</div> }
+      { !!icon && cloneElement(icon, { className: classes.icon })}
+      { !!children && <div className={classes.children}>{children}</div>}
     </button>
   )
 })

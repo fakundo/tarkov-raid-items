@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { LocalizedProvider, AppStateProvider, ModalProvider, ThemeProvider, JssProvider } from 'providers'
+import { LocalizedProvider, AppStateProvider, ModalProvider, ThemeProvider, JssProvider, SearchProvider } from 'providers'
 import theme from 'constants/theme'
 import * as locales from 'locales'
 import Visible from 'components/Visible'
@@ -23,30 +23,32 @@ export default () => (
           <LocalizedProvider locales={locales} selected={locale}>
             { () => (
               <ModalProvider>
-                <Container>
-                  {useMemo(() => (
-                    <>
-                      <DocumentTitle />
-                      <Header />
-                      <Visible breakpoint="lg">
-                        <Spacer large />
-                      </Visible>
-                      <Visible breakpoint="mdDown">
-                        <Spacer />
-                      </Visible>
-                      <Body>
-                        <Items />
-                      </Body>
-                      <Visible breakpoint="mdUp">
-                        <Spacer large />
-                      </Visible>
-                      <Visible breakpoint="smDown">
-                        <Spacer />
-                      </Visible>
-                      <Footer />
-                    </>
-                  ), [])}
-                </Container>
+                <SearchProvider>
+                  <Container>
+                    {useMemo(() => (
+                      <>
+                        <DocumentTitle />
+                        <Header />
+                        <Visible breakpoint="lg">
+                          <Spacer large />
+                        </Visible>
+                        <Visible breakpoint="mdDown">
+                          <Spacer />
+                        </Visible>
+                        <Body>
+                          <Items />
+                        </Body>
+                        <Visible breakpoint="mdUp">
+                          <Spacer large />
+                        </Visible>
+                        <Visible breakpoint="smDown">
+                          <Spacer />
+                        </Visible>
+                        <Footer />
+                      </>
+                    ), [])}
+                  </Container>
+                </SearchProvider>
               </ModalProvider>
             )}
           </LocalizedProvider>

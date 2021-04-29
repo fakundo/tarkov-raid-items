@@ -17,11 +17,11 @@ msgstr ""
 msgid "All images are copyrighted by BattleState Games."
 msgstr "Все изображения защищены авторским правом BattleState Games."
 
-#: src/components/HeaderLegend.js:28
+#: src/components/Legend.js:28
 msgid "Can be crafted"
 msgstr "Можно скрафтить"
 
-#: src/components/HeaderLegend.js:32
+#: src/components/Legend.js:32
 msgid "Can be obtained as reward"
 msgstr "Можно получить в награду"
 
@@ -49,12 +49,15 @@ msgstr "Данные взяты с сайта [URL] под лицензией [U
 msgid "Don't need for Kappa"
 msgstr "Не нужно для Каппы"
 
+#: src/components/SearchBox.js:63
+msgid "Enter item name here..."
+msgstr "Введите название предмета…"
+
 #: src/components/DocumentTitle.js:8
 msgid "Escape from Tarkov – [EFT] Find in Raid Items"
 msgstr "Escape from Tarkov – [EFT] Найдено в рейде"
 
-#: src/components/DialogHeaderMenu.js:24
-#: src/components/HeaderActions.js:62
+#: src/components/DialogHeaderMenu.js:24 src/components/HeaderActions.js:65
 msgid "Filter"
 msgstr "Фильтр"
 
@@ -62,7 +65,7 @@ msgstr "Фильтр"
 msgid "Filter settings"
 msgstr "Настройки фильтра"
 
-#: src/components/Header.js:60
+#: src/components/HeaderTitle.js:41
 msgid "Find in Raid Items"
 msgstr "Найдено в рейде – предметы"
 
@@ -77,7 +80,7 @@ msgstr[0] "Найден %s предмет из %s"
 msgstr[1] "Найдено %s предмета из %s"
 msgstr[2] "Найдено %s предметов из %s"
 
-#: src/components/Items.js:83
+#: src/components/Items.js:78
 msgid "Looks like you've found all the items! Enjoy your Kappa!"
 msgstr "Похоже ты нашёл все предметы! Наслаждайся своей Каппой!"
 
@@ -85,8 +88,7 @@ msgstr "Похоже ты нашёл все предметы! Наслаждай
 msgid "lvl %s"
 msgstr "ур %s"
 
-#: src/components/DialogFilter.js:35
-#: src/components/HeaderLegend.js:36
+#: src/components/DialogFilter.js:35 src/components/Legend.js:36
 msgid "Need for Kappa"
 msgstr "Нужно для Каппы"
 
@@ -98,13 +100,12 @@ msgstr "Нельзя скрафтить"
 msgid "Not found"
 msgstr "Не найдено"
 
-#: src/components/Items.js:97
+#: src/components/Items.js:67 src/components/Items.js:89
 msgid "Nothing to display..."
 msgstr "Нечего отобразить…"
 
-#: src/components/DialogHeaderMenu.js:19
-#: src/components/DialogProgress.js:21
-#: src/components/HeaderActions.js:46
+#: src/components/DialogHeaderMenu.js:19 src/components/DialogProgress.js:21
+#: src/components/HeaderActions.js:52
 msgid "Progress"
 msgstr "Прогресс"
 
@@ -115,21 +116,27 @@ msgstr[0] "Квест"
 msgstr[1] "Квесты"
 msgstr[2] "Квесты"
 
-#: src/components/Items.js:103
+#: src/components/Items.js:90
 msgid "Reset filter"
 msgstr "Сброс фильтра"
 
-#: src/components/DialogProgress.js:32
-#: src/components/Items.js:89
+#: src/components/DialogProgress.js:32 src/components/Items.js:79
 msgid "Reset progress"
 msgstr "Сброс прогресса"
+
+#: src/components/Items.js:68
+msgid "Reset search"
+msgstr "Сброс поиска"
 
 #: src/components/DialogItem.js:43
 msgid "Reward"
 msgstr "Награда"
 
-#: src/components/DialogHeaderMenu.js:29
-#: src/components/DialogLocale.js:16
+#: src/components/HeaderActions.js:46
+msgid "Search"
+msgstr "Поиск"
+
+#: src/components/DialogHeaderMenu.js:29 src/components/DialogLocale.js:16
 msgid "Select language"
 msgstr "Выбор языка"
 

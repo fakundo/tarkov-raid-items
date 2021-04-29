@@ -16,11 +16,11 @@ msgstr ""
 msgid "All images are copyrighted by BattleState Games."
 msgstr "Alle Bilder sind von BattleState Games urheberrechtlich geschützt."
 
-#: src/components/HeaderLegend.js:28
+#: src/components/Legend.js:28
 msgid "Can be crafted"
 msgstr "Kann hergestellt werden"
 
-#: src/components/HeaderLegend.js:32
+#: src/components/Legend.js:32
 msgid "Can be obtained as reward"
 msgstr "Kann als Belohnung erhalten werden"
 
@@ -48,13 +48,15 @@ msgstr "Daten aus der [URL] unter [URL] -Lizenz."
 msgid "Don't need for Kappa"
 msgstr "Ich brauche keinen Kappa"
 
+#: src/components/SearchBox.js:63
+msgid "Enter item name here..."
+msgstr "Objektname eingeben…"
+
 #: src/components/DocumentTitle.js:8
 msgid "Escape from Tarkov – [EFT] Find in Raid Items"
-msgstr ""
-"Escape from Tarkov – [EFT] Gegenstände, die bei der Razzia gefunden "
-"wurden"
+msgstr "Escape from Tarkov – [EFT] Gegenstände, die bei der Razzia gefunden wurden"
 
-#: src/components/DialogHeaderMenu.js:24 src/components/HeaderActions.js:62
+#: src/components/DialogHeaderMenu.js:24 src/components/HeaderActions.js:65
 msgid "Filter"
 msgstr "Filter"
 
@@ -62,7 +64,7 @@ msgstr "Filter"
 msgid "Filter settings"
 msgstr "Filtereinstellungen"
 
-#: src/components/Header.js:60
+#: src/components/HeaderTitle.js:41
 msgid "Find in Raid Items"
 msgstr "Gefunden in Schlachtzug – Gegenstände"
 
@@ -76,17 +78,17 @@ msgid_plural "Found %s items of %s"
 msgstr[0] "%s Element von %s gefunden"
 msgstr[1] "%s Elemente von %s gefunden"
 
-#: src/components/Items.js:83
+#: src/components/Items.js:78
 msgid "Looks like you've found all the items! Enjoy your Kappa!"
 msgstr ""
-"Sieht so aus, als hätten Sie alle Gegenstände gefunden! Viel Spaß mit "
-"deinem Kappa!"
+"Sieht so aus, als hätten Sie alle Gegenstände gefunden! Viel Spaß mit deinem "
+"Kappa!"
 
 #: src/components/DialogItem.js:76
 msgid "lvl %s"
 msgstr "lvl %s"
 
-#: src/components/DialogFilter.js:35 src/components/HeaderLegend.js:36
+#: src/components/DialogFilter.js:35 src/components/Legend.js:36
 msgid "Need for Kappa"
 msgstr "Notwendigkeit für Kappa"
 
@@ -98,12 +100,12 @@ msgstr "Nicht herstellbar"
 msgid "Not found"
 msgstr "Nicht gefunden"
 
-#: src/components/Items.js:97
+#: src/components/Items.js:67 src/components/Items.js:89
 msgid "Nothing to display..."
 msgstr "Nichts zu zeigen…"
 
-#: src/components/DialogHeaderMenu.js:19
-#: src/components/DialogProgress.js:21 src/components/HeaderActions.js:46
+#: src/components/DialogHeaderMenu.js:19 src/components/DialogProgress.js:21
+#: src/components/HeaderActions.js:52
 msgid "Progress"
 msgstr "Fortschritt"
 
@@ -113,17 +115,25 @@ msgid_plural "Quests"
 msgstr[0] "Quest"
 msgstr[1] "Quests"
 
-#: src/components/Items.js:103
+#: src/components/Items.js:90
 msgid "Reset filter"
 msgstr "Filter zurücksetzen"
 
-#: src/components/DialogProgress.js:32 src/components/Items.js:89
+#: src/components/DialogProgress.js:32 src/components/Items.js:79
 msgid "Reset progress"
 msgstr "Fortschritt zurücksetzen"
+
+#: src/components/Items.js:68
+msgid "Reset search"
+msgstr "Suche zurücksetzen"
 
 #: src/components/DialogItem.js:43
 msgid "Reward"
 msgstr "Belohnung"
+
+#: src/components/HeaderActions.js:46
+msgid "Search"
+msgstr "Suche"
 
 #: src/components/DialogHeaderMenu.js:29 src/components/DialogLocale.js:16
 msgid "Select language"

@@ -7,10 +7,12 @@ export default {
       muted: '#8897AC',
       error: '#FF6270',
       link: '#DADADA',
+      selection: '#1C1C1C',
     },
     background: {
       body: '#181818',
       card: '#1C1C1C',
+      selection: '#DADADA',
     },
     tag: {
       [CRAFT]: '#058320',

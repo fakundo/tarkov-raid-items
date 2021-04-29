@@ -1,5 +1,6 @@
 import React, { memo, cloneElement } from 'react'
 import { createUseStyles, useClassNames } from 'hooks'
+import { resetAppearance } from 'utils'
 
 const useStyles = createUseStyles({
   root: {
@@ -14,8 +15,7 @@ const useStyles = createUseStyles({
     marginRight: '.5rem',
   },
   label: {
-    fontSize: '1rem',
-    fontWeight: 'normal',
+    ...resetAppearance(),
   },
 })
 
@@ -40,9 +40,9 @@ export default memo(({ className, checked, label, iconCheck, iconUncheck, ...res
       />
       { cloneElement(checked ? iconCheck : iconUncheck, {
         className: classes.icon,
-      }) }
+      })}
       <span className={classes.label}>
-        { label }
+        {label}
       </span>
     </label>
   )

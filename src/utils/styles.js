@@ -9,8 +9,27 @@ export const breakpoints = {
   mdUp: '@media (min-width: 960px)',
 }
 
+export const resetAppearance = () => ({
+  fontFamily: 'inherit',
+  fontWeight: 'normal',
+  background: 'none',
+  appearance: 'none',
+  fontSize: '1rem',
+  padding: 0,
+  border: 0,
+  margin: 0,
+})
+
 export const createTransition = (theme, transitionProperty, duration = 'default') => ({
   transitionProperty,
   transitionTimingFunction: 'ease-out',
   transitionDuration: theme.animation.duration[duration],
+})
+
+export const createPlaceholderStyles = (style) => ({
+  '&::placeholder': style,
+  '&:-moz-placeholder': style,
+  '&::-moz-placeholder': style,
+  '&:-ms-input-placeholder': style,
+  '&::-webkit-input-placeholder': style,
 })

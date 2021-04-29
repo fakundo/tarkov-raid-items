@@ -8,11 +8,11 @@ msgstr ""
 msgid "All images are copyrighted by BattleState Games."
 msgstr ""
 
-#: src/components/HeaderLegend.js:28
+#: src/components/Legend.js:28
 msgid "Can be crafted"
 msgstr ""
 
-#: src/components/HeaderLegend.js:32
+#: src/components/Legend.js:32
 msgid "Can be obtained as reward"
 msgstr ""
 
@@ -40,12 +40,16 @@ msgstr ""
 msgid "Don't need for Kappa"
 msgstr ""
 
+#: src/components/SearchBox.js:63
+msgid "Enter item name here..."
+msgstr ""
+
 #: src/components/DocumentTitle.js:8
 msgid "Escape from Tarkov – [EFT] Find in Raid Items"
 msgstr ""
 
 #: src/components/DialogHeaderMenu.js:24
-#: src/components/HeaderActions.js:62
+#: src/components/HeaderActions.js:65
 msgid "Filter"
 msgstr ""
 
@@ -53,7 +57,7 @@ msgstr ""
 msgid "Filter settings"
 msgstr ""
 
-#: src/components/Header.js:60
+#: src/components/HeaderTitle.js:41
 msgid "Find in Raid Items"
 msgstr ""
 
@@ -67,7 +71,7 @@ msgid_plural "Found %s items of %s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/components/Items.js:83
+#: src/components/Items.js:78
 msgid "Looks like you've found all the items! Enjoy your Kappa!"
 msgstr ""
 
@@ -76,7 +80,7 @@ msgid "lvl %s"
 msgstr ""
 
 #: src/components/DialogFilter.js:35
-#: src/components/HeaderLegend.js:36
+#: src/components/Legend.js:36
 msgid "Need for Kappa"
 msgstr ""
 
@@ -88,13 +92,14 @@ msgstr ""
 msgid "Not found"
 msgstr ""
 
-#: src/components/Items.js:97
+#: src/components/Items.js:67
+#: src/components/Items.js:89
 msgid "Nothing to display..."
 msgstr ""
 
 #: src/components/DialogHeaderMenu.js:19
 #: src/components/DialogProgress.js:21
-#: src/components/HeaderActions.js:46
+#: src/components/HeaderActions.js:52
 msgid "Progress"
 msgstr ""
 
@@ -104,17 +109,25 @@ msgid_plural "Quests"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/components/Items.js:103
+#: src/components/Items.js:90
 msgid "Reset filter"
 msgstr ""
 
 #: src/components/DialogProgress.js:32
-#: src/components/Items.js:89
+#: src/components/Items.js:79
 msgid "Reset progress"
+msgstr ""
+
+#: src/components/Items.js:68
+msgid "Reset search"
 msgstr ""
 
 #: src/components/DialogItem.js:43
 msgid "Reward"
+msgstr ""
+
+#: src/components/HeaderActions.js:46
+msgid "Search"
 msgstr ""
 
 #: src/components/DialogHeaderMenu.js:29

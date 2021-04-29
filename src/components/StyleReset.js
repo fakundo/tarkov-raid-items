@@ -8,6 +8,10 @@ const useStyles = createUseStyles((theme) => ({
       boxSizing: 'border-box',
       tapHighlightColor: 'rgba(0,0,0,0)',
     },
+    '*::selection': {
+      color: theme.palette.text.selection,
+      background: theme.palette.background.selection,
+    },
     html: {
       fontSize: 16,
       fontSmoothing: 'antialiased',

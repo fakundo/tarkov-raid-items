@@ -1,14 +1,12 @@
 import React, { memo } from 'react'
 import { createUseStyles, useClassNames } from 'hooks'
-import { createTransition } from 'utils'
+import { createTransition, resetAppearance } from 'utils'
 
 const useStyles = createUseStyles((theme) => ({
   root: {
+    ...resetAppearance(),
     ...createTransition(theme, 'opacity', 'fast'),
-    fontSize: '1rem',
     cursor: 'pointer',
-    appearance: 'none',
-    fontWeight: 'normal',
     textDecoration: 'underline',
     color: theme.palette.text.link,
     '&:hover': {
