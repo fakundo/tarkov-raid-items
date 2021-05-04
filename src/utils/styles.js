@@ -15,6 +15,7 @@ export const resetAppearance = () => ({
   background: 'none',
   appearance: 'none',
   fontSize: '1rem',
+  borderRadius: 0,
   padding: 0,
   border: 0,
   margin: 0,
