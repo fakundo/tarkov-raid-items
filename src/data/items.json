@@ -242,7 +242,7 @@
       "SAMPLES": 1
     }
   },
-  "L1": {
+  "L_1_NOREPINEPHRINE": {
     "type": "Injector",
     "name": {
       "en": "L1 (Norepinephrine)",
