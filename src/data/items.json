@@ -95,6 +95,7 @@
     "type": "Jaeger",
     "name": {
       "en": "CMS kit",
+      "de": "CMS-Kit",
       "fr": "Kit chirurgical CMS",
       "ru": "Хирургический набор CMS"
     },
@@ -210,6 +211,9 @@
     },
     "quest": {
       "CAR_REPAIR": 8
+    },
+    "craft": {
+      "WORKBENCH": 2
     }
   },
   "3_B_TG": {
@@ -236,6 +240,22 @@
     "quest": {
       "COLLEAGUES_PART_3": 1,
       "SAMPLES": 1
+    }
+  },
+  "L1": {
+    "type": "Injector",
+    "name": {
+      "en": "L1 (Norepinephrine)",
+      "ru": "L1 (Норадреналин)"
+    },
+    "nameShort": {
+      "en": "L1"
+    },
+    "quest": {
+      "SAMPLES": 1
+    },
+    "reward": {
+      "COLLEAGUES_PART_3": 3
     }
   },
   "42ND_SIGNATURE_BLEND_ENGLISH_TEA": {
@@ -1031,6 +1051,9 @@
     },
     "craft": {
       "MEDSTATION": 2
+    },
+    "reward": {
+      "VITAMINS_PART_2": 5
     }
   },
   "LEDX_SKIN_TRANSILLUMINATOR": {
@@ -1116,6 +1139,9 @@
     },
     "quest": {
       "SAMPLES": 1
+    },
+    "reward": {
+      "COLLEAGUES_PART_3": 2
     }
   },
   "M_U_L_E_STIMULATOR": {
@@ -1149,6 +1175,9 @@
     },
     "quest": {
       "SAMPLES": 1
+    },
+    "reward": {
+      "COLLEAGUES_PART_3": 3
     }
   },
   "P_22": {
@@ -1199,6 +1228,9 @@
     },
     "quest": {
       "SEW_IT_GOOD_PART_1": 1
+    },
+    "craft": {
+      "LAVATORY": 2
     }
   },
   "SKI_HAT_WITH_HOLES_FOR_EYES": {
@@ -1306,6 +1338,9 @@
     },
     "quest": {
       "SIGNAL_PART_2": 3
+    },
+    "craft": {
+      "WORKBENCH": 1
     }
   },
   "PC_CPU": {
