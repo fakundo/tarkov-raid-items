@@ -27,7 +27,7 @@ const languages = [
   {
     filename: 'ru.html',
     lang: 'ru',
-    title: 'Escape from Tarkov [EFT] – Найдено в рейде, квестовые предметы',
+    title: 'Побег из Таркова [EFT] – Найдено в рейде, квестовые предметы',
     description: 'Интерактивный список квестовых предметов из игры Escape from Tarkov (Побег из Таркова), которые необходимо найти в рейде. Трекер прогресса.',
     keywords: 'Тарков, Escape From Tarkov, EFT, найдено в рейде, квестовые предметы, предметы найдены в рейде, интерактивный список',
     alternatives: _.reject(pages, { lang: 'ru' }),

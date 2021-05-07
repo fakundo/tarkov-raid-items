@@ -45,7 +45,7 @@ msgid "Enter item name here..."
 msgstr ""
 
 #: src/components/DocumentTitle.js:8
-msgid "Escape from Tarkov – [EFT] Find in Raid Items"
+msgid "Escape from Tarkov [EFT] – Find in Raid Quest Items"
 msgstr ""
 
 #: src/components/DialogHeaderMenu.js:24

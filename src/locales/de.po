@@ -53,8 +53,10 @@ msgid "Enter item name here..."
 msgstr "Objektname eingeben…"
 
 #: src/components/DocumentTitle.js:8
-msgid "Escape from Tarkov – [EFT] Find in Raid Items"
-msgstr "Escape from Tarkov – [EFT] Gegenstände, die bei der Razzia gefunden wurden"
+msgid "Escape from Tarkov [EFT] – Find in Raid Quest Items"
+msgstr ""
+"Escape from Tarkov – [EFT] Gegenstände, die bei der Razzia gefunden "
+"wurden"
 
 #: src/components/DialogHeaderMenu.js:24 src/components/HeaderActions.js:65
 msgid "Filter"
@@ -81,8 +83,8 @@ msgstr[1] "%s Elemente von %s gefunden"
 #: src/components/Items.js:78
 msgid "Looks like you've found all the items! Enjoy your Kappa!"
 msgstr ""
-"Sieht so aus, als hätten Sie alle Gegenstände gefunden! Viel Spaß mit deinem "
-"Kappa!"
+"Sieht so aus, als hätten Sie alle Gegenstände gefunden! Viel Spaß mit "
+"deinem Kappa!"
 
 #: src/components/DialogItem.js:76
 msgid "lvl %s"
@@ -104,8 +106,8 @@ msgstr "Nicht gefunden"
 msgid "Nothing to display..."
 msgstr "Nichts zu zeigen…"
 
-#: src/components/DialogHeaderMenu.js:19 src/components/DialogProgress.js:21
-#: src/components/HeaderActions.js:52
+#: src/components/DialogHeaderMenu.js:19
+#: src/components/DialogProgress.js:21 src/components/HeaderActions.js:52
 msgid "Progress"
 msgstr "Fortschritt"
 
