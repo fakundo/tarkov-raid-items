@@ -19,17 +19,17 @@ const languages = [
   {
     filename: 'index.html',
     lang: 'en',
-    title: 'Escape from Tarkov – [EFT] Find in Raid Items',
+    title: 'Escape from Tarkov [EFT] – Find in Raid Quest Items',
     description: 'Interactive list of quest items in Escape from Tarkov (EFT) game needed to be found in raid. Progress tracker.',
-    keywords: 'Escape From Tarkov, EFT find in raid, EFT, find in raid items, interactive',
+    keywords: 'Escape From Tarkov, EFT, items, find in raid, quest, quest items, find in raid items, interactive list',
     alternatives: _.reject(pages, { lang: 'en' }),
   },
   {
     filename: 'ru.html',
     lang: 'ru',
-    title: 'Escape from Tarkov – [EFT] Найдено в рейде',
-    description: 'Интерактивный список квестовых предметов из игры Escape from Tarkov (EFT), которые необходимо найти в рейде. Трекер прогресса.',
-    keywords: 'Escape From Tarkov, EFT найдено в рейде, EFT, предметы найдены в рейде, интерактивный',
+    title: 'Escape from Tarkov [EFT] – Найдено в рейде, квестовые предметы',
+    description: 'Интерактивный список квестовых предметов из игры Escape from Tarkov (Побег из Таркова), которые необходимо найти в рейде. Трекер прогресса.',
+    keywords: 'Тарков, Escape From Tarkov, EFT, найдено в рейде, квестовые предметы, предметы найдены в рейде, интерактивный список',
     alternatives: _.reject(pages, { lang: 'ru' }),
   },
   {
