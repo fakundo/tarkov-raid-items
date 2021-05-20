@@ -32,8 +32,8 @@
     }
     </script>
 
-    <% for(const { lang, href } of htmlWebpackPlugin.options.alternatives || []) { %>
-    <link rel="alternate" hreflang="<%= lang %>" href="<%= href %>" />
+    <% for(const { lang, path } of htmlWebpackPlugin.options.alternatives || []) { %>
+    <link rel="alternate" hreflang="<%= lang %>" href="<%= path %>" />
     <% } %>
 
     <% if (htmlWebpackPlugin.options.googleTagKey) { %>

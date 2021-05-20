@@ -5,50 +5,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { default: SitemapWebpackPlugin } = require('sitemap-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const createPages = require('./createPages')
 
 const publicPath = 'https://fakundo.github.io/tarkov-raid-items/'
-
-const pages = [
-  { lang: 'en', href: publicPath },
-  { lang: 'ru', href: `${publicPath}ru.html` },
-  { lang: 'de', href: `${publicPath}de.html` },
-  { lang: 'fr', href: `${publicPath}fr.html` },
-]
-
-const languages = [
-  {
-    filename: 'index.html',
-    lang: 'en',
-    title: 'Escape from Tarkov [EFT] – Find in Raid Quest Items',
-    description: 'Interactive list of quest items in Escape from Tarkov (EFT) game needed to be found in raid. Progress tracker.',
-    keywords: 'Escape From Tarkov, EFT, items, find in raid, quest, quest items, find in raid items, interactive list',
-    alternatives: _.reject(pages, { lang: 'en' }),
-  },
-  {
-    filename: 'ru.html',
-    lang: 'ru',
-    title: 'Побег из Таркова [EFT] – Найдено в рейде, квестовые предметы',
-    description: 'Интерактивный список квестовых предметов из игры Escape from Tarkov (Побег из Таркова), которые необходимо найти в рейде. Трекер прогресса.',
-    keywords: 'Тарков, Escape From Tarkov, EFT, найдено в рейде, квестовые предметы, предметы найдены в рейде, интерактивный список',
-    alternatives: _.reject(pages, { lang: 'ru' }),
-  },
-  {
-    filename: 'de.html',
-    lang: 'de',
-    title: 'Escape from Tarkov – [EFT] Gegenstände, die bei der Razzia gefunden wurden',
-    description: 'Die interaktive Liste der Questgegenstände im Spiel Escape from Tarkov (EFT) musste im Schlachtzug gefunden werden. Fortschrittsanzeige.',
-    keywords: 'Escape From Tarkov, EFT die bei der razzia gefunden wurden, EFT, questgegenstände die bei der razzia gefunden wurden, interaktive',
-    alternatives: _.reject(pages, { lang: 'de' }),
-  },
-  {
-    filename: 'fr.html',
-    lang: 'fr',
-    title: 'Escape from Tarkov – [EFT] Objets trouvés dans le raid',
-    description: 'La liste interactive des objets de quête dans le jeu Escape from Tarkov (EFT) devait être trouvée dans le raid. Suivi de progression.',
-    keywords: 'Escape From Tarkov, EFT trouvée dans le raid, EFT, objets trouvés dans le raid, interactive',
-    alternatives: _.reject(pages, { lang: 'fr' }),
-  },
-]
+const pages = createPages(publicPath)
 
 module.exports = {
   entry: path.resolve(__dirname, 'src/index'),
@@ -61,8 +21,9 @@ module.exports = {
   mode: 'production',
   devtool: 'source-map',
   plugins: [
-    ...languages.map((langOptions) => new HtmlWebpackPlugin({
-      ...langOptions,
+    ...pages.map((pageOptions) => new HtmlWebpackPlugin({
+      ...pageOptions,
+      alternatives: _.reject(pages, { lang: pageOptions.lang }),
       minify: { collapseWhitespace: true, minifyJS: true, minifyCSS: true },
       inject: 'body',
       hash: true,
@@ -83,9 +44,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new SitemapWebpackPlugin({
       base: publicPath,
-      paths: pages.map((page) => ({
-        path: page.href,
-      })),
+      paths: pages,
       options: {
         skipgzip: true,
       },
