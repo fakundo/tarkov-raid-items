@@ -2,6 +2,7 @@ const _ = require('lodash')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const { default: SitemapWebpackPlugin } = require('sitemap-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
@@ -28,7 +29,6 @@ module.exports = {
       inject: 'body',
       hash: true,
       template: path.resolve(__dirname, 'src/template.ejs'),
-      favicon: path.resolve(__dirname, 'src/assets/favicon.png'),
       poster: {
         url: `${publicPath}poster.png`,
         width: '144',
@@ -52,6 +52,20 @@ module.exports = {
     new BundleAnalyzerPlugin({
       analyzerMode: 'static',
       openAnalyzer: false,
+    }),
+    new FaviconsWebpackPlugin({
+      logo: path.resolve(__dirname, 'src/assets/favicon.png'),
+      publicPath,
+      outputPath: path.resolve(__dirname, 'build/favicons'),
+      favicons: {
+        appName: 'Tarkov Raid Items',
+        appDescription: 'Interactive list of quest items in Escape from Tarkov (EFT) game needed to be found in raid. Progress tracker.',
+        version: null,
+        developerURL: null,
+        developerName: null,
+        background: '#000000',
+        theme_color: '#FFFFFF',
+      },
     }),
   ],
   module: {
