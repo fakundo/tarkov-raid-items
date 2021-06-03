@@ -20,6 +20,7 @@ const useStyles = createUseStyles((theme) => ({
     body: {
       margin: 0,
       fontSize: '1rem',
+      overflowY: 'scroll',
       fontStyle: 'normal',
       fontWeight: 'normal',
       textSizeAdjust: '100%',
