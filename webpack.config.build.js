@@ -56,7 +56,6 @@ module.exports = {
     new FaviconsWebpackPlugin({
       logo: path.resolve(__dirname, 'src/assets/favicon.png'),
       publicPath,
-      outputPath: path.resolve(__dirname, 'build/favicons'),
       favicons: {
         appName: 'Tarkov Raid Items',
         appDescription: 'Interactive list of quest items in Escape from Tarkov (EFT) game needed to be found in raid. Progress tracker.',
