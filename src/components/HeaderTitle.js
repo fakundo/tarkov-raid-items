@@ -35,7 +35,7 @@ export default () => {
   return (
     <div className={classes.root}>
       <h2>
-        Escape from Tarkov
+        Escape from Tarkov – EFT
       </h2>
       <h1>
         {gettext('Find in Raid Items')}

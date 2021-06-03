@@ -18,6 +18,7 @@ const useStyles = createUseStyles((theme) => ({
     padding: '1rem',
     cursor: 'pointer',
     listStyle: 'none',
+    userSelect: 'none',
     borderRadius: '1rem',
     boxShadow: theme.shadow.card,
     background: theme.palette.background.card,

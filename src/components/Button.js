@@ -11,6 +11,7 @@ const useStyles = createUseStyles((theme) => ({
     display: 'flex',
     fontSize: '1rem',
     cursor: 'pointer',
+    userSelect: 'none',
     alignItems: 'center',
     justifyContent: 'center',
     '&:hover': {

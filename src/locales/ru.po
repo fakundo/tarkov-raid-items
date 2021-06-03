@@ -13,9 +13,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: src/components/Footer.js:16
+#: src/components/Footer.js:30
 msgid "All images are copyrighted by BattleState Games."
 msgstr "Все изображения защищены авторским правом BattleState Games."
+
+#: src/components/Footer.js:21
+msgid ""
+"An interactive list of items that must have the «Item found in raid» mark, "
+"and which are required to complete the quests."
+msgstr ""
+"Интерактивный список предметов, которые должны иметь отметку «Найдено в "
+"рейде» и которые необходимы для выполнения квестов."
 
 #: src/components/Legend.js:28
 msgid "Can be crafted"
@@ -41,7 +49,7 @@ msgstr "Крафт"
 msgid "Craftable"
 msgstr "Можно скрафтить"
 
-#: src/components/Footer.js:18
+#: src/components/Footer.js:32
 msgid "Data taken from the [URL] under [URL] license."
 msgstr "Данные взяты с сайта [URL] под лицензией [URL]."
 
@@ -79,6 +87,14 @@ msgid_plural "Found %s items of %s"
 msgstr[0] "Найден %s предмет из %s"
 msgstr[1] "Найдено %s предмета из %s"
 msgstr[2] "Найдено %s предметов из %s"
+
+#: src/components/Footer.js:27
+msgid ""
+"Items with only this mark can be sold at the Flea market, and the item "
+"loses the mark after being sold."
+msgstr ""
+"Предметы только с этой отметкой могут быть проданы на Барахолке, при этом "
+"товар теряет отметку после продажи."
 
 #: src/components/Items.js:78
 msgid "Looks like you've found all the items! Enjoy your Kappa!"
@@ -143,6 +159,24 @@ msgstr "Выбор языка"
 #: src/components/DialogHeaderMenu.js:37
 msgid "Settings"
 msgstr "Настройки"
+
+#: src/components/Footer.js:23
+msgid ""
+"The main reward after completing (almost) all quests in the game is a Kappa "
+"secure container."
+msgstr ""
+"Основной наградой после выполнения (почти) всех квестов в игре является "
+"защищенный контейнер Каппа."
+
+#: src/components/Footer.js:25
+msgid ""
+"The mark «Item found in raid» is given to items that were created in the "
+"Hideout, or obtained as a quest reward, or found during the game if the "
+"player survived."
+msgstr ""
+"Отметка «Найдено в рейде» присваивается предметам, которые были созданы в "
+"Убежище, или получены в качестве награды за квест, или найдены во время "
+"игры, если игрок выжил."
 
 #: src/components/Tag.js:35
 msgctxt "TAG_SHORT"

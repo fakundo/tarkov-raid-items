@@ -12,10 +12,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: src/components/Footer.js:16
+#: src/components/Footer.js:30
 msgid "All images are copyrighted by BattleState Games."
 msgstr ""
 "Toutes les images sont protégées par les droits d’auteur de BattleState Games."
+
+#: src/components/Footer.js:21
+msgid ""
+"An interactive list of items that must have the «Item found in raid» mark, and "
+"which are required to complete the quests."
+msgstr ""
+"Une liste interactive d’objets qui doivent avoir la marque «Objet trouvé dans le "
+"raid» et qui sont nécessaires pour terminer les quêtes."
 
 #: src/components/Legend.js:28
 msgid "Can be crafted"
@@ -41,7 +49,7 @@ msgstr "Artisanat"
 msgid "Craftable"
 msgstr "Artisanal"
 
-#: src/components/Footer.js:18
+#: src/components/Footer.js:32
 msgid "Data taken from the [URL] under [URL] license."
 msgstr "Données extraites de la licence [URL] sous [URL]."
 
@@ -78,6 +86,14 @@ msgid "Found %s item of %s"
 msgid_plural "Found %s items of %s"
 msgstr[0] "%s élément trouvé sur %s"
 msgstr[1] "%s éléments trouvés sur %s"
+
+#: src/components/Footer.js:27
+msgid ""
+"Items with only this mark can be sold at the Flea market, and the item loses the "
+"mark after being sold."
+msgstr ""
+"Les objets avec uniquement cette marque peuvent être vendus au Marché aux puces, "
+"et l’article perd sa marque après avoir été vendu."
 
 #: src/components/Items.js:78
 msgid "Looks like you've found all the items! Enjoy your Kappa!"
@@ -141,6 +157,24 @@ msgstr "Choisir la langue"
 #: src/components/DialogHeaderMenu.js:37
 msgid "Settings"
 msgstr "Réglages"
+
+#: src/components/Footer.js:23
+msgid ""
+"The main reward after completing (almost) all quests in the game is a Kappa "
+"secure container."
+msgstr ""
+"La principale récompense après avoir terminé (presque) toutes les quêtes du jeu "
+"est un conteneur sécurisé Kappa."
+
+#: src/components/Footer.js:25
+msgid ""
+"The mark «Item found in raid» is given to items that were created in the "
+"Hideout, or obtained as a quest reward, or found during the game if the player "
+"survived."
+msgstr ""
+"La marque «Objet trouvé en raid» est attribuée aux objets qui ont été créés dans "
+"le Planque, ou obtenus en récompense de quête, ou trouvés pendant le jeu si le "
+"joueur a survécu."
 
 #: src/components/Tag.js:35
 msgctxt "TAG_SHORT"

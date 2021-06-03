@@ -20,7 +20,6 @@ const useStyles = createUseStyles((theme) => ({
     body: {
       margin: 0,
       fontSize: '1rem',
-      userSelect: 'none',
       fontStyle: 'normal',
       fontWeight: 'normal',
       textSizeAdjust: '100%',

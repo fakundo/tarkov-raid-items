@@ -4,8 +4,14 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n == 1 ? 0 : (n >= 2 && n <= 4) ? 1 : 2);\n"
 "Language: cs\n"
 
-#: src/components/Footer.js:16
+#: src/components/Footer.js:30
 msgid "All images are copyrighted by BattleState Games."
+msgstr ""
+
+#: src/components/Footer.js:21
+msgid ""
+"An interactive list of items that must have the «Item found in raid» mark, "
+"and which are required to complete the quests."
 msgstr ""
 
 #: src/components/Legend.js:28
@@ -32,7 +38,7 @@ msgstr ""
 msgid "Craftable"
 msgstr ""
 
-#: src/components/Footer.js:18
+#: src/components/Footer.js:32
 msgid "Data taken from the [URL] under [URL] license."
 msgstr ""
 
@@ -70,6 +76,12 @@ msgid "Found %s item of %s"
 msgid_plural "Found %s items of %s"
 msgstr[0] ""
 msgstr[1] ""
+
+#: src/components/Footer.js:27
+msgid ""
+"Items with only this mark can be sold at the Flea market, and the item "
+"loses the mark after being sold."
+msgstr ""
 
 #: src/components/Items.js:78
 msgid "Looks like you've found all the items! Enjoy your Kappa!"
@@ -137,6 +149,19 @@ msgstr ""
 
 #: src/components/DialogHeaderMenu.js:37
 msgid "Settings"
+msgstr ""
+
+#: src/components/Footer.js:23
+msgid ""
+"The main reward after completing (almost) all quests in the game is a Kappa "
+"secure container."
+msgstr ""
+
+#: src/components/Footer.js:25
+msgid ""
+"The mark «Item found in raid» is given to items that were created in the "
+"Hideout, or obtained as a quest reward, or found during the game if the "
+"player survived."
 msgstr ""
 
 #: src/components/Tag.js:35
