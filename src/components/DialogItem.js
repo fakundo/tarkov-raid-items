@@ -10,14 +10,14 @@ import Tag from 'components/Tag'
 import DialogItemLinkGroup from 'components/DialogItemLinkGroup'
 
 export default ({ item }) => {
-  const { locale, ngettext, gettext } = useLocales()
+  const { locale, __n, __ } = useLocales()
   return (
     <>
       <DialogTitle>
-        { item.getName(locale) }
+        {item.getName(locale)}
       </DialogTitle>
       <b>
-        { ngettext('Quest', 'Quests', size(item.quest)) }
+        {__n`Quest``Quests`(size(item.quest))}
       </b>
       <Spacer small />
       <DialogItemLinkGroup
@@ -36,11 +36,11 @@ export default ({ item }) => {
           }
         })}
       />
-      { !!item.reward && (
+      {!!item.reward && (
         <>
           <Spacer />
           <b>
-            { gettext('Reward')}
+            {__`Reward`}
           </b>
           <Spacer small />
           <DialogItemLinkGroup
@@ -57,12 +57,12 @@ export default ({ item }) => {
             })}
           />
         </>
-      ) }
-      { !!item.craft && (
+      )}
+      {!!item.craft && (
         <>
           <Spacer />
           <b>
-            { gettext('Craft')}
+            {__`Craft`}
           </b>
           <Spacer small />
           <DialogItemLinkGroup
@@ -73,12 +73,12 @@ export default ({ item }) => {
                 imageAlt: mod.getName(locale),
                 href: mod.getLink(locale),
                 text: mod.getName(locale),
-                hints: [`(${gettext('lvl %s', level)})`],
+                hints: [`(${__`lvl ${level}`})`],
               }
             })}
           />
         </>
-      ) }
+      )}
     </>
   )
 }

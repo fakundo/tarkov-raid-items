@@ -18,7 +18,7 @@ const useStyles = createUseStyles((theme) => ({
 }))
 
 export default memo(({ className, tag }) => {
-  const { pgettext } = useLocales()
+  const { __p } = useLocales()
   const theme = useTheme()
   const classes = useStyles()
 
@@ -32,9 +32,9 @@ export default memo(({ className, tag }) => {
       className={cx}
       style={{ background: theme.palette.tag[tag] }}
     >
-      { tag === CRAFT && pgettext('TAG_SHORT', 'Cra') }
-      { tag === REWARD && pgettext('TAG_SHORT', 'Rew') }
-      { tag === KAPPA && pgettext('TAG_SHORT', 'Kap') }
+      {tag === CRAFT && __p('TAG_SHORT')`Cra`}
+      {tag === REWARD && __p('TAG_SHORT')`Rew`}
+      {tag === KAPPA && __p('TAG_SHORT')`Kap`}
     </div>
   )
 })

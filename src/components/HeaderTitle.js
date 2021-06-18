@@ -30,7 +30,7 @@ const useStyles = createUseStyles((theme) => ({
 }))
 
 export default () => {
-  const { gettext } = useLocales()
+  const { __ } = useLocales()
   const classes = useStyles()
   return (
     <div className={classes.root}>
@@ -38,7 +38,7 @@ export default () => {
         Escape from Tarkov – EFT
       </h2>
       <h1>
-        {gettext('Find in Raid Items')}
+        {__`Find in Raid Items`}
       </h1>
     </div>
   )

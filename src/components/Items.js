@@ -11,7 +11,7 @@ import ItemsBanner from 'components/ItemsBanner'
 import ItemsVariant from 'components/ItemsVariant'
 
 export default () => {
-  const { gettext } = useLocales()
+  const { __ } = useLocales()
   const { searchBoxOpen, searchTerm, closeSearchBox } = useSearch()
   const { progress, counters, filter, filterKey,
     resetProgress, updateCounter, updateFilter } = useAppState()
@@ -53,41 +53,41 @@ export default () => {
 
   return (
     <TransitionGroup>
-      { !empty && (
+      {!empty && (
         <Fade key={itemsKey}>
           <ItemsVariant>
             {children}
           </ItemsVariant>
         </Fade>
       )}
-      { empty && search && (
+      {empty && search && (
         <Fade key="search">
           <div>
             <ItemsBanner
-              text={gettext('Nothing to display...')}
-              buttonText={gettext('Reset search')}
+              text={__`Nothing to display...`}
+              buttonText={__`Reset search`}
               onReset={() => closeSearchBox()}
             />
           </div>
         </Fade>
       )}
-      { empty && !search && allDone && (
+      {empty && !search && allDone && (
         <Fade key="done">
           <div>
             <ItemsBanner
-              text={gettext('Looks like you\'ve found all the items! Enjoy your Kappa!')}
-              buttonText={gettext('Reset progress')}
+              text={__`Looks like you've found all the items! Enjoy your Kappa!`}
+              buttonText={__`Reset progress`}
               onReset={() => resetProgress()}
             />
           </div>
         </Fade>
       )}
-      { empty && !search && !allDone && (
+      {empty && !search && !allDone && (
         <Fade key="empty">
           <div>
             <ItemsBanner
-              text={gettext('Nothing to display...')}
-              buttonText={gettext('Reset filter')}
+              text={__`Nothing to display...`}
+              buttonText={__`Reset filter`}
               onReset={() => updateFilter({})}
             />
           </div>

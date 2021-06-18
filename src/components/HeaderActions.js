@@ -23,7 +23,7 @@ const useStyles = createUseStyles((theme) => ({
 }))
 
 export default () => {
-  const { gettext, nameShort: localeName } = useLocales()
+  const { __, nameShort: localeName } = useLocales()
   const { openDialog } = useModal()
   const { progress, filterCount } = useAppState()
   const classes = useStyles()
@@ -43,13 +43,13 @@ export default () => {
   return (
     <Group className={classes.root}>
       <SearchButton>
-        {gettext('Search')}
+        {__`Search`}
       </SearchButton>
       <Button
         icon={<CheckCircleOutlineIcon />}
         onClick={handleProgressClick}
       >
-        {gettext('Progress')}
+        {__`Progress`}
         <TransitionGroup>
           <Fade key={progress.found}>
             <span className={classes.progress}>
@@ -62,7 +62,7 @@ export default () => {
         icon={<FilterIcon />}
         onClick={handleFilterClick}
       >
-        {gettext('Filter')}
+        {__`Filter`}
         <TransitionGroup>
           <Fade key={filterCount}>
             <span className={classes.filter}>

@@ -20,8 +20,17 @@ export default () => (
       <StyleReset />
       <AppStateProvider>
         {({ locale }) => (
-          <LocalizedProvider locales={locales} selected={locale}>
-            { () => (
+          <LocalizedProvider
+            locales={locales}
+            selected={locale}
+            alias={{
+              gettext: '__',
+              ngettext: '__n',
+              pgettext: '__p',
+              npgettext: '__np',
+            }}
+          >
+            {() => (
               <ModalProvider>
                 <SearchProvider>
                   <Container>

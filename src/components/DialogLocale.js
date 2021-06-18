@@ -7,16 +7,16 @@ import Group from 'components/Group'
 import * as locales from 'locales'
 
 export default () => {
-  const { gettext } = useLocales()
+  const { __ } = useLocales()
   const { closeModal } = useModal()
   const { updateLocale } = useAppState()
   return (
     <>
       <DialogTitle>
-        { gettext('Select language') }
+        {__`Select language`}
       </DialogTitle>
       <Group vertical>
-        { map(locales, (locale, key) => (
+        {map(locales, (locale, key) => (
           <Button
             key={key}
             onClick={() => {
@@ -24,9 +24,9 @@ export default () => {
               setTimeout(updateLocale, 0, key)
             }}
           >
-            { locale.extraProps.name }
+            {locale.extra.name}
           </Button>
-        )) }
+        ))}
       </Group>
     </>
   )

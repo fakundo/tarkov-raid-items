@@ -6,7 +6,7 @@ import Spacer from 'components/Spacer'
 
 export default () => {
   const theme = useTheme()
-  const { ngettext, gettext } = useLocales()
+  const { __, __n } = useLocales()
   const { resetProgress, progress } = useAppState()
   const { closeModal } = useModal()
 
@@ -15,12 +15,14 @@ export default () => {
     setTimeout(resetProgress)
   }, [])
 
+  const { found, total } = progress
+
   return (
     <>
       <DialogTitle>
-        { gettext('Progress') }
+        {__`Progress`}
       </DialogTitle>
-      { ngettext('Found %s item of %s', 'Found %s items of %s', progress.found, progress.found, progress.total) }
+      {__n`Found ${found} item of ${total}``Found ${found} items of ${total}`(found)}
       <b>
         {` (${((progress.found / progress.total) * 100).toFixed(2)}%)`}
       </b>
@@ -29,7 +31,7 @@ export default () => {
         onClick={handleResetClick}
         style={{ color: theme.palette.text.error }}
       >
-        { gettext('Reset progress') }
+        {__`Reset progress`}
       </Button>
     </>
   )

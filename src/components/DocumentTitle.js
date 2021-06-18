@@ -2,11 +2,11 @@ import { useEffect } from 'react'
 import { useLocales } from 'hooks'
 
 export default () => {
-  const { gettext } = useLocales()
+  const { __ } = useLocales()
 
   useEffect(() => {
-    document.title = gettext('Escape from Tarkov [EFT] – Find in Raid Quest Items')
-  }, [gettext])
+    document.title = __`Escape from Tarkov [EFT] – Find in Raid Quest Items`
+  }, [__])
 
   return null
 }

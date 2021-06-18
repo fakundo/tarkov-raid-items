@@ -19,34 +19,34 @@ const useStyles = createUseStyles((theme) => ({
 }))
 
 export default memo(() => {
-  const { gettext } = useLocales()
+  const { __ } = useLocales()
   const classes = useStyles()
 
   const items = [
     {
       tag: <Tag tag={CRAFT} />,
-      text: gettext('Can be crafted'),
+      text: __`Can be crafted`,
     },
     {
       tag: <Tag tag={REWARD} />,
-      text: gettext('Can be obtained as reward'),
+      text: __`Can be obtained as reward`,
     },
     {
       tag: <Tag tag={KAPPA} />,
-      text: gettext('Need for Kappa'),
+      text: __`Need for Kappa`,
     },
   ]
 
   return (
     <Group>
-      { items.map((item) => (
+      {items.map((item) => (
         <div key={item.text} className={classes.item}>
-          { cloneElement(item.tag, { className: classes.itemIcon }) }
+          {cloneElement(item.tag, { className: classes.itemIcon })}
           <span className={classes.itemText}>
-            { item.text }
+            {item.text}
           </span>
         </div>
-      )) }
+      ))}
     </Group>
   )
 })

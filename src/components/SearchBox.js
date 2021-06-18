@@ -23,7 +23,7 @@ const useStyles = createUseStyles({
 
 export default ({ closeOnBlur }) => {
   const { searchTerm, closeSearchBox, updateSearchTerm } = useSearch()
-  const { gettext } = useLocales()
+  const { __ } = useLocales()
   const classes = useStyles()
 
   const handleBlur = useCallback((ev) => {
@@ -60,7 +60,7 @@ export default ({ closeOnBlur }) => {
           autoFocus
           defaultValue={searchTerm}
           className={classes.input}
-          placeholder={gettext('Enter item name here...')}
+          placeholder={__`Enter item name here...`}
           onBlur={handleBlur}
           onChange={handleChange}
           onKeyDown={handleKeyDown}

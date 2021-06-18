@@ -81,11 +81,11 @@ msgstr "Trouver en raid – objets"
 msgid "Found"
 msgstr "A trouvé"
 
-#: src/components/DialogProgress.js:23
-msgid "Found %s item of %s"
-msgid_plural "Found %s items of %s"
-msgstr[0] "%s élément trouvé sur %s"
-msgstr[1] "%s éléments trouvés sur %s"
+#: src/components/DialogProgress.js:25
+msgid "Found ${} item of ${}"
+msgid_plural "Found ${} items of ${}"
+msgstr[0] "${} élément trouvé sur ${}"
+msgstr[1] "${} éléments trouvé sur ${}"
 
 #: src/components/Footer.js:27
 msgid ""
@@ -100,8 +100,8 @@ msgid "Looks like you've found all the items! Enjoy your Kappa!"
 msgstr "On dirait que vous avez trouvé tous les articles! Profitez de votre Kappa!"
 
 #: src/components/DialogItem.js:76
-msgid "lvl %s"
-msgstr "lvl %s"
+msgid "lvl ${}"
+msgstr "lvl ${}"
 
 #: src/components/DialogFilter.js:35 src/components/Legend.js:36
 msgid "Need for Kappa"
@@ -119,7 +119,7 @@ msgstr "Pas trouvé"
 msgid "Nothing to display..."
 msgstr "Rien à afficher…"
 
-#: src/components/DialogHeaderMenu.js:19 src/components/DialogProgress.js:21
+#: src/components/DialogHeaderMenu.js:19 src/components/DialogProgress.js:23
 #: src/components/HeaderActions.js:52
 msgid "Progress"
 msgstr "Le progrès"
@@ -134,7 +134,7 @@ msgstr[1] "Quêtes"
 msgid "Reset filter"
 msgstr "Réinitialiser le filtre"
 
-#: src/components/DialogProgress.js:32 src/components/Items.js:79
+#: src/components/DialogProgress.js:34 src/components/Items.js:79
 msgid "Reset progress"
 msgstr "Réinitialiser la progression"
 

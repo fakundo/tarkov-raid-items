@@ -71,9 +71,9 @@ msgstr ""
 msgid "Found"
 msgstr ""
 
-#: src/components/DialogProgress.js:23
-msgid "Found %s item of %s"
-msgid_plural "Found %s items of %s"
+#: src/components/DialogProgress.js:25
+msgid "Found ${} item of ${}"
+msgid_plural "Found ${} items of ${}"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -88,7 +88,7 @@ msgid "Looks like you've found all the items! Enjoy your Kappa!"
 msgstr ""
 
 #: src/components/DialogItem.js:76
-msgid "lvl %s"
+msgid "lvl ${}"
 msgstr ""
 
 #: src/components/DialogFilter.js:35
@@ -110,7 +110,7 @@ msgid "Nothing to display..."
 msgstr ""
 
 #: src/components/DialogHeaderMenu.js:19
-#: src/components/DialogProgress.js:21
+#: src/components/DialogProgress.js:23
 #: src/components/HeaderActions.js:52
 msgid "Progress"
 msgstr ""
@@ -125,7 +125,7 @@ msgstr[1] ""
 msgid "Reset filter"
 msgstr ""
 
-#: src/components/DialogProgress.js:32
+#: src/components/DialogProgress.js:34
 #: src/components/Items.js:79
 msgid "Reset progress"
 msgstr ""
