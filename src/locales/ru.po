@@ -65,7 +65,8 @@ msgstr "Введите название предмета…"
 msgid "Escape from Tarkov [EFT] – Find in Raid Quest Items"
 msgstr "Побег из Таркова [EFT] – Найдено в рейде, квестовые предметы"
 
-#: src/components/DialogHeaderMenu.js:24 src/components/HeaderActions.js:65
+#: src/components/DialogHeaderMenu.js:24
+#: src/components/HeaderActions.js:65
 msgid "Filter"
 msgstr "Фильтр"
 
@@ -104,7 +105,8 @@ msgstr "Похоже ты нашёл все предметы! Наслаждай
 msgid "lvl ${}"
 msgstr "лвл ${}"
 
-#: src/components/DialogFilter.js:35 src/components/Legend.js:36
+#: src/components/DialogFilter.js:35
+#: src/components/Legend.js:36
 msgid "Need for Kappa"
 msgstr "Нужно для Каппы"
 
@@ -116,11 +118,13 @@ msgstr "Нельзя скрафтить"
 msgid "Not found"
 msgstr "Не найдено"
 
-#: src/components/Items.js:67 src/components/Items.js:89
+#: src/components/Items.js:67
+#: src/components/Items.js:89
 msgid "Nothing to display..."
 msgstr "Нечего отобразить…"
 
-#: src/components/DialogHeaderMenu.js:19 src/components/DialogProgress.js:23
+#: src/components/DialogHeaderMenu.js:19
+#: src/components/DialogProgress.js:23
 #: src/components/HeaderActions.js:52
 msgid "Progress"
 msgstr "Прогресс"
@@ -136,7 +140,8 @@ msgstr[2] "Квесты"
 msgid "Reset filter"
 msgstr "Сброс фильтра"
 
-#: src/components/DialogProgress.js:34 src/components/Items.js:79
+#: src/components/DialogProgress.js:34
+#: src/components/Items.js:79
 msgid "Reset progress"
 msgstr "Сброс прогресса"
 
@@ -152,7 +157,8 @@ msgstr "Награда"
 msgid "Search"
 msgstr "Поиск"
 
-#: src/components/DialogHeaderMenu.js:29 src/components/DialogLocale.js:16
+#: src/components/DialogHeaderMenu.js:29
+#: src/components/DialogLocale.js:16
 msgid "Select language"
 msgstr "Выбор языка"
 

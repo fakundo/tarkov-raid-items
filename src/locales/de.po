@@ -18,8 +18,8 @@ msgstr "Alle Bilder sind von BattleState Games urheberrechtlich geschützt."
 
 #: src/components/Footer.js:21
 msgid ""
-"An interactive list of items that must have the «Item found in raid» mark, and "
-"which are required to complete the quests."
+"An interactive list of items that must have the «Item found in raid» mark, "
+"and which are required to complete the quests."
 msgstr ""
 "Eine interaktive Liste von Gegenständen, die das Zeichen «Gegenstand im "
 "Schlachtzug gefunden» tragen müssen und die zum Abschließen der Quests "
@@ -65,7 +65,8 @@ msgstr "Objektname eingeben…"
 msgid "Escape from Tarkov [EFT] – Find in Raid Quest Items"
 msgstr "Escape from Tarkov – [EFT] Gegenstände, die bei der Razzia gefunden wurden"
 
-#: src/components/DialogHeaderMenu.js:24 src/components/HeaderActions.js:65
+#: src/components/DialogHeaderMenu.js:24
+#: src/components/HeaderActions.js:65
 msgid "Filter"
 msgstr "Filter"
 
@@ -89,23 +90,24 @@ msgstr[1] "${} Elements von ${} gefunden"
 
 #: src/components/Footer.js:27
 msgid ""
-"Items with only this mark can be sold at the Flea market, and the item loses the "
-"mark after being sold."
+"Items with only this mark can be sold at the Flea market, and the item "
+"loses the mark after being sold."
 msgstr ""
-"Gegenstände mit nur diesem Zeichen können im verkauft werden Flohmarkt, und der "
-"Artikel verliert nach dem Verkauf die Marke."
+"Gegenstände mit nur diesem Zeichen können im verkauft werden Flohmarkt, und "
+"der Artikel verliert nach dem Verkauf die Marke."
 
 #: src/components/Items.js:78
 msgid "Looks like you've found all the items! Enjoy your Kappa!"
 msgstr ""
-"Sieht so aus, als hätten Sie alle Gegenstände gefunden! Viel Spaß mit deinem "
-"Kappa!"
+"Sieht so aus, als hätten Sie alle Gegenstände gefunden! Viel Spaß mit "
+"deinem Kappa!"
 
 #: src/components/DialogItem.js:76
 msgid "lvl ${}"
 msgstr "lvl ${}"
 
-#: src/components/DialogFilter.js:35 src/components/Legend.js:36
+#: src/components/DialogFilter.js:35
+#: src/components/Legend.js:36
 msgid "Need for Kappa"
 msgstr "Notwendigkeit für Kappa"
 
@@ -117,11 +119,13 @@ msgstr "Nicht herstellbar"
 msgid "Not found"
 msgstr "Nicht gefunden"
 
-#: src/components/Items.js:67 src/components/Items.js:89
+#: src/components/Items.js:67
+#: src/components/Items.js:89
 msgid "Nothing to display..."
 msgstr "Nichts zu zeigen…"
 
-#: src/components/DialogHeaderMenu.js:19 src/components/DialogProgress.js:23
+#: src/components/DialogHeaderMenu.js:19
+#: src/components/DialogProgress.js:23
 #: src/components/HeaderActions.js:52
 msgid "Progress"
 msgstr "Fortschritt"
@@ -136,7 +140,8 @@ msgstr[1] "Quests"
 msgid "Reset filter"
 msgstr "Filter zurücksetzen"
 
-#: src/components/DialogProgress.js:34 src/components/Items.js:79
+#: src/components/DialogProgress.js:34
+#: src/components/Items.js:79
 msgid "Reset progress"
 msgstr "Fortschritt zurücksetzen"
 
@@ -152,7 +157,8 @@ msgstr "Belohnung"
 msgid "Search"
 msgstr "Suche"
 
-#: src/components/DialogHeaderMenu.js:29 src/components/DialogLocale.js:16
+#: src/components/DialogHeaderMenu.js:29
+#: src/components/DialogLocale.js:16
 msgid "Select language"
 msgstr "Sprache auswählen"
 
@@ -165,18 +171,18 @@ msgid ""
 "The main reward after completing (almost) all quests in the game is a Kappa "
 "secure container."
 msgstr ""
-"Die Hauptbelohnung nach Abschluss (fast) aller Quests im Spiel ist ein Kappa "
-"sicherer Container."
+"Die Hauptbelohnung nach Abschluss (fast) aller Quests im Spiel ist ein "
+"Kappa sicherer Container."
 
 #: src/components/Footer.js:25
 msgid ""
 "The mark «Item found in raid» is given to items that were created in the "
-"Hideout, or obtained as a quest reward, or found during the game if the player "
-"survived."
+"Hideout, or obtained as a quest reward, or found during the game if the "
+"player survived."
 msgstr ""
-"Das Zeichen «Gegenstand im Schlachtzug gefunden» wird für Gegenstände vergeben, "
-"die im Unterschlupf, erstellt oder als Questbelohnung erhalten oder während des "
-"Spiels gefunden wurden, wenn der Spieler überlebt hat."
+"Das Zeichen «Gegenstand im Schlachtzug gefunden» wird für Gegenstände "
+"vergeben, die im Unterschlupf, erstellt oder als Questbelohnung erhalten "
+"oder während des Spiels gefunden wurden, wenn der Spieler überlebt hat."
 
 #: src/components/Tag.js:35
 msgctxt "TAG_SHORT"
