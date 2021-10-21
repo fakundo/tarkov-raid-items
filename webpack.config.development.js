@@ -52,6 +52,5 @@ module.exports = {
   devServer: {
     host,
     port,
-    stats: 'minimal',
   },
 }

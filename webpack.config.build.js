@@ -35,6 +35,7 @@ module.exports = {
         height: '144',
       },
       googleTagKey: 'G-SVCPTV948J',
+      buildTime: new Date(),
     })),
     new CopyWebpackPlugin({
       patterns: [

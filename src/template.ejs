@@ -32,6 +32,10 @@
     }
     </script>
 
+    <script>
+      window.buildTime = "<%= new Date().toISOString() %>"
+    </script>
+
     <% for(const { lang, path } of htmlWebpackPlugin.options.alternatives || []) { %>
     <link rel="alternate" hreflang="<%= lang %>" href="<%= path %>" />
     <% } %>

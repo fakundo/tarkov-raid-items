@@ -1,6 +1,6 @@
 {
   "extends": "airbnb",
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "globals": {
     "window": true,
     "document": true
@@ -11,7 +11,10 @@
     "react/jsx-filename-extension": 0,
     "react/jsx-curly-newline": 0,
     "object-curly-newline": 0,
-    "semi": ["error", "never"],
+    "semi": [
+      "error",
+      "never"
+    ],
     "react/prop-types": 0,
     "default-case": 0,
     "no-plusplus": 0,

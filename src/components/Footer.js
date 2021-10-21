@@ -48,6 +48,14 @@ export default () => {
           ))
         }
       </span>
+      {!!window.buildTime && (
+        <>
+          <Spacer />
+          <span data-nosnippet>
+            {new Date(window.buildTime).toISOString()}
+          </span>
+        </>
+      )}
     </div>
   )
 }

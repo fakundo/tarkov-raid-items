@@ -1,4 +1,30 @@
 {
+  "INTELLIGENCE_CENTER": {
+    "name": {
+      "en": "Intelligence Center",
+      "fr": "Centre de renseignement",
+      "ru": "Разведцентр"
+    },
+    "link": {
+      "en": "https://escapefromtarkov.gamepedia.com/Hideout",
+      "de": "https://escapefromtarkov-de.gamepedia.com/Unterschlupf",
+      "fr": "https://escapefromtarkov-fr.gamepedia.com/Planque",
+      "ru": "https://escapefromtarkov-ru.gamepedia.com/%D0%A3%D0%B1%D0%B5%D0%B6%D0%B8%D1%89%D0%B5"
+    }
+  },
+  "LAVATORY": {
+    "name": {
+      "en": "Lavatory",
+      "fr": "Sanitaires",
+      "ru": "Санузел"
+    },
+    "link": {
+      "en": "https://escapefromtarkov.gamepedia.com/Hideout",
+      "de": "https://escapefromtarkov-de.gamepedia.com/Unterschlupf",
+      "fr": "https://escapefromtarkov-fr.gamepedia.com/Planque",
+      "ru": "https://escapefromtarkov-ru.gamepedia.com/%D0%A3%D0%B1%D0%B5%D0%B6%D0%B8%D1%89%D0%B5"
+    }
+  },
   "MEDSTATION": {
     "name": {
       "en": "Medstation",
@@ -25,37 +51,24 @@
       "ru": "https://escapefromtarkov-ru.gamepedia.com/%D0%A3%D0%B1%D0%B5%D0%B6%D0%B8%D1%89%D0%B5"
     }
   },
+  "WATER_COLLECTOR": {
+    "name": {
+      "en": "Water Collector",
+      "fr": "Récupérateur d'eau",
+      "ru": "Водосборник"
+    },
+    "link": {
+      "en": "https://escapefromtarkov.gamepedia.com/Hideout",
+      "de": "https://escapefromtarkov-de.gamepedia.com/Unterschlupf",
+      "fr": "https://escapefromtarkov-fr.gamepedia.com/Planque",
+      "ru": "https://escapefromtarkov-ru.gamepedia.com/%D0%A3%D0%B1%D0%B5%D0%B6%D0%B8%D1%89%D0%B5"
+    }
+  },
   "WORKBENCH": {
     "name": {
       "en": "Workbench",
       "fr": "Établi",
       "ru": "Верстак"
-    },
-    "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/Hideout",
-      "de": "https://escapefromtarkov-de.gamepedia.com/Unterschlupf",
-      "fr": "https://escapefromtarkov-fr.gamepedia.com/Planque",
-      "ru": "https://escapefromtarkov-ru.gamepedia.com/%D0%A3%D0%B1%D0%B5%D0%B6%D0%B8%D1%89%D0%B5"
-    }
-  },
-  "INTELLIGENCE_CENTER": {
-    "name": {
-      "en": "Intelligence Center",
-      "fr": "Centre de renseignement",
-      "ru": "Разведцентр"
-    },
-    "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/Hideout",
-      "de": "https://escapefromtarkov-de.gamepedia.com/Unterschlupf",
-      "fr": "https://escapefromtarkov-fr.gamepedia.com/Planque",
-      "ru": "https://escapefromtarkov-ru.gamepedia.com/%D0%A3%D0%B1%D0%B5%D0%B6%D0%B8%D1%89%D0%B5"
-    }
-  },
-  "LAVATORY": {
-    "name": {
-      "en": "Lavatory",
-      "fr": "Sanitaires",
-      "ru": "Санузел"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/Hideout",

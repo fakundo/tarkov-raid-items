@@ -10,7 +10,7 @@ import HeaderTitle from 'components/HeaderTitle'
 import HeaderActions from 'components/HeaderActions'
 import HeaderActionsCompact from 'components/HeaderActionsCompact'
 
-const useStyles = createUseStyles(() => ({
+const useStyles = createUseStyles({
   root: {
     display: 'flex',
     alignItems: 'stretch',
@@ -23,7 +23,7 @@ const useStyles = createUseStyles(() => ({
     flexFlow: 'column nowrap',
     justifyContent: 'space-between',
   },
-}))
+})
 
 export default () => {
   const { searchBoxOpen } = useSearch()

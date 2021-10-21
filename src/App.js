@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import { LocalizedProvider, AppStateProvider, ModalProvider, ThemeProvider, JssProvider, SearchProvider } from 'providers'
 import theme from 'constants/theme'
 import * as locales from 'locales'
@@ -13,6 +13,36 @@ import Footer from 'components/Footer'
 import Items from 'components/Items'
 import DocumentTitle from 'components/DocumentTitle'
 
+const localeAlias = {
+  gettext: '__',
+  ngettext: '__n',
+  pgettext: '__p',
+  npgettext: '__np',
+}
+
+const children = (
+  <>
+    <DocumentTitle />
+    <Header />
+    <Visible breakpoint="lg">
+      <Spacer large />
+    </Visible>
+    <Visible breakpoint="mdDown">
+      <Spacer />
+    </Visible>
+    <Body>
+      <Items />
+    </Body>
+    <Visible breakpoint="mdUp">
+      <Spacer large />
+    </Visible>
+    <Visible breakpoint="smDown">
+      <Spacer />
+    </Visible>
+    <Footer />
+  </>
+)
+
 export default () => (
   <JssProvider id={{ minify: true }}>
     <ThemeProvider theme={theme}>
@@ -23,39 +53,13 @@ export default () => (
           <LocalizedProvider
             locales={locales}
             selected={locale}
-            alias={{
-              gettext: '__',
-              ngettext: '__n',
-              pgettext: '__p',
-              npgettext: '__np',
-            }}
+            alias={localeAlias}
           >
             {() => (
               <ModalProvider>
                 <SearchProvider>
                   <Container>
-                    {useMemo(() => (
-                      <>
-                        <DocumentTitle />
-                        <Header />
-                        <Visible breakpoint="lg">
-                          <Spacer large />
-                        </Visible>
-                        <Visible breakpoint="mdDown">
-                          <Spacer />
-                        </Visible>
-                        <Body>
-                          <Items />
-                        </Body>
-                        <Visible breakpoint="mdUp">
-                          <Spacer large />
-                        </Visible>
-                        <Visible breakpoint="smDown">
-                          <Spacer />
-                        </Visible>
-                        <Footer />
-                      </>
-                    ), [])}
+                    {children}
                   </Container>
                 </SearchProvider>
               </ModalProvider>
