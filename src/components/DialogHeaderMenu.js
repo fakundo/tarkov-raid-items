@@ -6,7 +6,8 @@ import Group from 'components/Group'
 import DialogFilter from 'components/DialogFilter'
 import DialogLocale from 'components/DialogLocale'
 import DialogProgress from 'components/DialogProgress'
-import { FilterIcon, LanguageIcon, CheckCircleOutlineIcon } from 'components/Icons'
+import { FilterIcon, LanguageIcon } from 'components/Icons'
+import ProgressIcon from 'components/ProgressIcon'
 
 export default () => {
   const { __ } = useLocales()
@@ -15,7 +16,7 @@ export default () => {
 
   const buttons = [
     {
-      icon: <CheckCircleOutlineIcon />,
+      icon: <ProgressIcon />,
       children: `${__`Progress`} (${((progress.found / progress.total) * 100).toFixed(2)}%)`,
       onClick: () => openDialog(<DialogProgress />),
     },

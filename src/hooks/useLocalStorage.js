@@ -3,7 +3,7 @@ import { setLocalStorageItem, getLocalStorageItem } from 'utils'
 
 export default (key) => (
   useMemo(() => ({
-    get: () => getLocalStorageItem(key),
-    set: (data) => setLocalStorageItem(key, data),
+    getStorageItem: () => getLocalStorageItem(key),
+    setStorageItem: (data) => setLocalStorageItem(key, data),
   }), [key])
 )

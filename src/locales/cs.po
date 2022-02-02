@@ -54,8 +54,8 @@ msgstr ""
 msgid "Escape from Tarkov [EFT] – Find in Raid Quest Items"
 msgstr ""
 
-#: src/components/DialogHeaderMenu.js:24
-#: src/components/HeaderActions.js:65
+#: src/components/DialogHeaderMenu.js:25
+#: src/components/HeaderActions.js:69
 msgid "Filter"
 msgstr ""
 
@@ -71,11 +71,15 @@ msgstr ""
 msgid "Found"
 msgstr ""
 
-#: src/components/DialogProgress.js:25
+#: src/components/DialogProgress.js:17
 msgid "Found ${} item of ${}"
 msgid_plural "Found ${} items of ${}"
 msgstr[0] ""
 msgstr[1] ""
+
+#: src/components/DialogProgressImport.js:34
+msgid "Import progress from URL"
+msgstr ""
 
 #: src/components/Footer.js:27
 msgid ""
@@ -109,9 +113,9 @@ msgstr ""
 msgid "Nothing to display..."
 msgstr ""
 
-#: src/components/DialogHeaderMenu.js:19
-#: src/components/DialogProgress.js:23
-#: src/components/HeaderActions.js:52
+#: src/components/DialogHeaderMenu.js:20
+#: src/components/DialogProgress.js:15
+#: src/components/HeaderActions.js:50
 msgid "Progress"
 msgstr ""
 
@@ -125,7 +129,7 @@ msgstr[1] ""
 msgid "Reset filter"
 msgstr ""
 
-#: src/components/DialogProgress.js:34
+#: src/components/DialogProgressExport.js:28
 #: src/components/Items.js:79
 msgid "Reset progress"
 msgstr ""
@@ -134,21 +138,29 @@ msgstr ""
 msgid "Reset search"
 msgstr ""
 
+#: src/components/DialogProgressImport.js:40
+msgid "Return to your progress"
+msgstr ""
+
 #: src/components/DialogItem.js:43
 msgid "Reward"
 msgstr ""
 
-#: src/components/HeaderActions.js:46
+#: src/components/HeaderActions.js:79
 msgid "Search"
 msgstr ""
 
-#: src/components/DialogHeaderMenu.js:29
+#: src/components/DialogHeaderMenu.js:30
 #: src/components/DialogLocale.js:16
 msgid "Select language"
 msgstr ""
 
-#: src/components/DialogHeaderMenu.js:37
+#: src/components/DialogHeaderMenu.js:38
 msgid "Settings"
+msgstr ""
+
+#: src/components/DialogProgressExport.js:20
+msgid "Share URL"
 msgstr ""
 
 #: src/components/Footer.js:23
@@ -162,6 +174,14 @@ msgid ""
 "The mark «Item found in raid» is given to items that were created in the "
 "Hideout, or obtained as a quest reward, or found during the game if the "
 "player survived."
+msgstr ""
+
+#: src/components/DialogProgressImport.js:25
+msgid "When importing progress from the current URL"
+msgstr ""
+
+#: src/components/DialogProgressImport.js:27
+msgid "your previously saved progress will be erased"
 msgstr ""
 
 #: src/components/Tag.js:35

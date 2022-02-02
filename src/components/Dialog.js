@@ -71,43 +71,46 @@ export default ({ content, contentKey }) => {
     ev.stopPropagation()
   }, [])
 
-  return createPortal((
-    <TransitionGroup appear exit>
-      { !!content && (
-        <Fade
-          onEnter={handleAppear}
-          onExited={handleExited}
-        >
-          <div>
-            <div className={classes.overlay} />
-            <Container
-              tabIndex="-1"
-              onClick={closeModal}
-              className={classes.root}
-            >
-              <div className={classes.inner}>
-                <TransitionGroup>
-                  <Fade key={contentKey}>
-                    <div // eslint-disable-line
-                      tabIndex="-1"
-                      className={classes.content}
-                      onClick={handleContentClick}
-                    >
-                      { content }
-                      <Button
-                        aria-label="Close"
-                        icon={<CloseIcon />}
-                        onClick={closeModal}
-                        className={classes.contentClose}
-                      />
-                    </div>
-                  </Fade>
-                </TransitionGroup>
-              </div>
-            </Container>
-          </div>
-        </Fade>
-      ) }
-    </TransitionGroup>
-  ), document.body)
+  return createPortal(
+    (
+      <TransitionGroup appear exit>
+        {!!content && (
+          <Fade
+            onEnter={handleAppear}
+            onExited={handleExited}
+          >
+            <div>
+              <div className={classes.overlay} />
+              <Container
+                tabIndex="-1"
+                onClick={closeModal}
+                className={classes.root}
+              >
+                <div className={classes.inner}>
+                  <TransitionGroup>
+                    <Fade key={contentKey}>
+                      <div // eslint-disable-line
+                        tabIndex="-1"
+                        className={classes.content}
+                        onClick={handleContentClick}
+                      >
+                        {content}
+                        <Button
+                          aria-label="Close"
+                          icon={<CloseIcon />}
+                          onClick={closeModal}
+                          className={classes.contentClose}
+                        />
+                      </div>
+                    </Fade>
+                  </TransitionGroup>
+                </div>
+              </Container>
+            </div>
+          </Fade>
+        )}
+      </TransitionGroup>
+    ),
+    document.body,
+  )
 }

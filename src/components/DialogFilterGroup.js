@@ -14,9 +14,7 @@ export default ({ filterKey, labelTrue, labelFalse }) => {
     setValue(filter[filterKey])
   }, [filter[filterKey]])
 
-  const updateFilterDebounced = useCallback((
-    debounce(updateFilter, 50)
-  ), [updateFilter])
+  const updateFilterDebounced = useCallback(debounce(updateFilter, 50), [updateFilter])
 
   const options = [
     { optionValue: true, label: labelTrue },
@@ -25,7 +23,7 @@ export default ({ filterKey, labelTrue, labelFalse }) => {
 
   return (
     <Group vertical>
-      { options.map(({ optionValue, label }) => (
+      {options.map(({ optionValue, label }) => (
         <Checkbox
           label={label}
           key={optionValue}
@@ -38,7 +36,7 @@ export default ({ filterKey, labelTrue, labelFalse }) => {
             updateFilterDebounced({ ...filter, [filterKey]: nextValue })
           }}
         />
-      )) }
+      ))}
     </Group>
   )
 }

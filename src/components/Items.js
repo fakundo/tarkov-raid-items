@@ -13,7 +13,7 @@ import ItemsVariant from 'components/ItemsVariant'
 export default () => {
   const { __ } = useLocales()
   const { searchBoxOpen, searchTerm, closeSearchBox } = useSearch()
-  const { progress, counters, filter, filterKey,
+  const { progress, counters, filter, itemsIdempotencyKey,
     resetProgress, updateCounter, updateFilter } = useAppState()
 
   const search = searchBoxOpen && !!searchTerm
@@ -49,7 +49,7 @@ export default () => {
 
   const empty = !children.length
   const allDone = progress.found === progress.total
-  const itemsKey = filterKey + (search ? searchTerm : '')
+  const itemsKey = itemsIdempotencyKey + (search ? searchTerm : '')
 
   return (
     <TransitionGroup>

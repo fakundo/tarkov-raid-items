@@ -1,4 +1,5 @@
 export * from './localStorage'
 export * from './device'
 export * from './styles'
-export * from './filter'
+export * from './hash'
+export * from './helpers'

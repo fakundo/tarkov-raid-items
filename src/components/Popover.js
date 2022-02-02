@@ -51,20 +51,23 @@ export default ({ content, anchor }) => {
     }
   }, [content])
 
-  return !!content && createPortal((
-    <>
-      <div // eslint-disable-line
-        tabIndex="-1"
-        onClick={closeModal}
-        className={classes.overlay}
-      />
-      <div
-        ref={rootRef}
-        style={style}
-        className={classes.root}
-      >
-        {content}
-      </div>
-    </>
-  ), document.body)
+  return !!content && createPortal(
+    (
+      <>
+        <div // eslint-disable-line
+          tabIndex="-1"
+          onClick={closeModal}
+          className={classes.overlay}
+        />
+        <div
+          ref={rootRef}
+          style={style}
+          className={classes.root}
+        >
+          {content}
+        </div>
+      </>
+    ),
+    document.body,
+  )
 }

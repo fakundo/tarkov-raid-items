@@ -3,7 +3,8 @@ import { createUseStyles, useLocales, useModal, useAppState } from 'hooks'
 import TransitionGroup from 'components/TransitionGroup'
 import Button from 'components/Button'
 import Group from 'components/Group'
-import { FilterIcon, LanguageIcon, CheckCircleOutlineIcon } from 'components/Icons'
+import { FilterIcon, LanguageIcon } from 'components/Icons'
+import ProgressIcon from 'components/ProgressIcon'
 import SearchButton from 'components/SearchButton'
 import DialogFilter from 'components/DialogFilter'
 import DialogLocale from 'components/DialogLocale'
@@ -46,19 +47,6 @@ export default () => {
         {__`Search`}
       </SearchButton>
       <Button
-        icon={<CheckCircleOutlineIcon />}
-        onClick={handleProgressClick}
-      >
-        {__`Progress`}
-        <TransitionGroup>
-          <Fade key={progress.found}>
-            <span className={classes.progress}>
-              {` ${((progress.found / progress.total) * 100).toFixed(2)}%`}
-            </span>
-          </Fade>
-        </TransitionGroup>
-      </Button>
-      <Button
         icon={<FilterIcon />}
         onClick={handleFilterClick}
       >
@@ -67,6 +55,19 @@ export default () => {
           <Fade key={filterCount}>
             <span className={classes.filter}>
               {!!filterCount && ` ${filterCount}`}
+            </span>
+          </Fade>
+        </TransitionGroup>
+      </Button>
+      <Button
+        icon={<ProgressIcon />}
+        onClick={handleProgressClick}
+      >
+        {__`Progress`}
+        <TransitionGroup>
+          <Fade key={progress.found}>
+            <span className={classes.progress}>
+              {` ${((progress.found / progress.total) * 100).toFixed(2)}%`}
             </span>
           </Fade>
         </TransitionGroup>

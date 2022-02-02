@@ -48,9 +48,7 @@ export default ({ amountNeed, amountFound, onChange, ...rest }) => {
     setAmount(amountFound)
   }, [amountFound])
 
-  const onChangeDebounced = useCallback((
-    debounce(onChange, 50)
-  ), [onChange])
+  const onChangeDebounced = useCallback(debounce(onChange, 50), [onChange])
 
   const handleChange = (ev) => {
     ev.stopPropagation()

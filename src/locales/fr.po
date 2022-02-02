@@ -15,16 +15,15 @@ msgstr ""
 #: src/components/Footer.js:30
 msgid "All images are copyrighted by BattleState Games."
 msgstr ""
-"Toutes les images sont protégées par les droits d’auteur de BattleState "
-"Games."
+"Toutes les images sont protégées par les droits d’auteur de BattleState Games."
 
 #: src/components/Footer.js:21
 msgid ""
-"An interactive list of items that must have the «Item found in raid» mark, "
-"and which are required to complete the quests."
+"An interactive list of items that must have the «Item found in raid» mark, and "
+"which are required to complete the quests."
 msgstr ""
-"Une liste interactive d’objets qui doivent avoir la marque «Objet trouvé "
-"dans le raid» et qui sont nécessaires pour terminer les quêtes."
+"Une liste interactive d’objets qui doivent avoir la marque «Objet trouvé dans le "
+"raid» et qui sont nécessaires pour terminer les quêtes."
 
 #: src/components/Legend.js:28
 msgid "Can be crafted"
@@ -66,8 +65,7 @@ msgstr "Entrez le nom de l’objet…"
 msgid "Escape from Tarkov [EFT] – Find in Raid Quest Items"
 msgstr "Escape from Tarkov – [EFT] Objets trouvés dans le raid"
 
-#: src/components/DialogHeaderMenu.js:24
-#: src/components/HeaderActions.js:65
+#: src/components/DialogHeaderMenu.js:25 src/components/HeaderActions.js:69
 msgid "Filter"
 msgstr "Filtre"
 
@@ -83,19 +81,23 @@ msgstr "Trouver en raid – objets"
 msgid "Found"
 msgstr "A trouvé"
 
-#: src/components/DialogProgress.js:25
+#: src/components/DialogProgress.js:17
 msgid "Found ${} item of ${}"
 msgid_plural "Found ${} items of ${}"
 msgstr[0] "${} élément trouvé sur ${}"
 msgstr[1] "${} éléments trouvé sur ${}"
 
+#: src/components/DialogProgressImport.js:34
+msgid "Import progress from URL"
+msgstr "Importer la progression à partir de l’URL"
+
 #: src/components/Footer.js:27
 msgid ""
-"Items with only this mark can be sold at the Flea market, and the item "
-"loses the mark after being sold."
+"Items with only this mark can be sold at the Flea market, and the item loses the "
+"mark after being sold."
 msgstr ""
-"Les objets avec uniquement cette marque peuvent être vendus au Marché aux "
-"puces, et l’article perd sa marque après avoir été vendu."
+"Les objets avec uniquement cette marque peuvent être vendus au Marché aux puces, "
+"et l’article perd sa marque après avoir été vendu."
 
 #: src/components/Items.js:78
 msgid "Looks like you've found all the items! Enjoy your Kappa!"
@@ -105,8 +107,7 @@ msgstr "On dirait que vous avez trouvé tous les articles! Profitez de votre Kap
 msgid "lvl ${}"
 msgstr "lvl ${}"
 
-#: src/components/DialogFilter.js:35
-#: src/components/Legend.js:36
+#: src/components/DialogFilter.js:35 src/components/Legend.js:36
 msgid "Need for Kappa"
 msgstr "Besoin de Kappa"
 
@@ -118,14 +119,12 @@ msgstr "Non artisanal"
 msgid "Not found"
 msgstr "Pas trouvé"
 
-#: src/components/Items.js:67
-#: src/components/Items.js:89
+#: src/components/Items.js:67 src/components/Items.js:89
 msgid "Nothing to display..."
 msgstr "Rien à afficher…"
 
-#: src/components/DialogHeaderMenu.js:19
-#: src/components/DialogProgress.js:23
-#: src/components/HeaderActions.js:52
+#: src/components/DialogHeaderMenu.js:20 src/components/DialogProgress.js:15
+#: src/components/HeaderActions.js:50
 msgid "Progress"
 msgstr "Le progrès"
 
@@ -139,8 +138,7 @@ msgstr[1] "Quêtes"
 msgid "Reset filter"
 msgstr "Réinitialiser le filtre"
 
-#: src/components/DialogProgress.js:34
-#: src/components/Items.js:79
+#: src/components/DialogProgressExport.js:28 src/components/Items.js:79
 msgid "Reset progress"
 msgstr "Réinitialiser la progression"
 
@@ -148,40 +146,55 @@ msgstr "Réinitialiser la progression"
 msgid "Reset search"
 msgstr "Réinitialiser la recherche"
 
+#: src/components/DialogProgressImport.js:40
+msgid "Return to your progress"
+msgstr "Revenez à votre progression"
+
 #: src/components/DialogItem.js:43
 msgid "Reward"
 msgstr "Récompense"
 
-#: src/components/HeaderActions.js:46
+#: src/components/HeaderActions.js:79
 msgid "Search"
 msgstr "Rechercher"
 
-#: src/components/DialogHeaderMenu.js:29
-#: src/components/DialogLocale.js:16
+#: src/components/DialogHeaderMenu.js:30 src/components/DialogLocale.js:16
 msgid "Select language"
 msgstr "Choisir la langue"
 
-#: src/components/DialogHeaderMenu.js:37
+#: src/components/DialogHeaderMenu.js:38
 msgid "Settings"
 msgstr "Réglages"
+
+#: src/components/DialogProgressExport.js:20
+msgid "Share URL"
+msgstr "Partager l’URL"
 
 #: src/components/Footer.js:23
 msgid ""
 "The main reward after completing (almost) all quests in the game is a Kappa "
 "secure container."
 msgstr ""
-"La principale récompense après avoir terminé (presque) toutes les quêtes du "
-"jeu est un conteneur sécurisé Kappa."
+"La principale récompense après avoir terminé (presque) toutes les quêtes du jeu "
+"est un conteneur sécurisé Kappa."
 
 #: src/components/Footer.js:25
 msgid ""
 "The mark «Item found in raid» is given to items that were created in the "
-"Hideout, or obtained as a quest reward, or found during the game if the "
-"player survived."
+"Hideout, or obtained as a quest reward, or found during the game if the player "
+"survived."
 msgstr ""
-"La marque «Objet trouvé en raid» est attribuée aux objets qui ont été créés "
-"dans le Planque, ou obtenus en récompense de quête, ou trouvés pendant le "
-"jeu si le joueur a survécu."
+"La marque «Objet trouvé en raid» est attribuée aux objets qui ont été créés dans "
+"le Planque, ou obtenus en récompense de quête, ou trouvés pendant le jeu si le "
+"joueur a survécu."
+
+#: src/components/DialogProgressImport.js:25
+msgid "When importing progress from the current URL"
+msgstr "Lors de l’importation de la progression à partir de l’URL actuelle"
+
+#: src/components/DialogProgressImport.js:27
+msgid "your previously saved progress will be erased"
+msgstr "votre progression précédemment enregistrée sera effacée"
 
 #: src/components/Tag.js:35
 msgctxt "TAG_SHORT"

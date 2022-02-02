@@ -1,77 +1,90 @@
-import React, { createContext, useMemo, useState, useCallback, useEffect } from 'react'
-import clamp from 'lodash/clamp'
-import reduce from 'lodash/reduce'
+import React, { createContext, useMemo, useCallback, useRef, useEffect, useState } from 'react'
+import isEmpty from 'lodash/isEmpty'
 import uniqueId from 'lodash/uniqueId'
-import { getNavigatorLanguage, getFilterCount } from 'utils'
-import { useLocalStorage } from 'hooks'
-import { items } from 'data'
+import { getNavigatorLanguage, getFilterCount, calculateProgress, updateAppStateCounters, unstringifyState, stringifyState, createStateExportLink } from 'utils'
+import { useLocalStorage, useHash } from 'hooks'
 
-const getProgress = (counters) => {
-  const { total, found } = reduce(items, (acc, item, key) => {
-    const itemAmount = reduce(item.quest, (amountAcc, amount) => (amountAcc + amount), 0)
-    const itemFound = clamp(counters?.[key] || 0, 0, itemAmount)
-    return {
-      total: (acc.total || 0) + itemAmount,
-      found: (acc.found || 0) + itemFound,
-    }
-  }, {})
-  return { found, total }
-}
+const storageStateKey = 'state'
+const itemsIdempotencyKeyPrefix = 'items-'
 
 export const AppStateContext = createContext()
 
 export const AppStateProvider = ({ children }) => {
-  const { get, set } = useLocalStorage('state')
-  const [state, setState] = useState(get)
+  const { getStorageItem, setStorageItem } = useLocalStorage(storageStateKey)
+  const { getHash, setHash } = useHash()
+  const isHashStateRef = useRef()
+  const itemsIdempotencyRef = useRef(itemsIdempotencyKeyPrefix)
+
+  const [state, setState] = useState(() => {
+    const hashState = unstringifyState(getHash())
+    const storageState = getStorageItem() || {}
+    isHashStateRef.current = !isEmpty(hashState)
+    return isHashStateRef.current ? hashState : storageState
+  })
 
   useEffect(() => {
-    set(state)
+    if (isHashStateRef.current) {
+      setHash(stringifyState(state))
+    } else {
+      setStorageItem(state)
+    }
   }, [state])
 
   const updateLocale = useCallback((locale) => {
-    setState((prevState) => ({
-      ...prevState, locale,
-    }))
+    setState((prevState) => ({ ...prevState, locale }))
   }, [])
 
   const updateFilter = useCallback((filter) => {
-    setState((prevState) => ({
-      ...prevState, filter, filterKey: uniqueId(),
-    }))
+    itemsIdempotencyRef.current = uniqueId(itemsIdempotencyKeyPrefix)
+    setState((prevState) => ({ ...prevState, filter }))
   }, [])
 
   const resetProgress = useCallback(() => {
-    setState((prevState) => ({
-      ...prevState, counters: {}, filterKey: uniqueId(),
-    }))
+    itemsIdempotencyRef.current = uniqueId(itemsIdempotencyKeyPrefix)
+    setState((prevState) => ({ ...prevState, counters: {} }))
   }, [])
 
   const updateCounter = useCallback((itemKey, value) => {
-    setState((prevState) => ({
-      ...prevState,
-      counters: {
-        ...prevState?.counters,
-        [itemKey]: value,
-      },
-    }))
+    setState((prevState) => updateAppStateCounters(prevState, itemKey, value))
   }, [])
 
+  const createExportLink = useCallback(() => (
+    createStateExportLink(state)
+  ), [state])
+
+  const importState = useCallback(() => {
+    isHashStateRef.current = false
+    setHash()
+    setState({ ...state })
+  }, [state])
+
+  const rejectImport = useCallback(() => {
+    isHashStateRef.current = false
+    itemsIdempotencyRef.current = uniqueId(itemsIdempotencyKeyPrefix)
+    setHash()
+    setState(getStorageItem() || {})
+  }, [state])
+
   const value = useMemo(() => ({
-    filterKey: state?.filterKey || 0,
-    filter: state?.filter || {},
-    counters: state?.counters || {},
-    locale: state?.locale || getNavigatorLanguage(),
+    itemsIdempotencyKey: itemsIdempotencyRef.current,
+    isImportAvailable: isHashStateRef.current,
+    filter: state.filter || {},
+    counters: state.counters || {},
+    locale: state.locale || getNavigatorLanguage(),
     filterCount: getFilterCount(state?.filter),
-    progress: getProgress(state?.counters),
+    progress: calculateProgress(state?.counters),
     updateFilter,
     updateLocale,
     updateCounter,
     resetProgress,
+    createExportLink,
+    importState,
+    rejectImport,
   }), [state])
 
   return (
     <AppStateContext.Provider value={value}>
-      { children(value) }
+      {children(value)}
     </AppStateContext.Provider>
   )
 }

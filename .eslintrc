@@ -10,6 +10,8 @@
     "react/jsx-props-no-spreading": 0,
     "react/jsx-filename-extension": 0,
     "react/jsx-curly-newline": 0,
+    "react/function-component-definition": 0,
+    "react/no-unstable-nested-components": 0,
     "object-curly-newline": 0,
     "semi": [
       "error",

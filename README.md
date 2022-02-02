@@ -18,7 +18,7 @@
 * `yarn run build` - builds the app into `docs` directory
 * `yarn run lang` - extracts translation strings from source files and creates `.po` files in `src/locales` directory
 * `yarn run parse` - parses data from Wiki and saves it as `.json` files in `src/data` directory
-* `yarn run item-image-resizer <src> <output>` - parses data from Wiki and saves it as `.json` files in `src/data` directory
+* `yarn run item-image-resizer <src> <output>` - resizes item image
 
 #### Node version
 

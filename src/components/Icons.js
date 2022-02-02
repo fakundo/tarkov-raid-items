@@ -9,6 +9,7 @@ import removeSvg from 'assets/icons/remove.svg'
 import closeSvg from 'assets/icons/close.svg'
 import filterSvg from 'assets/icons/filter.svg'
 import checkCircleOutlineSvg from 'assets/icons/check-circle-outline.svg'
+import errorOutlineSvg from 'assets/icons/error-outline.svg'
 import searchSvg from 'assets/icons/search.svg'
 
 export const MenuIcon = (props) => (
@@ -45,6 +46,10 @@ export const FilterIcon = (props) => (
 
 export const CheckCircleOutlineIcon = (props) => (
   <SvgIcon {...checkCircleOutlineSvg} {...props} />
+)
+
+export const ErrorOutlineIcon = (props) => (
+  <SvgIcon {...errorOutlineSvg} {...props} />
 )
 
 export const SearchIcon = (props) => (
