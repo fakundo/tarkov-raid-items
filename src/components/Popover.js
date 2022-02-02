@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState, useRef } from 'react'
+import React, { useLayoutEffect, useState, useRef, useCallback } from 'react'
 import { createPortal } from 'react-dom'
 import clamp from 'lodash/clamp'
 import { createUseStyles, useModal } from 'hooks'
@@ -51,12 +51,16 @@ export default ({ content, anchor }) => {
     }
   }, [content])
 
+  const handleCloseClick = useCallback(() => {
+    closeModal()
+  }, [])
+
   return !!content && createPortal(
     (
       <>
         <div // eslint-disable-line
           tabIndex="-1"
-          onClick={closeModal}
+          onClick={handleCloseClick}
           className={classes.overlay}
         />
         <div

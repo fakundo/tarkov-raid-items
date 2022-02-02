@@ -20,8 +20,9 @@ export default () => {
           <Button
             key={key}
             onClick={() => {
-              closeModal()
-              setTimeout(updateLocale, 0, key)
+              closeModal(() => {
+                updateLocale(key)
+              })
             }}
           >
             {locale.extra.name}

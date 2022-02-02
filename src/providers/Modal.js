@@ -1,11 +1,13 @@
 import React, { createContext, useMemo, useEffect, useState } from 'react'
 import uniqueId from 'lodash/uniqueId'
+import { useTheme } from 'hooks'
 import Dialog from 'components/Dialog'
 // import Popover from 'components/Popover'
 
 export const ModalContext = createContext()
 
 export const ModalProvider = ({ children }) => {
+  const theme = useTheme()
   const [state, setState] = useState({})
 
   const visible = !!state.dialog?.content
@@ -24,17 +26,20 @@ export const ModalProvider = ({ children }) => {
         popover: { content, anchor },
       })
     },
-    closeModal: () => {
+    closeModal: (callback) => {
       setState({
         dialog: null,
         popover: null,
       })
+      if (callback) {
+        setTimeout(callback, theme.animation.duration.fast)
+      }
     },
   }), [])
 
   useEffect(() => {
     if (!visible) {
-      return () => {}
+      return () => { }
     }
     const handler = (ev) => {
       if (ev.key === 'Escape') {
@@ -51,7 +56,7 @@ export const ModalProvider = ({ children }) => {
 
   return (
     <ModalContext.Provider value={value}>
-      { children }
+      {children}
       <Dialog {...state.dialog} />
       {/* <Popover {...state.popover} /> */}
     </ModalContext.Provider>

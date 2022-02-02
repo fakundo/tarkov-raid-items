@@ -11,8 +11,7 @@ export default () => {
   const { closeModal } = useModal()
 
   const handleResetClick = useCallback(() => {
-    closeModal()
-    setTimeout(resetProgress)
+    closeModal(resetProgress)
   }, [])
 
   return (

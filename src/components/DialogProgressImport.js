@@ -11,13 +11,11 @@ export default () => {
   const { closeModal } = useModal()
 
   const handleImport = useCallback(() => {
-    closeModal()
-    setTimeout(importState)
+    closeModal(importState)
   }, [])
 
   const handleImportReject = useCallback(() => {
-    closeModal()
-    setTimeout(rejectImport)
+    closeModal(rejectImport)
   }, [])
 
   return (

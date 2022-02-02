@@ -71,11 +71,16 @@ export default ({ content, contentKey }) => {
     ev.stopPropagation()
   }, [])
 
+  const handleCloseClick = useCallback(() => {
+    closeModal()
+  }, [])
+
   return createPortal(
     (
       <TransitionGroup appear exit>
         {!!content && (
           <Fade
+            duration="fast"
             onEnter={handleAppear}
             onExited={handleExited}
           >
@@ -83,12 +88,15 @@ export default ({ content, contentKey }) => {
               <div className={classes.overlay} />
               <Container
                 tabIndex="-1"
-                onClick={closeModal}
+                onClick={handleCloseClick}
                 className={classes.root}
               >
                 <div className={classes.inner}>
                   <TransitionGroup>
-                    <Fade key={contentKey}>
+                    <Fade
+                      duration="fast"
+                      key={contentKey}
+                    >
                       <div // eslint-disable-line
                         tabIndex="-1"
                         className={classes.content}
@@ -98,7 +106,7 @@ export default ({ content, contentKey }) => {
                         <Button
                           aria-label="Close"
                           icon={<CloseIcon />}
-                          onClick={closeModal}
+                          onClick={handleCloseClick}
                           className={classes.contentClose}
                         />
                       </div>
