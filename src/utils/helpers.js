@@ -84,6 +84,6 @@ export const createStateExportLink = (state) => {
 
 export const getDefaultLanguage = () => {
   const { pathname } = window.location
-  const lang = pathname.match(/\/(.+).html$/)?.[1]?.toLowerCase()
+  const lang = pathname.match(/([^/]+).html$/)?.[1]?.toLowerCase()
   return lang || getNavigatorLanguage()
 }
