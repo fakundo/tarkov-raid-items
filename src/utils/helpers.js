@@ -5,6 +5,7 @@ import reduce from 'lodash/reduce'
 import clamp from 'lodash/clamp'
 import isBoolean from 'lodash/isBoolean'
 import pick from 'lodash/pick'
+import { getNavigatorLanguage } from 'utils/device'
 import { DONE, CRAFT, REWARD, KAPPA } from 'constants/tags'
 import { items } from 'data'
 
@@ -79,4 +80,10 @@ export const createStateExportLink = (state) => {
   const url = new URL(`${window.location.origin}${window.location.pathname}`)
   url.hash = stringifyState(state)
   return url.toString()
+}
+
+export const getDefaultLanguage = () => {
+  const { pathname } = window.location
+  const lang = pathname.match(/\/(.+).html$/)?.[1]?.toLowerCase()
+  return lang || getNavigatorLanguage()
 }

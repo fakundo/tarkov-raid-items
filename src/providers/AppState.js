@@ -1,7 +1,7 @@
 import React, { createContext, useMemo, useCallback, useRef, useEffect, useState } from 'react'
 import isEmpty from 'lodash/isEmpty'
 import uniqueId from 'lodash/uniqueId'
-import { getNavigatorLanguage, getFilterCount, calculateProgress, updateAppStateCounters, unstringifyState, stringifyState, createStateExportLink } from 'utils'
+import { getDefaultLanguage, getFilterCount, calculateProgress, updateAppStateCounters, unstringifyState, stringifyState, createStateExportLink } from 'utils'
 import { useLocalStorage, useHash } from 'hooks'
 
 const storageStateKey = 'state'
@@ -70,7 +70,7 @@ export const AppStateProvider = ({ children }) => {
     isImportAvailable: isHashStateRef.current,
     filter: state.filter || {},
     counters: state.counters || {},
-    locale: state.locale || getNavigatorLanguage(),
+    locale: state.locale || getDefaultLanguage(),
     filterCount: getFilterCount(state?.filter),
     progress: calculateProgress(state?.counters),
     updateFilter,
