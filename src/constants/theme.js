@@ -11,8 +11,11 @@ export default {
     },
     background: {
       body: '#181818',
-      card: '#1C1C1C',
       selection: '#DADADA',
+      card: {
+        default: '#1C1C1C',
+        done: '#024a12',
+      },
     },
     tag: {
       [CRAFT]: '#058320',
@@ -22,7 +25,10 @@ export default {
     },
   },
   shadow: {
-    card: '0 8px 24px rgba(0,0,0,0.4)',
+    card: {
+      default: '0 8px 24px rgba(0,0,0,0.4)',
+      done: '0 8px 24px rgba(2,74,18,0.4)',
+    },
   },
   animation: {
     duration: {

@@ -8,7 +8,7 @@ import DialogItem from 'components/DialogItem'
 
 const useStyles = createUseStyles((theme) => ({
   root: {
-    ...createTransition(theme, 'opacity, box-shadow'),
+    ...createTransition(theme, 'background, box-shadow'),
     display: 'grid',
     gridTemplate: '1rem auto / 64px auto',
     gridGap: '.5rem',
@@ -20,8 +20,8 @@ const useStyles = createUseStyles((theme) => ({
     listStyle: 'none',
     userSelect: 'none',
     borderRadius: '1rem',
-    boxShadow: theme.shadow.card,
-    background: theme.palette.background.card,
+    boxShadow: theme.shadow.card.default,
+    background: theme.palette.background.card.default,
   },
   image: {
     gridArea: '1 / 1 / 4 / 1',
@@ -43,8 +43,8 @@ const useStyles = createUseStyles((theme) => ({
     '& > *': { marginLeft: '.5rem' },
   },
   done: {
-    opacity: 0.5,
-    boxShadow: '0 0 0 rgba(0,0,0,0)',
+    boxShadow: theme.shadow.card.done,
+    background: theme.palette.background.card.done,
   },
 }))
 

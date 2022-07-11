@@ -40,8 +40,8 @@ const useStyles = createUseStyles((theme) => ({
     borderRadius: '1rem',
     position: 'relative',
     overflowWrap: 'break-word',
-    boxShadow: theme.shadow.card,
-    background: theme.palette.background.card,
+    boxShadow: theme.shadow.card.default,
+    background: theme.palette.background.card.default,
   },
   contentClose: {
     top: '.5rem',

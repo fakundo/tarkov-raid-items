@@ -14,7 +14,7 @@ const useStyles = createUseStyles((theme) => ({
     userSelect: 'none',
     alignItems: 'center',
     justifyContent: 'center',
-    '&:hover': {
+    '&:hover > *': {
       opacity: 0.6,
     },
   },
@@ -56,8 +56,8 @@ export default memo(({ className, icon, children, onClick = noop, ...rest }) => 
       onClick={handleClick}
       {...rest}
     >
-      { !!icon && cloneElement(icon, { className: classes.icon })}
-      { !!children && <div className={classes.children}>{children}</div>}
+      {!!icon && cloneElement(icon, { className: classes.icon })}
+      {!!children && <div className={classes.children}>{children}</div>}
     </button>
   )
 })

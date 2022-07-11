@@ -17,12 +17,12 @@
   "42ND_SIGNATURE_BLEND_ENGLISH_TEA": {
     "type": "Other",
     "name": {
-      "en": "42nd Signature Blend English Tea",
+      "en": "42 Signature Blend English Tea",
       "fr": "Thé Anglais 42nd Signature Blend",
       "ru": "Коробка с чаем"
     },
     "nameShort": {
-      "en": "42nd",
+      "en": "42",
       "fr": "Thé",
       "ru": "Чай"
     },
@@ -33,7 +33,7 @@
   "5_L_PROPANE_TANK": {
     "type": "Flammable material",
     "name": {
-      "en": "5L propane tank",
+      "en": "Propane tank (5L)",
       "de": "5 l Propan-Tank",
       "fr": "Bonbonne de propane de 5L",
       "ru": "5-ти литровый баллон пропана"
@@ -48,14 +48,14 @@
     },
     "reward": {
       "A_FUEL_MATTER": 2,
-      "HUNTSMAN_PATH_JUSTICE": 2
+      "THE_HUNTSMAN_PATH_JUSTICE": 2
     }
   },
   "60_ROUND_6_L_31_5_45_X_39_MAGAZINE_FOR_AK_74_AND_COMPATIBLES": {
     "type": "Magazine",
     "name": {
-      "en": "60-round 6L31 5.45x39 magazine for AK-74 and compatibles",
-      "fr": "Chargeur 6L31 5,45x39 60 coups pour AK-74 et armes compatibles",
+      "en": "AK-74 5.45x39 6L31 60-round magazine",
+      "de": "60-Schuss 6L31 5,45 x 39 Magazin für AK-74 und baugleiche Systeme",
       "ru": "Магазин 6Л31 5.45x39 для АК-74 и совместимых на 60 патронов"
     },
     "nameShort": {
@@ -105,10 +105,9 @@
   "AK_74_N_5_45_X_39_ASSAULT_RIFLE": {
     "type": "Assault rifle",
     "name": {
-      "en": "AK-74N 5.45x39 assault rifle",
+      "en": "Kalashnikov AK-74N 5.45x39 assault rifle",
       "cs": "Útočná puška AK-74N 5.45x39",
       "de": "AK-74N 5,45 x 39 Sturmgewehr",
-      "fr": "Fusil d'assaut AK-74N 5,45x39",
       "ru": "Автомат Калашникова АК-74Н 5.45x39"
     },
     "nameShort": {
@@ -126,12 +125,14 @@
     "type": "Melee weapon",
     "name": {
       "en": "Antique axe",
+      "cs": "Starožitná sekera",
       "de": "Antike Axt",
       "fr": "Hache antique",
       "ru": "Антикварный топор"
     },
     "nameShort": {
       "en": "Axe",
+      "cs": "Sekera",
       "de": "Beil",
       "fr": "Hache",
       "ru": "Топор"
@@ -193,13 +194,51 @@
       "LAVATORY": 1
     }
   },
+  "AXEL_PARROT_FIGURINE": {
+    "type": "Valuable",
+    "name": {
+      "en": "Axel parrot figurine",
+      "ru": "Статуэтка попугая Axel"
+    },
+    "nameShort": {
+      "en": "Axel"
+    },
+    "quest": {
+      "LIVING_HIGH_IS_NOT_A_CRIME_PART_2": 1,
+      "COLLECTOR": 1
+    }
+  },
+  "BADDIES_RED_BEARD": {
+    "type": "Valuable",
+    "name": {
+      "en": "Baddie's red beard",
+      "ru": "Рыжая накладная борода Baddie"
+    },
+    "nameShort": {
+      "en": "Baddie"
+    },
+    "quest": {
+      "COLLECTOR": 1
+    }
+  },
+  "BAKEEZY_COOK_BOOK": {
+    "type": "Valuable",
+    "name": {
+      "en": "BakeEzy Cook Book",
+      "ru": "Книга рецептов BakeEzy"
+    },
+    "nameShort": {
+      "en": "BakeEzy"
+    },
+    "quest": {
+      "COLLECTOR": 1
+    }
+  },
   "BARS_A_2607_95_X_18": {
     "type": "Melee weapon",
     "name": {
-      "en": "Bars A-2607 - 95x18 knife",
-      "cs": "Bars A-2607- 95x18",
+      "en": "Bars A-2607 95H18 knife",
       "de": "Bars A-2607 – 95 x 18",
-      "fr": "Bars A-2607 - 95x18",
       "ru": "Барс А-2607 95Х18"
     },
     "nameShort": {
@@ -222,6 +261,19 @@
       "de": "Buch",
       "fr": "Livre",
       "ru": "Книга"
+    },
+    "quest": {
+      "COLLECTOR": 1
+    }
+  },
+  "BEAR_BUDDY_PLUSH_TOY": {
+    "type": "Valuable",
+    "name": {
+      "en": "BEAR Buddy plush toy",
+      "ru": "Мягкая игрушка \"BEAR Buddy\""
+    },
+    "nameShort": {
+      "en": "BEAR Buddy"
     },
     "quest": {
       "COLLECTOR": 1
@@ -250,6 +302,7 @@
     "type": "Headwear",
     "name": {
       "en": "BOSS cap",
+      "fr": "Casquette BOSS",
       "ru": "Кепка BOSS"
     },
     "nameShort": {
@@ -257,7 +310,7 @@
       "ru": "Кепка"
     },
     "quest": {
-      "HUNTSMAN_PATH_FACTORY_CHIEF": 1
+      "THE_HUNTSMAN_PATH_FACTORY_CHIEF": 1
     }
   },
   "BOTTLE_OF_DAN_JACKIEL_WHISKEY": {
@@ -303,7 +356,7 @@
   "BROKEN_G_PHONE": {
     "type": "Electronics",
     "name": {
-      "en": "Broken GPhone",
+      "en": "Broken GPhone smartphone",
       "de": "Kaputtes GPhone",
       "fr": "GPhone cassé",
       "ru": "Сломанный смартфон GPhone"
@@ -340,7 +393,7 @@
   "CAN_OF_BEEF_STEW": {
     "type": "Food",
     "name": {
-      "en": "Small can of beef stew",
+      "en": "Can of beef stew (Small)",
       "cs": "Dušené hovězí v konzervě",
       "de": "Dose mit Rindereintopf (flach)",
       "fr": "Conserve de ragoût de bœuf",
@@ -360,7 +413,7 @@
   "CAN_OF_DELICIOUS_BEEF_STEW": {
     "type": "Food",
     "name": {
-      "en": "Large can of beef stew",
+      "en": "Can of beef stew (Large)",
       "cs": "Dušené hovězí ve velké konzervě",
       "de": "Dose mit Rindereintopf",
       "fr": "Conserve de délicieux ragoût de bœuf",
@@ -394,7 +447,7 @@
   "CAN_OF_RAT_COLA": {
     "type": "Drink",
     "name": {
-      "en": "Can of RatCola",
+      "en": "Can of RatCola soda",
       "cs": "RatCola",
       "fr": "RatCola",
       "ru": "Банка RatCola"
@@ -496,7 +549,8 @@
   "CLIN_WIPER": {
     "type": "Household item",
     "name": {
-      "en": "Clin Wiper",
+      "en": "Clin window cleaner",
+      "cs": "Čistící prostředek Clin",
       "de": "Clin Wiper",
       "fr": "Lave-vitre Clin",
       "ru": "Стеклоочиститель"
@@ -517,7 +571,7 @@
   "CMS_KIT": {
     "type": "Jaeger",
     "name": {
-      "en": "CMS kit",
+      "en": "CMS surgical kit",
       "de": "CMS-Kit",
       "fr": "Kit chirurgical CMS",
       "ru": "Хирургический набор CMS"
@@ -527,6 +581,9 @@
     },
     "quest": {
       "AMBULANCE": 2
+    },
+    "craft": {
+      "MEDSTATION": 1
     },
     "reward": {
       "SUPPLY_PLANS": 1,
@@ -557,7 +614,7 @@
       "en": "Colt M4A1 5.56x45 assault rifle",
       "cs": "Útočná puška Colt M4A1 5.56x45",
       "de": "Colt M4A1 5,56x45 Sturmgewehr",
-      "fr": "Fusil d'assaut Colt M4A1 5,56x45",
+      "fr": "Fusil d'assaut Colt M4A1 5,56 x 45",
       "ru": "Штурмовая винтовка Colt M4A1 5.56x45"
     },
     "nameShort": {
@@ -579,13 +636,13 @@
     "name": {
       "en": "Corrugated hose",
       "cs": "Vlnitá hadice",
-      "fr": "Tuyau annelé",
+      "fr": "Tuyau ondulé",
       "ru": "Гофрированный шланг"
     },
     "nameShort": {
       "en": "Hose",
       "fr": "Tuyau",
-      "ru": "Шланг"
+      "ru": "ГШланг"
     },
     "quest": {
       "SPA_TOUR_PART_3": 2,
@@ -595,19 +652,19 @@
       "LAVATORY": 2
     },
     "reward": {
-      "HUNTSMAN_PATH_SECURED_PERIMETER": 2
+      "THE_HUNTSMAN_PATH_SECURED_PERIMETER": 2
     }
   },
   "CPU_FAN": {
     "type": "Electronics",
     "name": {
-      "en": "CPU Fan",
+      "en": "CPU fan",
       "de": "CPU-Lüfter",
       "fr": "Ventilateur de processeur",
       "ru": "Процессорный кулер"
     },
     "nameShort": {
-      "en": "CPU Fan",
+      "en": "CPU fan",
       "de": "CPU-Lüfter",
       "fr": "Vent. CPU",
       "ru": "Кулер"
@@ -662,7 +719,9 @@
       "ru": "Жетон (BEAR)"
     },
     "quest": {
-      "THE_PUNISHER_PART_6": 7
+      "THE_PUNISHER_PART_6": 7,
+      "COUNTERACTION": 20,
+      "TROPHIES": 20
     }
   },
   "DOGTAG_USEC": {
@@ -677,7 +736,22 @@
     },
     "quest": {
       "FRIEND_FROM_THE_WEST_PART_1": 7,
-      "THE_PUNISHER_PART_6": 7
+      "THE_PUNISHER_PART_6": 7,
+      "OUR_OWN_LAND": 20,
+      "TROPHIES": 20
+    }
+  },
+  "DRD_BODY_ARMOR": {
+    "type": "Armor vest",
+    "name": {
+      "en": "DRD Body Armor",
+      "ru": "Бронежилет DRD Body Armor"
+    },
+    "nameShort": {
+      "en": "DRD"
+    },
+    "quest": {
+      "COLLECTOR": 1
     }
   },
   "EMELYA_RYE_CROUTONS": {
@@ -701,6 +775,7 @@
     "type": "Armband",
     "name": {
       "en": "Evasion armband",
+      "de": "Evasion Armband",
       "fr": "Brassard Evasion",
       "ru": "Повязка на плечо Evasion"
     },
@@ -798,12 +873,41 @@
     "quest": {
       "SANITARY_STANDARDS_PART_1": 1,
       "SANITARY_STANDARDS_PART_2": 2
+    },
+    "craft": {
+      "WORKBENCH": 1
+    }
+  },
+  "GINGY_KEYCHAIN": {
+    "type": "Container",
+    "name": {
+      "en": "Gingy Keychain",
+      "ru": "Ключница Gingy"
+    },
+    "nameShort": {
+      "en": "Gingy"
+    },
+    "quest": {
+      "COLLECTOR": 1
+    }
+  },
+  "GLORIOUS_E_MASK": {
+    "type": "Valuable",
+    "name": {
+      "en": "Glorious E lightweight armored mask",
+      "ru": "Легкая армированная маска \"Glorious E\""
+    },
+    "nameShort": {
+      "en": "Glorious"
+    },
+    "quest": {
+      "COLLECTOR": 1
     }
   },
   "GOLDEN_1_G_PHONE": {
     "type": "Electronics",
     "name": {
-      "en": "Golden 1GPhone",
+      "en": "Golden 1GPhone smartphone",
       "de": "Goldenes 1GPhone",
       "fr": "1GPhone doré",
       "ru": "Золотой 1GPhone"
@@ -812,6 +916,24 @@
       "en": "1GPhone"
     },
     "quest": {
+      "COLLECTOR": 1
+    }
+  },
+  "GOLDEN_EGG": {
+    "type": "Valuable",
+    "name": {
+      "en": "Golden egg",
+      "cs": "Zlaté vejce",
+      "fr": "Œuf doré",
+      "ru": "Золотое яйцо"
+    },
+    "nameShort": {
+      "en": "Egg",
+      "fr": "Meyer",
+      "ru": "Яйцо"
+    },
+    "quest": {
+      "LIVING_HIGH_IS_NOT_A_CRIME_PART_1": 1,
       "COLLECTOR": 1
     }
   },
@@ -847,18 +969,16 @@
     "nameShort": {
       "en": "GPU",
       "de": "Grafikkarte",
-      "fr": "Carte graphique",
-      "ru": "Видеокарта"
+      "fr": "Carte graphique"
     },
     "quest": {
       "FARMING_PART_4": 3
     },
     "craft": {
-      "INTELLIGENCE_CENTER": 2
+      "INTELLIGENCE_CENTER": 3
     },
     "reward": {
-      "CHEMISTRY_CLOSET": 1,
-      "SCOUT": 1
+      "CHEMISTRY_CLOSET": 1
     }
   },
   "HEAT_EXCHANGE_ALKALI_SURFACE_WASHER": {
@@ -871,6 +991,7 @@
     },
     "nameShort": {
       "en": "Alkali",
+      "fr": "Alcali",
       "ru": "Щелочь"
     },
     "quest": {
@@ -890,7 +1011,7 @@
       "en": "Horse",
       "de": "Pferdefigur",
       "fr": "Cheval",
-      "ru": "Статуэтка"
+      "ru": "Конь"
     },
     "quest": {
       "LIVING_HIGH_IS_NOT_A_CRIME_PART_1": 2
@@ -936,6 +1057,19 @@
       "COLLECTOR": 1
     }
   },
+  "JOHNB_GLASSES": {
+    "type": "Valuable",
+    "name": {
+      "en": "JohnB Liquid DNB glasses",
+      "ru": "Очки JohnB \"Liquid DNB\""
+    },
+    "nameShort": {
+      "en": "JohnB"
+    },
+    "quest": {
+      "COLLECTOR": 1
+    }
+  },
   "KEKTAPE_DUCT_TAPE": {
     "type": "Building material",
     "name": {
@@ -944,7 +1078,8 @@
       "ru": "Липкая лента KEKТЕЙП"
     },
     "nameShort": {
-      "en": "KEK"
+      "en": "KEK",
+      "ru": "КЕК"
     },
     "quest": {
       "TEXTILE_PART_2": 5
@@ -957,6 +1092,7 @@
     "type": "Headwear",
     "name": {
       "en": "Kinda cowboy hat",
+      "cs": "Kovbojský klobouk",
       "de": "Cowboyhut",
       "fr": "Chapeau de cowboy",
       "ru": "Ковбойская шляпа"
@@ -993,6 +1129,7 @@
     "type": "Medical supply",
     "name": {
       "en": "LEDX Skin Transilluminator",
+      "cs": "Žilní transilluminator LEDX",
       "fr": "Trans-illuminateur de peau LEDX",
       "ru": "Светодиодный трансиллюминатор кожи LEDX"
     },
@@ -1012,7 +1149,7 @@
     "name": {
       "en": "Loot Lord plushie",
       "fr": "Peluche Loot Lord",
-      "ru": "Плюшевая игрушка Loot Lord"
+      "ru": "Плюшевая игрушка \"Loot Lord\""
     },
     "nameShort": {
       "en": "Loot Lord"
@@ -1045,7 +1182,7 @@
     }
   },
   "LVNDMAR_KS_RAT_POISON": {
-    "type": "Household materials",
+    "type": "Household item",
     "name": {
       "en": "LVNDMARK's rat poison",
       "fr": "Poison pour rat LVNDMARK",
@@ -1081,6 +1218,7 @@
     "name": {
       "en": "Malboro Cigarettes",
       "cs": "Cigarety Malboro",
+      "de": "Malboro Zigaretten",
       "fr": "Cigarettes Malboro",
       "ru": "Сигареты Malboro"
     },
@@ -1097,7 +1235,7 @@
   "MASKA_1_SCH_HELMET_KILLA": {
     "type": "Helmet",
     "name": {
-      "en": "Maska-1Shch bulletproof helmet (Olive Drab)",
+      "en": "\"Maska-1SCh\" bulletproof helmet",
       "fr": "Casque Maska 1Sch",
       "ru": "Шлем Маска-1Щ (Килла)"
     },
@@ -1106,7 +1244,7 @@
       "ru": "Маска-1Щ"
     },
     "quest": {
-      "HUNTSMAN_PATH_SELLOUT": 1
+      "THE_HUNTSMAN_PATH_SELLOUT": 1
     }
   },
   "MEDICAL_BLOODSET": {
@@ -1152,7 +1290,7 @@
   "MILITARY_COFDM_WIRELESS_SIGNAL_TRANSMITTER": {
     "type": "Electronics",
     "name": {
-      "en": "Military COFDM wireless Signal Transmitter",
+      "en": "Military COFDM Wireless Signal Transmitter",
       "cs": "Vojenský bezdrátový vysílač COFDM",
       "de": "Militärischer COFDM-Funksender",
       "fr": "Transmetteur militaire sans-fil COFDM",
@@ -1169,17 +1307,32 @@
       "INTELLIGENCE_CENTER": 2
     }
   },
+  "MISSAM_FORKLIFT_KEY": {
+    "type": "Valuable",
+    "name": {
+      "en": "Missam forklift key",
+      "ru": "Ключ от погрузчика Missam"
+    },
+    "nameShort": {
+      "en": "Danex"
+    },
+    "quest": {
+      "COLLECTOR": 1
+    }
+  },
   "MODULE_3_M_BODYARMOR": {
     "type": "Armor vest",
     "name": {
-      "en": "BNTI Module-3M body armor",
+      "en": "BNTI \"Module-3M\" body armor",
       "cs": "Balistická vesta BNTI Modul-3M",
       "de": "Modulare Schutzweste von 3M",
       "fr": "Gilet pare-balles Module-3M",
       "ru": "Бронежилет Модуль 3М"
     },
     "nameShort": {
-      "en": "3M"
+      "en": "Module-3M",
+      "de": "3M",
+      "ru": "Модуль-3М"
     },
     "quest": {
       "SUPPLIER": 1
@@ -1346,6 +1499,7 @@
     "type": "Face cover",
     "name": {
       "en": "Pestily plague mask",
+      "de": "Pestilys Pestmaske",
       "fr": "Masque de peste Pestily",
       "ru": "Маска Pestily"
     },
@@ -1399,9 +1553,6 @@
     },
     "craft": {
       "LAVATORY": 2
-    },
-    "reward": {
-      "BIG_SALE": 1
     }
   },
   "PM_9_X_18_PM_PISTOL": {
@@ -1447,9 +1598,10 @@
       "ru": "Портативный дефибриллятор"
     },
     "nameShort": {
-      "en": "Defibrillator",
+      "en": "Defibrillat",
+      "de": "Defibrillator",
       "fr": "Défibrillateur",
-      "ru": "Дефибрилятор"
+      "ru": "Дефибриллятор"
     },
     "quest": {
       "AMBULANCE": 1,
@@ -1478,6 +1630,20 @@
     },
     "craft": {
       "WORKBENCH": 1
+    }
+  },
+  "PRESS_PASS": {
+    "type": "Other",
+    "name": {
+      "en": "Press pass (issued for NoiceGuy)",
+      "ru": "Пропуск для прессы (выписан на NoiceGuy)"
+    },
+    "nameShort": {
+      "en": "Pass",
+      "ru": "Пропуск"
+    },
+    "quest": {
+      "COLLECTOR": 1
     }
   },
   "PRINTED_CIRCUIT_BOARD": {
@@ -1524,7 +1690,7 @@
   "P_22": {
     "type": "Injector",
     "name": {
-      "en": "P22 injector",
+      "en": "P22 stimulant injector",
       "fr": "P22",
       "ru": "P22 (Препарат 22)"
     },
@@ -1542,6 +1708,7 @@
     "type": "Valuable",
     "name": {
       "en": "Raven figurine",
+      "cs": "Soška havrana",
       "fr": "Figurine de corbeau",
       "ru": "Статуэтка ворона"
     },
@@ -1551,6 +1718,7 @@
       "ru": "Ворон"
     },
     "quest": {
+      "LIVING_HIGH_IS_NOT_A_CRIME_PART_2": 2,
       "COLLECTOR": 1
     }
   },
@@ -1565,7 +1733,7 @@
     "nameShort": {
       "en": "RBattery",
       "de": "Akku",
-      "fr": "BattRec",
+      "fr": "Batt. Rec",
       "ru": "Аккум"
     },
     "quest": {
@@ -1579,14 +1747,16 @@
     "type": "Face cover",
     "name": {
       "en": "Respirator",
+      "cs": "Respirátor",
       "de": "Atemschutzmaske",
       "fr": "Masque de protection respiratoire",
       "ru": "Респираторная маска"
     },
     "nameShort": {
       "en": "Respirator",
+      "cs": "Respirátor",
       "de": "Beat",
-      "fr": "Resp",
+      "fr": "Respirateur",
       "ru": "Респиратор"
     },
     "quest": {
@@ -1615,6 +1785,7 @@
     "type": "Valuable",
     "name": {
       "en": "Roler Submariner gold wrist watch",
+      "cs": "Zlaté náramkové hodinky Roler submariner",
       "de": "Roler Submariner, goldene Armbanduhr",
       "fr": "Montre bracelet en or Roler Submariner",
       "ru": "Золотые часы Roler Submariner"
@@ -1669,7 +1840,7 @@
       "INTELLIGENCE_CENTER": 2
     },
     "reward": {
-      "HUNTSMAN_PATH_EVIL_WATCHMAN": 2
+      "THE_HUNTSMAN_PATH_EVIL_WATCHMAN": 2
     }
   },
   "SHROUD_HALF_MASK": {
@@ -1703,7 +1874,7 @@
       "ru": "КШ"
     },
     "quest": {
-      "HUNTSMAN_PATH_WOODS_KEEPER": 1
+      "THE_HUNTSMAN_PATH_WOODS_KEEPER": 1
     }
   },
   "SILVER_BADGE": {
@@ -1746,6 +1917,8 @@
     "type": "Face cover",
     "name": {
       "en": "Smoke balaclava",
+      "cs": "Kukla Smoke",
+      "de": "Smoke Balaklava",
       "fr": "Cagoule Smoke",
       "ru": "Балаклава Smoke"
     },
@@ -1809,7 +1982,7 @@
       "FISHING_PLACE": 2
     },
     "reward": {
-      "HUNTSMAN_PATH_WOODS_KEEPER": 3
+      "THE_HUNTSMAN_PATH_WOODS_KEEPER": 3
     }
   },
   "TOZ_106_BOLT_ACTION_SHOTGUN": {
@@ -1842,7 +2015,7 @@
       "ru": "ТТ Золотой"
     },
     "quest": {
-      "HUNTSMAN_PATH_THE_TROPHY": 1
+      "THE_HUNTSMAN_PATH_TROPHY": 1
     }
   },
   "T_SHAPED_PLUG": {
@@ -1921,6 +2094,19 @@
       "COLLECTOR": 1
     }
   },
+  "VIDEO_CASSETTE_CYBORG": {
+    "type": "Valuables",
+    "name": {
+      "en": "Video cassette with the Cyborg Killer movie",
+      "ru": "Видеокассета с фильмом \"Киборг-убийца\""
+    },
+    "nameShort": {
+      "en": "VHS"
+    },
+    "quest": {
+      "COLLECTOR": 1
+    }
+  },
   "VIRTEX_PROGRAMMABLE_PROCESSOR": {
     "type": "Electronics",
     "name": {
@@ -1961,7 +2147,7 @@
       "INTELLIGENCE_CENTER": 2
     },
     "reward": {
-      "HUNTSMAN_PATH_WOODS_KEEPER": 1,
+      "THE_HUNTSMAN_PATH_WOODS_KEEPER": 1,
       "HUNTING_TRIP": 1
     }
   },
@@ -2024,7 +2210,7 @@
   "WIRES": {
     "type": "Electronics",
     "name": {
-      "en": "Wires",
+      "en": "Bundle of wires",
       "cs": "Dráty",
       "de": "Leitungen",
       "fr": "Fils conducteurs",
@@ -2049,11 +2235,13 @@
     "type": "Container",
     "name": {
       "en": "WZ Wallet",
+      "de": "WZ Geldbörse",
       "fr": "Portefeuille WZ",
       "ru": "Бумажник WZ"
     },
     "nameShort": {
-      "en": "WZ"
+      "en": "WZ",
+      "fr": "WillerZ"
     },
     "quest": {
       "COLLECTOR": 1

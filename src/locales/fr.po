@@ -19,10 +19,10 @@ msgstr ""
 
 #: src/components/Footer.js:21
 msgid ""
-"An interactive list of items that must have the «Item found in raid» mark, and "
-"which are required to complete the quests."
+"An interactive list of items that must have the «Item found in raid» mark and "
+"that are required to complete the quests."
 msgstr ""
-"Une liste interactive d’objets qui doivent avoir la marque «Objet trouvé dans le "
+"Une liste interactive d’objets qui doivent avoir la marque «Objet trouvé en "
 "raid» et qui sont nécessaires pour terminer les quêtes."
 
 #: src/components/Legend.js:28
@@ -65,7 +65,7 @@ msgstr "Entrez le nom de l’objet…"
 msgid "Escape from Tarkov [EFT] – Find in Raid Quest Items"
 msgstr "Escape from Tarkov – [EFT] Objets trouvés dans le raid"
 
-#: src/components/DialogHeaderMenu.js:25 src/components/HeaderActions.js:69
+#: src/components/DialogHeaderMenu.js:25 src/components/HeaderActions.js:53
 msgid "Filter"
 msgstr "Filtre"
 
@@ -74,7 +74,7 @@ msgid "Filter settings"
 msgstr "Paramètres de filtre"
 
 #: src/components/HeaderTitle.js:41
-msgid "Find in Raid Items"
+msgid "Find In Raid Quest Items"
 msgstr "Trouver en raid – objets"
 
 #: src/components/DialogFilter.js:17
@@ -87,17 +87,9 @@ msgid_plural "Found ${} items of ${}"
 msgstr[0] "${} élément trouvé sur ${}"
 msgstr[1] "${} éléments trouvé sur ${}"
 
-#: src/components/DialogProgressImport.js:34
+#: src/components/DialogProgressImport.js:32
 msgid "Import progress from URL"
 msgstr "Importer la progression à partir de l’URL"
-
-#: src/components/Footer.js:27
-msgid ""
-"Items with only this mark can be sold at the Flea market, and the item loses the "
-"mark after being sold."
-msgstr ""
-"Les objets avec uniquement cette marque peuvent être vendus au Marché aux puces, "
-"et l’article perd sa marque après avoir été vendu."
 
 #: src/components/Items.js:78
 msgid "Looks like you've found all the items! Enjoy your Kappa!"
@@ -123,8 +115,16 @@ msgstr "Pas trouvé"
 msgid "Nothing to display..."
 msgstr "Rien à afficher…"
 
+#: src/components/Footer.js:27
+msgid ""
+"Only items with this mark can be sold at the Flea market and the item loses the "
+"mark after being sold."
+msgstr ""
+"Seuls les articles portant cette marque peuvent être vendus au marché aux puces "
+"et l’article perd la marque après avoir été vendu."
+
 #: src/components/DialogHeaderMenu.js:20 src/components/DialogProgress.js:15
-#: src/components/HeaderActions.js:50
+#: src/components/HeaderActions.js:66
 msgid "Progress"
 msgstr "Le progrès"
 
@@ -138,7 +138,7 @@ msgstr[1] "Quêtes"
 msgid "Reset filter"
 msgstr "Réinitialiser le filtre"
 
-#: src/components/DialogProgressExport.js:28 src/components/Items.js:79
+#: src/components/DialogProgressExport.js:27 src/components/Items.js:79
 msgid "Reset progress"
 msgstr "Réinitialiser la progression"
 
@@ -146,7 +146,7 @@ msgstr "Réinitialiser la progression"
 msgid "Reset search"
 msgstr "Réinitialiser la recherche"
 
-#: src/components/DialogProgressImport.js:40
+#: src/components/DialogProgressImport.js:38
 msgid "Return to your progress"
 msgstr "Revenez à votre progression"
 
@@ -154,7 +154,7 @@ msgstr "Revenez à votre progression"
 msgid "Reward"
 msgstr "Récompense"
 
-#: src/components/HeaderActions.js:79
+#: src/components/HeaderActions.js:47
 msgid "Search"
 msgstr "Rechercher"
 
@@ -166,7 +166,7 @@ msgstr "Choisir la langue"
 msgid "Settings"
 msgstr "Réglages"
 
-#: src/components/DialogProgressExport.js:20
+#: src/components/DialogProgressExport.js:19
 msgid "Share URL"
 msgstr "Partager l’URL"
 
@@ -181,18 +181,18 @@ msgstr ""
 #: src/components/Footer.js:25
 msgid ""
 "The mark «Item found in raid» is given to items that were created in the "
-"Hideout, or obtained as a quest reward, or found during the game if the player "
+"Hideout, or received as a quest reward, or found during the game if the player "
 "survived."
 msgstr ""
 "La marque «Objet trouvé en raid» est attribuée aux objets qui ont été créés dans "
-"le Planque, ou obtenus en récompense de quête, ou trouvés pendant le jeu si le "
+"la cachette, ou reçus en récompense de quête, ou trouvés pendant le jeu si le "
 "joueur a survécu."
 
-#: src/components/DialogProgressImport.js:25
+#: src/components/DialogProgressImport.js:23
 msgid "When importing progress from the current URL"
 msgstr "Lors de l’importation de la progression à partir de l’URL actuelle"
 
-#: src/components/DialogProgressImport.js:27
+#: src/components/DialogProgressImport.js:25
 msgid "your previously saved progress will be erased"
 msgstr "votre progression précédemment enregistrée sera effacée"
 

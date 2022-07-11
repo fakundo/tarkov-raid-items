@@ -19,8 +19,8 @@ msgstr "Все изображения защищены авторским пра
 
 #: src/components/Footer.js:21
 msgid ""
-"An interactive list of items that must have the «Item found in raid» mark, "
-"and which are required to complete the quests."
+"An interactive list of items that must have the «Item found in raid» mark "
+"and that are required to complete the quests."
 msgstr ""
 "Интерактивный список предметов, которые должны иметь отметку «Найдено в "
 "рейде» и которые необходимы для выполнения квестов."
@@ -65,8 +65,7 @@ msgstr "Введите название предмета…"
 msgid "Escape from Tarkov [EFT] – Find in Raid Quest Items"
 msgstr "Побег из Таркова [EFT] – Найдено в рейде, квестовые предметы"
 
-#: src/components/DialogHeaderMenu.js:25
-#: src/components/HeaderActions.js:69
+#: src/components/DialogHeaderMenu.js:25 src/components/HeaderActions.js:53
 msgid "Filter"
 msgstr "Фильтр"
 
@@ -75,8 +74,8 @@ msgid "Filter settings"
 msgstr "Настройки фильтра"
 
 #: src/components/HeaderTitle.js:41
-msgid "Find in Raid Items"
-msgstr "Найдено в рейде – предметы"
+msgid "Find In Raid Quest Items"
+msgstr "Квестовые предметы – Найдено в рейде"
 
 #: src/components/DialogFilter.js:17
 msgid "Found"
@@ -89,17 +88,9 @@ msgstr[0] "Найден ${} предмет из ${}"
 msgstr[1] "Найдено ${} предмета из ${}"
 msgstr[2] "Найдено ${} предметов из ${}"
 
-#: src/components/DialogProgressImport.js:34
+#: src/components/DialogProgressImport.js:32
 msgid "Import progress from URL"
 msgstr "Импорт прогресса из URL"
-
-#: src/components/Footer.js:27
-msgid ""
-"Items with only this mark can be sold at the Flea market, and the item "
-"loses the mark after being sold."
-msgstr ""
-"Предметы только с этой отметкой могут быть проданы на Барахолке, при этом "
-"товар теряет отметку после продажи."
 
 #: src/components/Items.js:78
 msgid "Looks like you've found all the items! Enjoy your Kappa!"
@@ -109,8 +100,7 @@ msgstr "Похоже ты нашёл все предметы! Наслаждай
 msgid "lvl ${}"
 msgstr "лвл ${}"
 
-#: src/components/DialogFilter.js:35
-#: src/components/Legend.js:36
+#: src/components/DialogFilter.js:35 src/components/Legend.js:36
 msgid "Need for Kappa"
 msgstr "Нужно для Каппы"
 
@@ -122,14 +112,20 @@ msgstr "Нельзя скрафтить"
 msgid "Not found"
 msgstr "Не найдено"
 
-#: src/components/Items.js:67
-#: src/components/Items.js:89
+#: src/components/Items.js:67 src/components/Items.js:89
 msgid "Nothing to display..."
 msgstr "Нечего отобразить…"
 
-#: src/components/DialogHeaderMenu.js:20
-#: src/components/DialogProgress.js:15
-#: src/components/HeaderActions.js:50
+#: src/components/Footer.js:27
+msgid ""
+"Only items with this mark can be sold at the Flea market and the item loses "
+"the mark after being sold."
+msgstr ""
+"Только предметы с этой отметкой могут быть проданы на Барахолке, после "
+"продажи предмет теряет отметку."
+
+#: src/components/DialogHeaderMenu.js:20 src/components/DialogProgress.js:15
+#: src/components/HeaderActions.js:66
 msgid "Progress"
 msgstr "Прогресс"
 
@@ -144,8 +140,7 @@ msgstr[2] "Квесты"
 msgid "Reset filter"
 msgstr "Сброс фильтра"
 
-#: src/components/DialogProgressExport.js:28
-#: src/components/Items.js:79
+#: src/components/DialogProgressExport.js:27 src/components/Items.js:79
 msgid "Reset progress"
 msgstr "Сброс прогресса"
 
@@ -153,7 +148,7 @@ msgstr "Сброс прогресса"
 msgid "Reset search"
 msgstr "Сброс поиска"
 
-#: src/components/DialogProgressImport.js:40
+#: src/components/DialogProgressImport.js:38
 msgid "Return to your progress"
 msgstr "Вернуться к своему прогрессу"
 
@@ -161,12 +156,11 @@ msgstr "Вернуться к своему прогрессу"
 msgid "Reward"
 msgstr "Награда"
 
-#: src/components/HeaderActions.js:79
+#: src/components/HeaderActions.js:47
 msgid "Search"
 msgstr "Поиск"
 
-#: src/components/DialogHeaderMenu.js:30
-#: src/components/DialogLocale.js:16
+#: src/components/DialogHeaderMenu.js:30 src/components/DialogLocale.js:16
 msgid "Select language"
 msgstr "Выбор языка"
 
@@ -174,7 +168,7 @@ msgstr "Выбор языка"
 msgid "Settings"
 msgstr "Настройки"
 
-#: src/components/DialogProgressExport.js:20
+#: src/components/DialogProgressExport.js:19
 msgid "Share URL"
 msgstr "Поделиться URL"
 
@@ -183,24 +177,24 @@ msgid ""
 "The main reward after completing (almost) all quests in the game is a Kappa "
 "secure container."
 msgstr ""
-"Основной наградой после выполнения (почти) всех квестов в игре является "
+"Главной наградой после выполнения (почти) всех квестов в игре является "
 "защищенный контейнер Каппа."
 
 #: src/components/Footer.js:25
 msgid ""
 "The mark «Item found in raid» is given to items that were created in the "
-"Hideout, or obtained as a quest reward, or found during the game if the "
+"Hideout, or received as a quest reward, or found during the game if the "
 "player survived."
 msgstr ""
-"Отметка «Найдено в рейде» присваивается предметам, которые были созданы в "
-"Убежище, или получены в качестве награды за квест, или найдены во время "
-"игры, если игрок выжил."
+"Отметка «Найдено в рейде» присваивается предметам, созданным в Убежище, "
+"либо полученным в качестве награды за квест, либо найденным во время игры, "
+"если игрок выжил."
 
-#: src/components/DialogProgressImport.js:25
+#: src/components/DialogProgressImport.js:23
 msgid "When importing progress from the current URL"
 msgstr "При импорте прогресса из текущего URL"
 
-#: src/components/DialogProgressImport.js:27
+#: src/components/DialogProgressImport.js:25
 msgid "your previously saved progress will be erased"
 msgstr "ранее сохраненный прогресс будет потерян"
 

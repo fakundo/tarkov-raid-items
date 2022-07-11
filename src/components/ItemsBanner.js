@@ -9,8 +9,8 @@ const useStyles = createUseStyles((theme) => ({
     fontSize: '1.5rem',
     borderRadius: '1rem',
     display: 'inline-block',
-    boxShadow: theme.shadow.card,
-    background: theme.palette.background.card,
+    boxShadow: theme.shadow.card.default,
+    background: theme.palette.background.card.default,
   },
   button: {
     color: theme.palette.text.error,

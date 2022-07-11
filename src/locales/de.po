@@ -18,12 +18,12 @@ msgstr "Alle Bilder sind von BattleState Games urheberrechtlich geschützt."
 
 #: src/components/Footer.js:21
 msgid ""
-"An interactive list of items that must have the «Item found in raid» mark, and "
-"which are required to complete the quests."
+"An interactive list of items that must have the «Item found in raid» mark and "
+"that are required to complete the quests."
 msgstr ""
-"Eine interaktive Liste von Gegenständen, die das Zeichen «Gegenstand im "
-"Schlachtzug gefunden» tragen müssen und die zum Abschließen der Quests "
-"erforderlich sind."
+"Eine interaktive Liste von Gegenständen, die mit der Markierung «Gegenstand im "
+"Überfall gefunden» versehen sein müssen und die zum Abschließen der Quests "
+"benötigt werden."
 
 #: src/components/Legend.js:28
 msgid "Can be crafted"
@@ -65,7 +65,7 @@ msgstr "Objektname eingeben…"
 msgid "Escape from Tarkov [EFT] – Find in Raid Quest Items"
 msgstr "Escape from Tarkov – [EFT] Gegenstände, die bei der Razzia gefunden wurden"
 
-#: src/components/DialogHeaderMenu.js:25 src/components/HeaderActions.js:69
+#: src/components/DialogHeaderMenu.js:25 src/components/HeaderActions.js:53
 msgid "Filter"
 msgstr "Filter"
 
@@ -74,7 +74,7 @@ msgid "Filter settings"
 msgstr "Filtereinstellungen"
 
 #: src/components/HeaderTitle.js:41
-msgid "Find in Raid Items"
+msgid "Find In Raid Quest Items"
 msgstr "Gefunden in Schlachtzug – Gegenstände"
 
 #: src/components/DialogFilter.js:17
@@ -87,17 +87,9 @@ msgid_plural "Found ${} items of ${}"
 msgstr[0] "${} Element von ${} gefunden"
 msgstr[1] "${} Elements von ${} gefunden"
 
-#: src/components/DialogProgressImport.js:34
+#: src/components/DialogProgressImport.js:32
 msgid "Import progress from URL"
 msgstr "Fortschritt von URL importieren"
-
-#: src/components/Footer.js:27
-msgid ""
-"Items with only this mark can be sold at the Flea market, and the item loses the "
-"mark after being sold."
-msgstr ""
-"Gegenstände mit nur diesem Zeichen können im verkauft werden Flohmarkt, und der "
-"Artikel verliert nach dem Verkauf die Marke."
 
 #: src/components/Items.js:78
 msgid "Looks like you've found all the items! Enjoy your Kappa!"
@@ -125,8 +117,16 @@ msgstr "Nicht gefunden"
 msgid "Nothing to display..."
 msgstr "Nichts zu zeigen…"
 
+#: src/components/Footer.js:27
+msgid ""
+"Only items with this mark can be sold at the Flea market and the item loses the "
+"mark after being sold."
+msgstr ""
+"Nur Artikel mit diesem Zeichen können auf dem Flohmarkt verkauft werden und der "
+"Artikel verliert das Zeichen nach dem Verkauf."
+
 #: src/components/DialogHeaderMenu.js:20 src/components/DialogProgress.js:15
-#: src/components/HeaderActions.js:50
+#: src/components/HeaderActions.js:66
 msgid "Progress"
 msgstr "Fortschritt"
 
@@ -140,7 +140,7 @@ msgstr[1] "Quests"
 msgid "Reset filter"
 msgstr "Filter zurücksetzen"
 
-#: src/components/DialogProgressExport.js:28 src/components/Items.js:79
+#: src/components/DialogProgressExport.js:27 src/components/Items.js:79
 msgid "Reset progress"
 msgstr "Fortschritt zurücksetzen"
 
@@ -148,7 +148,7 @@ msgstr "Fortschritt zurücksetzen"
 msgid "Reset search"
 msgstr "Suche zurücksetzen"
 
-#: src/components/DialogProgressImport.js:40
+#: src/components/DialogProgressImport.js:38
 msgid "Return to your progress"
 msgstr "Kehren Sie zu Ihrem Fortschritt zurück"
 
@@ -156,7 +156,7 @@ msgstr "Kehren Sie zu Ihrem Fortschritt zurück"
 msgid "Reward"
 msgstr "Belohnung"
 
-#: src/components/HeaderActions.js:79
+#: src/components/HeaderActions.js:47
 msgid "Search"
 msgstr "Suche"
 
@@ -168,7 +168,7 @@ msgstr "Sprache auswählen"
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: src/components/DialogProgressExport.js:20
+#: src/components/DialogProgressExport.js:19
 msgid "Share URL"
 msgstr "URL teilen"
 
@@ -183,18 +183,18 @@ msgstr ""
 #: src/components/Footer.js:25
 msgid ""
 "The mark «Item found in raid» is given to items that were created in the "
-"Hideout, or obtained as a quest reward, or found during the game if the player "
+"Hideout, or received as a quest reward, or found during the game if the player "
 "survived."
 msgstr ""
-"Das Zeichen «Gegenstand im Schlachtzug gefunden» wird für Gegenstände vergeben, "
-"die im Unterschlupf, erstellt oder als Questbelohnung erhalten oder während des "
-"Spiels gefunden wurden, wenn der Spieler überlebt hat."
+"Die Markierung „Gegenstand im Überfall gefunden“ wird an Gegenstände vergeben, "
+"die im Versteck erstellt, als Questbelohnung erhalten oder während des Spiels "
+"gefunden wurden, wenn der Spieler überlebt hat."
 
-#: src/components/DialogProgressImport.js:25
+#: src/components/DialogProgressImport.js:23
 msgid "When importing progress from the current URL"
 msgstr "Beim Importieren des Fortschritts von der aktuellen URL"
 
-#: src/components/DialogProgressImport.js:27
+#: src/components/DialogProgressImport.js:25
 msgid "your previously saved progress will be erased"
 msgstr "Ihr zuvor gespeicherter Fortschritt wird gelöscht"
 

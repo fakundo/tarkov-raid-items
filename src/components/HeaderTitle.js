@@ -38,7 +38,7 @@ export default () => {
         Escape from Tarkov – EFT
       </h2>
       <h1>
-        {__`Find in Raid Items`}
+        {__`Find In Raid Quest Items`}
       </h1>
     </div>
   )

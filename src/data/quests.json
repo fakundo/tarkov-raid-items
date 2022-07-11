@@ -35,13 +35,15 @@
   },
   "A_FUEL_MATTER": {
     "name": {
-      "en": "A fuel matter",
-      "fr": "Fuel matter",
+      "en": "A Fuel Matter",
+      "de": "Eine Frage des Treibstoffs",
+      "fr": "Une affaire de carburant",
       "ru": "Топливный вопрос"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/A_fuel_matter",
-      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Fuel_matter",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/A_Fuel_Matter",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Eine_Frage_des_Treibstoffs",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Une_affaire_de_carburant",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A2%D0%BE%D0%BF%D0%BB%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81"
     },
     "kappa": true,
@@ -49,43 +51,32 @@
   },
   "BAD_HABIT": {
     "name": {
-      "en": "Bad habit",
+      "en": "Bad Habit",
       "cs": "Zlozvyk",
+      "de": "Schlechte Angewohnheit",
       "fr": "Mauvaise habitude",
       "ru": "Вредная привычка"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Bad_habit",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Bad_Habit",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Zlozvyk",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Schlechte_Angewohnheit",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Mauvaise_habitude",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%92%D1%80%D0%B5%D0%B4%D0%BD%D0%B0%D1%8F_%D0%BF%D1%80%D0%B8%D0%B2%D1%8B%D1%87%D0%BA%D0%B0"
     },
     "kappa": true,
     "dealer": "MECHANIC"
   },
-  "BIG_SALE": {
-    "name": {
-      "en": "Big sale",
-      "cs": "Velký výprodej",
-      "fr": "Liquidation totale !",
-      "ru": "Распродажа"
-    },
-    "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Big_sale",
-      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Velk%C3%BD_v%C3%BDprodej",
-      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Liquidation_totale_!",
-      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0"
-    },
-    "kappa": true,
-    "dealer": "RAGMAN"
-  },
   "BOOZE": {
     "name": {
       "en": "Booze",
+      "fr": "Picole",
       "ru": "Выпивка"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Booze",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Booze",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Picole",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%92%D1%8B%D0%BF%D0%B8%D0%B2%D0%BA%D0%B0"
     },
     "kappa": false,
@@ -95,12 +86,14 @@
     "name": {
       "en": "Cargo X - Part 2",
       "cs": "Náklad X - Část 2",
+      "de": "Fracht X - Teil 2",
       "fr": "Cargaison X - Partie 2",
       "ru": "Груз X. Часть 2"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Cargo_X_-_Part_2",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/N%C3%A1klad_X_-_%C4%8C%C3%A1st_2",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Fracht_X_-_Teil_2",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Cargaison_X_-_Partie_2",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%93%D1%80%D1%83%D0%B7_X._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_2"
     },
@@ -109,14 +102,14 @@
   },
   "CAR_REPAIR": {
     "name": {
-      "en": "Car repair",
+      "en": "Car Repair",
       "cs": "Oprava auta",
       "de": "Autoreparatur",
       "fr": "Réparation automobile",
       "ru": "Авторем"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Car_repair",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Car_Repair",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Oprava_auta",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Autoreparatur",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/R%C3%A9paration_automobile",
@@ -127,14 +120,16 @@
   },
   "CHEMISTRY_CLOSET": {
     "name": {
-      "en": "Chemistry closet",
+      "en": "Chemistry Closet",
       "cs": "Skříňka s chemikáliemi",
+      "de": "Der Chemieschrank",
       "fr": "Le placard du chimiste",
       "ru": "Кабинет химии"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Chemistry_closet",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Chemistry_Closet",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Sk%C5%99%C3%AD%C5%88ka_s_chemik%C3%A1liemi",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Der_Chemieschrank",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Le_placard_du_chimiste",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9A%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82_%D1%85%D0%B8%D0%BC%D0%B8%D0%B8"
     },
@@ -163,12 +158,14 @@
     "name": {
       "en": "Colleagues - Part 2",
       "cs": "Kolegové - Část 2",
+      "de": "Kollegen - Teil 2",
       "fr": "Collègues - Partie 2",
       "ru": "Коллеги. Часть 2"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Colleagues_-_Part_2",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Kolegov%C3%A9_-_%C4%8C%C3%A1st_2",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Kollegen_-_Teil_2",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Coll%C3%A8gues_-_Partie_2",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%B3%D0%B8._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_2"
     },
@@ -179,12 +176,14 @@
     "name": {
       "en": "Colleagues - Part 3",
       "cs": "Kolegové - Část 3",
+      "de": "Kollegen - Teil 3",
       "fr": "Collègues - Partie 3",
       "ru": "Коллеги. Часть 3"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Colleagues_-_Part_3",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Kolegov%C3%A9_-_%C4%8C%C3%A1st_3",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Kollegen_-_Teil_3",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Coll%C3%A8gues_-_Partie_3",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%B3%D0%B8._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_3"
     },
@@ -209,14 +208,33 @@
     "kappa": true,
     "dealer": "FENCE"
   },
+  "COUNTERACTION": {
+    "name": {
+      "en": "Counteraction (USEC only)",
+      "fr": "Contremesure (USEC only)",
+      "ru": "Противостояние (только для USEC)"
+    },
+    "link": {
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Counteraction",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Counteraction",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Contremesure",
+      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%80%D0%BE%D1%82%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5"
+    },
+    "kappa": false,
+    "dealer": "PEACEKEEPER"
+  },
   "CRISIS": {
     "name": {
       "en": "Crisis",
+      "cs": "Krize",
+      "fr": "Crise",
       "ru": "Доктор \"Айболит\""
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Crisis",
-      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Crisis",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Krize",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Crisis",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Crise",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%94%D0%BE%D0%BA%D1%82%D0%BE%D1%80_%22%D0%90%D0%B9%D0%B1%D0%BE%D0%BB%D0%B8%D1%82%22"
     },
     "kappa": false,
@@ -226,12 +244,14 @@
     "name": {
       "en": "Database - Part 1",
       "cs": "Databáze - Část 1",
+      "de": "Datenbank - Teil 1",
       "fr": "Base de données - Partie 1",
       "ru": "Картотека. Часть 1"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Database_-_Part_1",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Datab%C3%A1ze_-_%C4%8C%C3%A1st_1",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Datenbank_-_Teil_1",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Base_de_donn%C3%A9es_-_Partie_1",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9A%D0%B0%D1%80%D1%82%D0%BE%D1%82%D0%B5%D0%BA%D0%B0._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_1"
     },
@@ -258,14 +278,14 @@
   },
   "DECONTAMINATION_SERVICE": {
     "name": {
-      "en": "Decontamination service",
+      "en": "Decontamination Service",
       "cs": "Dekontaminační služby",
       "de": "Dekontaminationsservice",
       "fr": "Service de décontamination",
       "ru": "Служба дезинфекции"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Decontamination_service",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Decontamination_Service",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Dekontamina%C4%8Dn%C3%AD_slu%C5%BEby",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Dekontaminationsservice",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Service_de_d%C3%A9contamination",
@@ -276,14 +296,16 @@
   },
   "DRESSED_TO_KILL": {
     "name": {
-      "en": "Dressed to kill",
+      "en": "Dressed to Kill",
       "cs": "Oblečen na zabijení",
+      "de": "Gekleidet um zu töten",
       "fr": "Habillé pour tuer",
       "ru": "Модный приговор"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Dressed_to_kill",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Dressed_to_Kill",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Oble%C4%8Den_na_zabijen%C3%AD",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Gekleidet_um_zu_t%C3%B6ten",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Habill%C3%A9_pour_tuer",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9C%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D0%B8%D0%B3%D0%BE%D0%B2%D0%BE%D1%80"
     },
@@ -294,12 +316,14 @@
     "name": {
       "en": "Farming - Part 2",
       "cs": "Sběrač - Část 2",
+      "de": "Jäger und Sammler - Teil 2",
       "fr": "Récolte - Partie 2",
       "ru": "Садоводство. Часть 2"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Farming_-_Part_2",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Sb%C4%9Bra%C4%8D_-_%C4%8C%C3%A1st_2",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/J%C3%A4ger_und_Sammler_-_Teil_2",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/R%C3%A9colte_-_Partie_2",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A1%D0%B0%D0%B4%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_2"
     },
@@ -310,12 +334,14 @@
     "name": {
       "en": "Farming - Part 3",
       "cs": "Sběrač - Část 3",
+      "de": "Jäger und Sammler - Teil 3",
       "fr": "Récolte - Partie 3",
       "ru": "Садоводство. Часть 3"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Farming_-_Part_3",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Sb%C4%9Bra%C4%8D_-_%C4%8C%C3%A1st_3",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/J%C3%A4ger_und_Sammler_-_Teil_3",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/R%C3%A9colte_-_Partie_3",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A1%D0%B0%D0%B4%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_3"
     },
@@ -326,12 +352,14 @@
     "name": {
       "en": "Farming - Part 4",
       "cs": "Sběrač - Část 4",
+      "de": "Jäger und Sammler - Teil 4",
       "fr": "Récolte - Partie 4",
       "ru": "Садоводство. Часть 4"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Farming_-_Part_4",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Sb%C4%9Bra%C4%8D_-_%C4%8C%C3%A1st_4",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/J%C3%A4ger_und_Sammler_-_Teil_4",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/R%C3%A9colte_-_Partie_4",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A1%D0%B0%D0%B4%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_4"
     },
@@ -342,12 +370,14 @@
     "name": {
       "en": "Fertilizers",
       "cs": "Hnojiva",
+      "de": "Düngemittel",
       "fr": "Fertilisant",
       "ru": "Удобрения"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Fertilizers",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Hnojiva",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/D%C3%BCngemittel",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Fertilisant",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A3%D0%B4%D0%BE%D0%B1%D1%80%D0%B5%D0%BD%D0%B8%D1%8F"
     },
@@ -356,14 +386,14 @@
   },
   "FISHING_PLACE": {
     "name": {
-      "en": "Fishing place",
+      "en": "Fishing Place",
       "cs": "Rybářské místo",
       "de": "Angelstelle",
       "fr": "Lieu de pêche",
       "ru": "Рыбное место"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Fishing_place",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Fishing_Place",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Ryb%C3%A1%C5%99sk%C3%A9_m%C3%ADsto",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Angelstelle",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Lieu_de_p%C3%AAche",
@@ -392,14 +422,14 @@
   },
   "GENERAL_WARES": {
     "name": {
-      "en": "General wares",
+      "en": "General Wares",
       "cs": "Běžné zboží",
       "de": "Gemischtwaren",
       "fr": "Approvisionnement général",
       "ru": "Сельпо"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/General_wares",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/General_Wares",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/B%C4%9B%C5%BEn%C3%A9_zbo%C5%BE%C3%AD",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Gemischtwaren",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Approvisionnement_g%C3%A9n%C3%A9ral",
@@ -412,12 +442,14 @@
     "name": {
       "en": "Gunsmith - Part 16",
       "cs": "Puškař - Část 16",
+      "de": "Büchsenmacher - Teil 16",
       "fr": "Armurier - Partie 16",
       "ru": "Оружейник. Часть 16 (M4A1)"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Gunsmith_-_Part_16",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Pu%C5%A1ka%C5%99_-_%C4%8C%C3%A1st_16",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/B%C3%BCchsenmacher_-_Teil_16",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Armurier_-_Partie_16",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9E%D1%80%D1%83%D0%B6%D0%B5%D0%B9%D0%BD%D0%B8%D0%BA._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_16"
     },
@@ -428,12 +460,14 @@
     "name": {
       "en": "Gunsmith - Part 2",
       "cs": "Puškař - Část 2",
+      "de": "Büchsenmacher - Teil 2",
       "fr": "Armurier - Partie 2",
       "ru": "Оружейник. Часть 2 (АКС-74У)"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Gunsmith_-_Part_2",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Pu%C5%A1ka%C5%99_-_%C4%8C%C3%A1st_2",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/B%C3%BCchsenmacher_-_Teil_2",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Armurier_-_Partie_2",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9E%D1%80%D1%83%D0%B6%D0%B5%D0%B9%D0%BD%D0%B8%D0%BA._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_2"
     },
@@ -478,14 +512,14 @@
   },
   "HUNTING_TRIP": {
     "name": {
-      "en": "Hunting trip",
+      "en": "Hunting Trip",
       "cs": "Lov",
       "de": "Jagdausflug",
       "fr": "Partie de chasse",
       "ru": "На охоту"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Hunting_trip",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Hunting_Trip",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Lov",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Jagdausflug",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Partie_de_chasse",
@@ -494,136 +528,16 @@
     "kappa": false,
     "dealer": "JAEGER"
   },
-  "HUNTSMAN_PATH_EVIL_WATCHMAN": {
-    "name": {
-      "en": "Huntsman path - Evil watchman",
-      "cs": "Cesta lovce - Zlý hlídač",
-      "de": "Pfad des Jägers. Böse Wächter",
-      "fr": "La voie du chasseur - Gardien maléfique",
-      "ru": "Путь охотника. Злой вахтёр"
-    },
-    "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Huntsman_path_-_Evil_watchman",
-      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Cesta_lovce_-_Zl%C3%BD_hl%C3%ADda%C4%8D",
-      "de": "https://escapefromtarkov.fandom.com/de/wiki/Pfad_des_J%C3%A4gers._B%C3%B6se_W%C3%A4chter",
-      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_Gardien_mal%C3%A9fique",
-      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%97%D0%BB%D0%BE%D0%B9_%D0%B2%D0%B0%D1%85%D1%82%D1%91%D1%80"
-    },
-    "kappa": false,
-    "dealer": "JAEGER"
-  },
-  "HUNTSMAN_PATH_FACTORY_CHIEF": {
-    "name": {
-      "en": "Huntsman Path - Factory Chief",
-      "ru": "Путь охотника. Начальник завода"
-    },
-    "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Huntsman_Path_-_Factory_Chief",
-      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D0%B0"
-    },
-    "kappa": true,
-    "dealer": "JAEGER"
-  },
-  "HUNTSMAN_PATH_JUSTICE": {
-    "name": {
-      "en": "Huntsman path - Justice",
-      "cs": "Cesta lovce - Spravedlnost",
-      "de": "Pfad des Jägers. Waldbeschützer",
-      "fr": "La voie du chasseur - Justice",
-      "ru": "Путь охотника. Справедливость"
-    },
-    "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Huntsman_path_-_Justice",
-      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Cesta_lovce_-_Spravedlnost",
-      "de": "https://escapefromtarkov.fandom.com/de/wiki/Pfad_des_J%C3%A4gers._Waldbesch%C3%BCtzer",
-      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_Justice",
-      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%B5%D0%B4%D0%BB%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D1%8C"
-    },
-    "kappa": false,
-    "dealer": "JAEGER"
-  },
-  "HUNTSMAN_PATH_SECURED_PERIMETER": {
-    "name": {
-      "en": "Huntsman path - Secured perimeter",
-      "cs": "Cesta lovce - Zajištěný perimetr",
-      "de": "Pfad des Jägers. Gesicherter Bereich",
-      "fr": "La voie du chasseur - Périmètre sécurisé",
-      "ru": "Путь охотника. Охранка"
-    },
-    "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Huntsman_path_-_Secured_perimeter",
-      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Cesta_lovce_-_Zaji%C5%A1t%C4%9Bn%C3%BD_perimetr",
-      "de": "https://escapefromtarkov.fandom.com/de/wiki/Pfad_des_J%C3%A4gers._Gesicherter_Bereich",
-      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_P%C3%A9rim%C3%A8tre_s%C3%A9curis%C3%A9",
-      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%9E%D1%85%D1%80%D0%B0%D0%BD%D0%BA%D0%B0"
-    },
-    "kappa": true,
-    "dealer": "JAEGER"
-  },
-  "HUNTSMAN_PATH_SELLOUT": {
-    "name": {
-      "en": "Huntsman path - Sellout",
-      "cs": "Cesta lovce - Výprodej",
-      "de": "Pfad des Jägers. Ausverkauf",
-      "fr": "La voie du chasseur - Tout doit disparaître",
-      "ru": "Путь охотника. Переучёт"
-    },
-    "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Huntsman_path_-_Sellout",
-      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Cesta_lovce_-_V%C3%BDprodej",
-      "de": "https://escapefromtarkov.fandom.com/de/wiki/Pfad_des_J%C3%A4gers._Ausverkauf",
-      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_Tout_doit_dispara%C3%AEtre",
-      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%9F%D0%B5%D1%80%D0%B5%D1%83%D1%87%D1%91%D1%82"
-    },
-    "kappa": true,
-    "dealer": "JAEGER"
-  },
-  "HUNTSMAN_PATH_THE_TROPHY": {
-    "name": {
-      "en": "Huntsman path - The trophy",
-      "cs": "Cesta lovce - Trofej",
-      "de": "Pfad des Jägers. Die Trophäe",
-      "fr": "La voie du chasseur - Le trophée",
-      "ru": "Путь охотника. Трофей"
-    },
-    "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Huntsman_path_-_The_trophy",
-      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Cesta_lovce_-_Trofej",
-      "de": "https://escapefromtarkov.fandom.com/de/wiki/Pfad_des_J%C3%A4gers._Die_Troph%C3%A4e",
-      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_Le_troph%C3%A9e",
-      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%A2%D1%80%D0%BE%D1%84%D0%B5%D0%B9"
-    },
-    "kappa": true,
-    "dealer": "JAEGER"
-  },
-  "HUNTSMAN_PATH_WOODS_KEEPER": {
-    "name": {
-      "en": "Huntsman path - Woods keeper",
-      "cs": "Cesta lovce - Lesník",
-      "de": "Pfad des Jägers. Waldbeschützer",
-      "fr": "La voie du chasseur - Gardien des bois",
-      "ru": "Путь охотника. Санитар леса"
-    },
-    "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Huntsman_path_-_Woods_keeper",
-      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Cesta_lovce_-_Lesn%C3%ADk",
-      "de": "https://escapefromtarkov.fandom.com/de/wiki/Pfad_des_J%C3%A4gers._Waldbesch%C3%BCtzer",
-      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_Gardien_des_bois",
-      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%A1%D0%B0%D0%BD%D0%B8%D1%82%D0%B0%D1%80_%D0%BB%D0%B5%D1%81%D0%B0"
-    },
-    "kappa": true,
-    "dealer": "JAEGER"
-  },
   "ICE_CREAM_CONES": {
     "name": {
-      "en": "Ice cream cones",
+      "en": "Ice Cream Cones",
       "cs": "Kornouty na zmrzlinu",
       "de": "Eistüten",
       "fr": "Cornets de glace",
       "ru": "Рожки для мороженого"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Ice_cream_cones",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Ice_Cream_Cones",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Kornouty_na_zmrzlinu",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Eist%C3%BCten",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Cornets_de_glace",
@@ -636,12 +550,14 @@
     "name": {
       "en": "Import",
       "cs": "Dovoz",
+      "de": "Importware",
       "fr": "Importation",
       "ru": "Импорт"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Import",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Dovoz",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Importware",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Importation",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%98%D0%BC%D0%BF%D0%BE%D1%80%D1%82"
     },
@@ -650,13 +566,13 @@
   },
   "LEND_LEASE_PART_2": {
     "name": {
-      "en": "Lend lease - Part 2",
+      "en": "Lend-Lease - Part 2",
       "cs": "Pronájem pozemku - Část 2",
       "fr": "Prêt-Bail - Partie 2",
       "ru": "Лендлиз. Часть 2"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Lend_lease_-_Part_2",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Lend-Lease_-_Part_2",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Pron%C3%A1jem_pozemku_-_%C4%8C%C3%A1st_2",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Pr%C3%AAt-Bail_-_Partie_2",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9B%D0%B5%D0%BD%D0%B4%D0%BB%D0%B8%D0%B7._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_2"
@@ -666,14 +582,16 @@
   },
   "LIVING_HIGH_IS_NOT_A_CRIME_PART_1": {
     "name": {
-      "en": "Living high is not a crime - Part 1",
+      "en": "Living High is Not a Crime - Part 1",
       "cs": "Žít blaze, není zločin - Část 1",
+      "de": "Im Überfluss zu leben ist kein Verbrechen - Teil 1",
       "fr": "La richesse n'est pas un crime - Partie 1",
       "ru": "Красиво жить не запретишь. Часть 1"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Living_high_is_not_a_crime_-_Part_1",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Living_High_is_Not_a_Crime_-_Part_1",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/%C5%BD%C3%ADt_blaze,_nen%C3%AD_zlo%C4%8Din_-_%C4%8C%C3%A1st_1",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Im_%C3%9Cberfluss_zu_leben_ist_kein_Verbrechen_-_Teil_1",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_richesse_n%27est_pas_un_crime_-_Partie_1",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%BE_%D0%B6%D0%B8%D1%82%D1%8C_%D0%BD%D0%B5_%D0%B7%D0%B0%D0%BF%D1%80%D0%B5%D1%82%D0%B8%D1%88%D1%8C._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_1"
     },
@@ -682,14 +600,16 @@
   },
   "LIVING_HIGH_IS_NOT_A_CRIME_PART_2": {
     "name": {
-      "en": "Living high is not a crime - Part 2",
+      "en": "Living High is Not a Crime - Part 2",
       "cs": "Žít blaze, není zločin - Část 2",
+      "de": "Im Überfluss zu leben ist kein Verbrechen - Teil 2",
       "fr": "La richesse n'est pas un crime - Partie 2",
       "ru": "Красиво жить не запретишь. Часть 2"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Living_high_is_not_a_crime_-_Part_2",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Living_High_is_Not_a_Crime_-_Part_2",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/%C5%BD%C3%ADt_blaze,_nen%C3%AD_zlo%C4%8Din_-_%C4%8C%C3%A1st_2",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Im_%C3%9Cberfluss_zu_leben_ist_kein_Verbrechen_-_Teil_2",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_richesse_n%27est_pas_un_crime_-_Partie_2",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%BE_%D0%B6%D0%B8%D1%82%D1%8C_%D0%BD%D0%B5_%D0%B7%D0%B0%D0%BF%D1%80%D0%B5%D1%82%D0%B8%D1%88%D1%8C._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_2"
     },
@@ -706,6 +626,7 @@
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Make_ULTRA_Great_Again",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Ud%C4%9Blat_ULTRA_op%C4%9Bt_nejlep%C5%A1%C3%AD",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Make_ULTRA_Great_Again",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Rendez_au_Ultra_sa_grandeur",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%92%D0%B5%D1%80%D0%BD%D0%B5%D0%BC_%D0%A3%D0%BB%D1%8C%D1%82%D1%80%D0%B5_%D0%B1%D1%8B%D0%BB%D0%BE%D0%B5_%D0%B2%D0%B5%D0%BB%D0%B8%D1%87%D0%B8%D0%B5"
     },
@@ -715,14 +636,35 @@
   "NIGHT_SWEEP": {
     "name": {
       "en": "Night Sweep",
+      "fr": "Balayage nocturne",
       "ru": "Ночная прогулка"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Night_Sweep",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Night_Sweep",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Night_Sweep",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Balayage_nocturne",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9D%D0%BE%D1%87%D0%BD%D0%B0%D1%8F_%D0%BF%D1%80%D0%BE%D0%B3%D1%83%D0%BB%D0%BA%D0%B0"
     },
     "kappa": false,
     "dealer": "SKIER"
+  },
+  "OUR_OWN_LAND": {
+    "name": {
+      "en": "Our Own Land (BEAR only)",
+      "cs": "Naše vlastní půda (BEAR only)",
+      "fr": "Notre propre terre (BEAR only)",
+      "ru": "Своя Земля (только для BEAR)"
+    },
+    "link": {
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Our_Own_Land",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Na%C5%A1e_vlastn%C3%AD_p%C5%AFda",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Our_Own_Land",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Notre_propre_terre",
+      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A1%D0%B2%D0%BE%D1%8F_%D0%97%D0%B5%D0%BC%D0%BB%D1%8F"
+    },
+    "kappa": false,
+    "dealer": "PRAPOR"
   },
   "PAINKILLER": {
     "name": {
@@ -744,14 +686,16 @@
   },
   "PEACEKEEPING_MISSION": {
     "name": {
-      "en": "Peacekeeping mission",
+      "en": "Peacekeeping Mission",
       "cs": "Mírová mise",
+      "de": "Friedensmission",
       "fr": "Maintien de la paix",
       "ru": "Миротворческая миссия"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Peacekeeping_mission",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Peacekeeping_Mission",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/M%C3%ADrov%C3%A1_mise",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Friedensmission",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Maintien_de_la_paix",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9C%D0%B8%D1%80%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BC%D0%B8%D1%81%D1%81%D0%B8%D1%8F"
     },
@@ -760,14 +704,14 @@
   },
   "PRIVATE_CLINIC": {
     "name": {
-      "en": "Private clinic",
+      "en": "Private Clinic",
       "cs": "Soukromá klinika",
       "de": "Privatklinik",
       "fr": "Clinique privée",
       "ru": "Частная клиника"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Private_clinic",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Private_Clinic",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Soukrom%C3%A1_klinika",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Privatklinik",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Clinique_priv%C3%A9e",
@@ -778,14 +722,14 @@
   },
   "REGULATED_MATERIALS": {
     "name": {
-      "en": "Regulated materials",
+      "en": "Regulated Materials",
       "cs": "Regulované materiály",
       "de": "Regulierte Materialien",
       "fr": "Articles réglementés",
       "ru": "Поставщик"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Regulated_materials",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Regulated_Materials",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Regulovan%C3%A9_materi%C3%A1ly",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Regulierte_Materialien",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Articles_r%C3%A9glement%C3%A9s",
@@ -798,12 +742,14 @@
     "name": {
       "en": "Samples",
       "cs": "Vzorky",
+      "de": "Proben",
       "fr": "Échantillons",
       "ru": "Образцы"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Samples",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Vzorky",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Proben",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/%C3%89chantillons",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D1%86%D1%8B"
     },
@@ -813,14 +759,14 @@
   "SANITARY_STANDARDS_PART_1": {
     "name": {
       "en": "Sanitary Standards - Part 1",
-      "cs": "Hygienické standardy - Část 1",
+      "cs": "Hygienické normy - Část 1",
       "de": "Gesundheitsstandards - Teil 1",
       "fr": "Normes sanitaires - Partie 1",
       "ru": "Санэпиднадзор. Часть 1"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Sanitary_Standards_-_Part_1",
-      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Hygienick%C3%A9_standardy",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Hygienick%C3%A9_normy_-_%C4%8C%C3%A1st_1",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Gesundheitsstandards_-_Teil_1",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Normes_sanitaires_-_Partie_1",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A1%D0%B0%D0%BD%D1%8D%D0%BF%D0%B8%D0%B4%D0%BD%D0%B0%D0%B4%D0%B7%D0%BE%D1%80._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_1"
@@ -831,14 +777,14 @@
   "SANITARY_STANDARDS_PART_2": {
     "name": {
       "en": "Sanitary Standards - Part 2",
-      "cs": "Hygienické standardy - Část 2",
+      "cs": "Hygienické normy - Část 12",
       "de": "Gesundheitsstandards - Teil 2",
       "fr": "Normes sanitaires - Partie 2",
       "ru": "Санэпиднадзор. Часть 2"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Sanitary_Standards_-_Part_2",
-      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Hygienick%C3%A9_standardy_-_%C4%8C%C3%A1st_2",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Hygienick%C3%A9_normy_-_%C4%8C%C3%A1st_12",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Gesundheitsstandards_-_Teil_2",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Normes_sanitaires_-_Partie_2",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A1%D0%B0%D0%BD%D1%8D%D0%BF%D0%B8%D0%B4%D0%BD%D0%B0%D0%B4%D0%B7%D0%BE%D1%80._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_2"
@@ -846,32 +792,18 @@
     "kappa": true,
     "dealer": "THERAPIST"
   },
-  "SCOUT": {
-    "name": {
-      "en": "Scout",
-      "cs": "Průzkumník",
-      "fr": "Éclaireur",
-      "ru": "Скаут"
-    },
-    "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Scout",
-      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Pr%C5%AFzkumn%C3%ADk",
-      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/%C3%89claireur",
-      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A1%D0%BA%D0%B0%D1%83%D1%82"
-    },
-    "kappa": true,
-    "dealer": "MECHANIC"
-  },
   "SEW_IT_GOOD_PART_1": {
     "name": {
-      "en": "Sew it good - Part 1",
+      "en": "Sew it Good - Part 1",
       "cs": "Vidět to dobré - Část 1",
+      "de": "Schön zusammennähen - Teil 1",
       "fr": "On ne vit qu'une fois - Partie 1",
       "ru": "Шить - не тужить. Часть 1"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Sew_it_good_-_Part_1",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Sew_it_Good_-_Part_1",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Vid%C4%9Bt_to_dobr%C3%A9_-_%C4%8C%C3%A1st_1",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Sch%C3%B6n_zusammenn%C3%A4hen_-_Teil_1",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/On_ne_vit_qu%27une_fois_-_Partie_1",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A8%D0%B8%D1%82%D1%8C_-_%D0%BD%D0%B5_%D1%82%D1%83%D0%B6%D0%B8%D1%82%D1%8C._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_1"
     },
@@ -880,14 +812,16 @@
   },
   "SEW_IT_GOOD_PART_4": {
     "name": {
-      "en": "Sew it good - Part 4",
+      "en": "Sew it Good - Part 4",
       "cs": "Vidět to dobré - Část 4",
+      "de": "Schön zusammennähen - Teil 4",
       "fr": "On ne vit qu'une fois - Partie 4",
       "ru": "Шить - не тужить. Часть 4"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Sew_it_good_-_Part_4",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Sew_it_Good_-_Part_4",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Vid%C4%9Bt_to_dobr%C3%A9_-_%C4%8C%C3%A1st_4",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Sch%C3%B6n_zusammenn%C3%A4hen_-_Teil_4",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/On_ne_vit_qu%27une_fois_-_Partie_4",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A8%D0%B8%D1%82%D1%8C_-_%D0%BD%D0%B5_%D1%82%D1%83%D0%B6%D0%B8%D1%82%D1%8C._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_4"
     },
@@ -896,14 +830,14 @@
   },
   "SHADY_BUSINESS": {
     "name": {
-      "en": "Shady business",
+      "en": "Shady Business",
       "cs": "Pochybný obchod",
       "de": "Dunkles Geschäft",
       "fr": "Magouilles",
       "ru": "Мутное дело"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Shady_business",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Shady_Business",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Pochybn%C3%BD_obchod",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Dunkles_Gesch%C3%A4ft",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Magouilles",
@@ -934,12 +868,14 @@
     "name": {
       "en": "Signal - Part 2",
       "cs": "Signál - Část 2",
+      "de": "Signal - Teil 2",
       "fr": "Signal - Partie 2",
       "ru": "Сигнал. Часть 2"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Signal_-_Part_2",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Sign%C3%A1l_-_%C4%8C%C3%A1st_2",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Signal_-_Teil_2",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Signal_-_Partie_2",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A1%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_2"
     },
@@ -968,12 +904,14 @@
     "name": {
       "en": "Spa Tour - Part 4",
       "cs": "Wellness túra - Část 4",
+      "de": "Spa Tour - Teil 4",
       "fr": "Visite du spa - Partie 4",
       "ru": "Путевка в санаторий. Часть 4"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Spa_Tour_-_Part_4",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Wellness_t%C3%BAra_-_%C4%8C%C3%A1st_4",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Spa_Tour_-_Teil_4",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Visite_du_spa_-_Partie_4",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D0%B5%D0%B2%D0%BA%D0%B0_%D0%B2_%D1%81%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D1%80%D0%B8%D0%B9._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_4"
     },
@@ -984,12 +922,14 @@
     "name": {
       "en": "Spa Tour - Part 7",
       "cs": "Wellness túra - Část 7",
+      "de": "Spa Tour - Teil 7",
       "fr": "Visite du spa - Partie 7",
       "ru": "Путевка в санаторий. Часть 7"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Spa_Tour_-_Part_7",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Wellness_t%C3%BAra_-_%C4%8C%C3%A1st_7",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Spa_Tour_-_Teil_7",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Visite_du_spa_-_Partie_7",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D0%B5%D0%B2%D0%BA%D0%B0_%D0%B2_%D1%81%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D1%80%D0%B8%D0%B9._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_7"
     },
@@ -999,10 +939,13 @@
   "SPECIAL_EQUIPMENT": {
     "name": {
       "en": "Special Equipment",
+      "fr": "Équipement spécial",
       "ru": "Заказ"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Special_Equipment",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Special_Equipment",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/%C3%89quipement_sp%C3%A9cial",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%97%D0%B0%D0%BA%D0%B0%D0%B7"
     },
     "kappa": false,
@@ -1028,14 +971,14 @@
   },
   "SUPPLY_PLANS": {
     "name": {
-      "en": "Supply plans",
+      "en": "Supply Plans",
       "cs": "Zásobovací plány",
       "de": "Versorgungspläne",
       "fr": "Plans d'approvisionnement",
       "ru": "Планы снабжения"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/Supply_plans",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Supply_Plans",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Z%C3%A1sobovac%C3%AD_pl%C3%A1ny",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Versorgungspl%C3%A4ne",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Plans_d%27approvisionnement",
@@ -1048,12 +991,14 @@
     "name": {
       "en": "Textile - Part 1",
       "cs": "Textil - Část 1",
+      "de": "Textilien - Teil 1",
       "fr": "Textile - Partie 1",
       "ru": "Текстиль. Часть 1"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Textile_-_Part_1",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Textil_-_%C4%8C%C3%A1st_1",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Textilien_-_Teil_1",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Textile_-_Partie_1",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%B8%D0%BB%D1%8C._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_1"
     },
@@ -1064,12 +1009,14 @@
     "name": {
       "en": "Textile - Part 2",
       "cs": "Textil - Část 2",
+      "de": "Textilien - Teil 2",
       "fr": "Textile - Partie 2",
       "ru": "Текстиль. Часть 2"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Textile_-_Part_2",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Textil_-_%C4%8C%C3%A1st_2",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Textilien_-_Teil_2",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Textile_-_Partie_2",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%B8%D0%BB%D1%8C._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_2"
     },
@@ -1080,17 +1027,141 @@
     "name": {
       "en": "The Blood of War - Part 2",
       "cs": "Krev Války - Část 2",
+      "de": "Das Blut des Krieges - Teil 2",
       "fr": "Le nerf de la guerre - Partie 2",
       "ru": "Кровь войны. Часть 2"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/The_Blood_of_War_-_Part_2",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Krev_V%C3%A1lky_-_%C4%8C%C3%A1st_2",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Das_Blut_des_Krieges_-_Teil_2",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Le_nerf_de_la_guerre_-_Partie_2",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9A%D1%80%D0%BE%D0%B2%D1%8C_%D0%B2%D0%BE%D0%B9%D0%BD%D1%8B._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_2"
     },
     "kappa": true,
     "dealer": "RAGMAN"
+  },
+  "THE_HUNTSMAN_PATH_EVIL_WATCHMAN": {
+    "name": {
+      "en": "The Huntsman Path - Evil Watchman",
+      "cs": "Cesta lovce - Zlý hlídač",
+      "de": "Pfad des Jägers. Böse Wächter",
+      "fr": "La voie du chasseur - Gardien maléfique",
+      "ru": "Путь охотника. Злой вахтёр"
+    },
+    "link": {
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/The_Huntsman_Path_-_Evil_Watchman",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Cesta_lovce_-_Zl%C3%BD_hl%C3%ADda%C4%8D",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Pfad_des_J%C3%A4gers._B%C3%B6se_W%C3%A4chter",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_Gardien_mal%C3%A9fique",
+      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%97%D0%BB%D0%BE%D0%B9_%D0%B2%D0%B0%D1%85%D1%82%D1%91%D1%80"
+    },
+    "kappa": false,
+    "dealer": "JAEGER"
+  },
+  "THE_HUNTSMAN_PATH_FACTORY_CHIEF": {
+    "name": {
+      "en": "The Huntsman Path - Factory Chief",
+      "fr": "La voie du chasseur - Chef de l'usine",
+      "ru": "Путь охотника. Начальник завода"
+    },
+    "link": {
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/The_Huntsman_Path_-_Factory_Chief",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_Chef_de_l%27usine",
+      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D0%B0"
+    },
+    "kappa": true,
+    "dealer": "JAEGER"
+  },
+  "THE_HUNTSMAN_PATH_JUSTICE": {
+    "name": {
+      "en": "The Huntsman Path - Justice",
+      "cs": "Cesta lovce - Spravedlnost",
+      "de": "Pfad des Jägers. Waldbeschützer",
+      "fr": "La voie du chasseur - Justice",
+      "ru": "Путь охотника. Справедливость"
+    },
+    "link": {
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/The_Huntsman_Path_-_Justice",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Cesta_lovce_-_Spravedlnost",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Pfad_des_J%C3%A4gers._Waldbesch%C3%BCtzer",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_Justice",
+      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%B5%D0%B4%D0%BB%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D1%8C"
+    },
+    "kappa": false,
+    "dealer": "JAEGER"
+  },
+  "THE_HUNTSMAN_PATH_SECURED_PERIMETER": {
+    "name": {
+      "en": "The Huntsman Path - Secured Perimeter",
+      "cs": "Cesta lovce - Zajištěný perimetr",
+      "de": "Pfad des Jägers. Gesicherter Bereich",
+      "fr": "La voie du chasseur - Périmètre sécurisé",
+      "ru": "Путь охотника. Охранка"
+    },
+    "link": {
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/The_Huntsman_Path_-_Secured_Perimeter",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Cesta_lovce_-_Zaji%C5%A1t%C4%9Bn%C3%BD_perimetr",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Pfad_des_J%C3%A4gers._Gesicherter_Bereich",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_P%C3%A9rim%C3%A8tre_s%C3%A9curis%C3%A9",
+      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%9E%D1%85%D1%80%D0%B0%D0%BD%D0%BA%D0%B0"
+    },
+    "kappa": true,
+    "dealer": "JAEGER"
+  },
+  "THE_HUNTSMAN_PATH_SELLOUT": {
+    "name": {
+      "en": "The Huntsman Path - Sellout",
+      "cs": "Cesta lovce - Výprodej",
+      "de": "Pfad des Jägers. Ausverkauf",
+      "fr": "La voie du chasseur - Tout doit disparaître",
+      "ru": "Путь охотника. Переучёт"
+    },
+    "link": {
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/The_Huntsman_Path_-_Sellout",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Cesta_lovce_-_V%C3%BDprodej",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Pfad_des_J%C3%A4gers._Ausverkauf",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_Tout_doit_dispara%C3%AEtre",
+      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%9F%D0%B5%D1%80%D0%B5%D1%83%D1%87%D1%91%D1%82"
+    },
+    "kappa": true,
+    "dealer": "JAEGER"
+  },
+  "THE_HUNTSMAN_PATH_TROPHY": {
+    "name": {
+      "en": "The Huntsman Path - Trophy",
+      "cs": "Cesta lovce - Trofej",
+      "de": "Pfad des Jägers. Die Trophäe",
+      "fr": "La voie du chasseur - Le trophée",
+      "ru": "Путь охотника. Трофей"
+    },
+    "link": {
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/The_Huntsman_Path_-_Trophy",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Cesta_lovce_-_Trofej",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Pfad_des_J%C3%A4gers._Die_Troph%C3%A4e",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_Le_troph%C3%A9e",
+      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%A2%D1%80%D0%BE%D1%84%D0%B5%D0%B9"
+    },
+    "kappa": true,
+    "dealer": "JAEGER"
+  },
+  "THE_HUNTSMAN_PATH_WOODS_KEEPER": {
+    "name": {
+      "en": "The Huntsman Path - Woods Keeper",
+      "cs": "Cesta lovce - Lesník",
+      "de": "Pfad des Jägers. Waldbeschützer",
+      "fr": "La voie du chasseur - Gardien des bois",
+      "ru": "Путь охотника. Санитар леса"
+    },
+    "link": {
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/The_Huntsman_Path_-_Woods_Keeper",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Cesta_lovce_-_Lesn%C3%ADk",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Pfad_des_J%C3%A4gers._Waldbesch%C3%BCtzer",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_Gardien_des_bois",
+      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%A1%D0%B0%D0%BD%D0%B8%D1%82%D0%B0%D1%80_%D0%BB%D0%B5%D1%81%D0%B0"
+    },
+    "kappa": true,
+    "dealer": "JAEGER"
   },
   "THE_PUNISHER_PART_2": {
     "name": {
@@ -1166,16 +1237,16 @@
   },
   "THE_SURVIVALIST_PATH_TOUGH_GUY": {
     "name": {
-      "en": "The survivalist path - Tough guy",
+      "en": "The Survivalist Path - Tough Guy",
       "cs": "Cesta přeživšího - Tvrďák",
-      "de": "Pfad des Überlebenskünstler. Harter type",
+      "de": "Pfad des Überlebenskünstler - Harter Typ",
       "fr": "La voie du survivaliste - Dur à cuir",
       "ru": "Путь выживальщика. Крепыш"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/The_survivalist_path_-_Tough_guy",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/The_Survivalist_Path_-_Tough_Guy",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Cesta_p%C5%99e%C5%BEiv%C5%A1%C3%ADho_-_Tvr%C4%8F%C3%A1k",
-      "de": "https://escapefromtarkov.fandom.com/de/wiki/Pfad_des_%C3%9Cberlebensk%C3%BCnstler._Harter_type",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Pfad_des_%C3%9Cberlebensk%C3%BCnstler_-_Harter_Typ",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_survivaliste_-_Dur_%C3%A0_cuir",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%B2%D1%8B%D0%B6%D0%B8%D0%B2%D0%B0%D0%BB%D1%8C%D1%89%D0%B8%D0%BA%D0%B0._%D0%9A%D1%80%D0%B5%D0%BF%D1%8B%D1%88"
     },
@@ -1184,13 +1255,13 @@
   },
   "THE_TARKOV_SHOOTER_PART_3": {
     "name": {
-      "en": "The Tarkov shooter - Part 3",
+      "en": "The Tarkov Shooter - Part 3",
       "cs": "\"Střelec z Tarkova\" - Část 3",
       "fr": "\"Le tireur de Tarkov\" - Partie 3",
       "ru": "Тарковский стрелок. Часть 3"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/The_Tarkov_shooter_-_Part_3",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/The_Tarkov_Shooter_-_Part_3",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/%22St%C5%99elec_z_Tarkova%22_-_%C4%8C%C3%A1st_3",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/%22Le_tireur_de_Tarkov%22_-_Partie_3",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A2%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BE%D0%BA._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_3"
@@ -1200,19 +1271,36 @@
   },
   "THE_TARKOV_SHOOTER_PART_6": {
     "name": {
-      "en": "The Tarkov shooter - Part 6",
+      "en": "The Tarkov Shooter - Part 6",
       "cs": "\"Střelec z Tarkova\" - Část 6",
       "fr": "\"Le tireur de Tarkov\" - Partie 6",
       "ru": "Тарковский стрелок. Часть 6"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/The_Tarkov_shooter_-_Part_6",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/The_Tarkov_Shooter_-_Part_6",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/%22St%C5%99elec_z_Tarkova%22_-_%C4%8C%C3%A1st_6",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/%22Le_tireur_de_Tarkov%22_-_Partie_6",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A2%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BE%D0%BA._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_6"
     },
     "kappa": true,
     "dealer": "JAEGER"
+  },
+  "TROPHIES": {
+    "name": {
+      "en": "Trophies",
+      "cs": "Čistič",
+      "fr": "Trophées",
+      "ru": "Трофеи"
+    },
+    "link": {
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/Trophies",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/%C4%8Cisti%C4%8D",
+      "de": "https://escapefromtarkov.fandom.com/de/wiki/Trophies",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Troph%C3%A9es",
+      "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A2%D1%80%D0%BE%D1%84%D0%B5%D0%B8"
+    },
+    "kappa": false,
+    "dealer": "PEACEKEEPER"
   },
   "VITAMINS_PART_2": {
     "name": {
@@ -1250,14 +1338,14 @@
   },
   "WHATS_ON_THE_FLASH_DRIVE": {
     "name": {
-      "en": "What's on the flash drive?",
+      "en": "What’s on the Flash Drive?",
       "cs": "Co je na tom flash disku?",
       "de": "Was ist auf dem USB-Stick?",
       "fr": "Qu'y a-t-il sur la clé USB ?",
       "ru": "Что на флешке?"
     },
     "link": {
-      "en": "https://escapefromtarkov.gamepedia.com/wiki/What%27s_on_the_flash_drive%3F",
+      "en": "https://escapefromtarkov.gamepedia.com/wiki/What%E2%80%99s_on_the_Flash_Drive%3F",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Co_je_na_tom_flash_disku%3F",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Was_ist_auf_dem_USB-Stick%3F",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Qu%27y_a-t-il_sur_la_cl%C3%A9_USB_%3F",

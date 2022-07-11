@@ -10,8 +10,8 @@ msgstr ""
 
 #: src/components/Footer.js:21
 msgid ""
-"An interactive list of items that must have the «Item found in raid» mark, "
-"and which are required to complete the quests."
+"An interactive list of items that must have the «Item found in raid» mark "
+"and that are required to complete the quests."
 msgstr ""
 
 #: src/components/Legend.js:28
@@ -55,7 +55,7 @@ msgid "Escape from Tarkov [EFT] – Find in Raid Quest Items"
 msgstr ""
 
 #: src/components/DialogHeaderMenu.js:25
-#: src/components/HeaderActions.js:69
+#: src/components/HeaderActions.js:53
 msgid "Filter"
 msgstr ""
 
@@ -64,7 +64,7 @@ msgid "Filter settings"
 msgstr ""
 
 #: src/components/HeaderTitle.js:41
-msgid "Find in Raid Items"
+msgid "Find In Raid Quest Items"
 msgstr ""
 
 #: src/components/DialogFilter.js:17
@@ -77,14 +77,8 @@ msgid_plural "Found ${} items of ${}"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/components/DialogProgressImport.js:34
+#: src/components/DialogProgressImport.js:32
 msgid "Import progress from URL"
-msgstr ""
-
-#: src/components/Footer.js:27
-msgid ""
-"Items with only this mark can be sold at the Flea market, and the item "
-"loses the mark after being sold."
 msgstr ""
 
 #: src/components/Items.js:78
@@ -113,9 +107,15 @@ msgstr ""
 msgid "Nothing to display..."
 msgstr ""
 
+#: src/components/Footer.js:27
+msgid ""
+"Only items with this mark can be sold at the Flea market and the item loses "
+"the mark after being sold."
+msgstr ""
+
 #: src/components/DialogHeaderMenu.js:20
 #: src/components/DialogProgress.js:15
-#: src/components/HeaderActions.js:50
+#: src/components/HeaderActions.js:66
 msgid "Progress"
 msgstr ""
 
@@ -129,7 +129,7 @@ msgstr[1] ""
 msgid "Reset filter"
 msgstr ""
 
-#: src/components/DialogProgressExport.js:28
+#: src/components/DialogProgressExport.js:27
 #: src/components/Items.js:79
 msgid "Reset progress"
 msgstr ""
@@ -138,7 +138,7 @@ msgstr ""
 msgid "Reset search"
 msgstr ""
 
-#: src/components/DialogProgressImport.js:40
+#: src/components/DialogProgressImport.js:38
 msgid "Return to your progress"
 msgstr ""
 
@@ -146,7 +146,7 @@ msgstr ""
 msgid "Reward"
 msgstr ""
 
-#: src/components/HeaderActions.js:79
+#: src/components/HeaderActions.js:47
 msgid "Search"
 msgstr ""
 
@@ -159,7 +159,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: src/components/DialogProgressExport.js:20
+#: src/components/DialogProgressExport.js:19
 msgid "Share URL"
 msgstr ""
 
@@ -172,15 +172,15 @@ msgstr ""
 #: src/components/Footer.js:25
 msgid ""
 "The mark «Item found in raid» is given to items that were created in the "
-"Hideout, or obtained as a quest reward, or found during the game if the "
+"Hideout, or received as a quest reward, or found during the game if the "
 "player survived."
 msgstr ""
 
-#: src/components/DialogProgressImport.js:25
+#: src/components/DialogProgressImport.js:23
 msgid "When importing progress from the current URL"
 msgstr ""
 
-#: src/components/DialogProgressImport.js:27
+#: src/components/DialogProgressImport.js:25
 msgid "your previously saved progress will be erased"
 msgstr ""
 

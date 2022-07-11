@@ -10,7 +10,7 @@ const createFadeStyles = (transitionDuration) => ({
     opacity: 1,
     transitionDuration,
     transitionProperty: 'opacity',
-    transitionTimingFunction: 'linear',
+    transitionTimingFunction: 'ease-in-out',
   },
   '&-enter': {
     opacity: 0,
@@ -19,7 +19,7 @@ const createFadeStyles = (transitionDuration) => ({
     opacity: 1,
     transitionDuration,
     transitionProperty: 'opacity',
-    transitionTimingFunction: 'linear',
+    transitionTimingFunction: 'ease-in-out',
   },
   '&-exit': {
     opacity: 1,
@@ -28,7 +28,7 @@ const createFadeStyles = (transitionDuration) => ({
     opacity: 0,
     transitionDuration,
     transitionProperty: 'opacity',
-    transitionTimingFunction: 'linear',
+    transitionTimingFunction: 'ease-in-out',
   },
 })
 
