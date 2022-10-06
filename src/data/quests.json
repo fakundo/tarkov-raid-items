@@ -36,12 +36,14 @@
   "A_FUEL_MATTER": {
     "name": {
       "en": "A Fuel Matter",
+      "cs": "Na palivu záleží",
       "de": "Eine Frage des Treibstoffs",
       "fr": "Une affaire de carburant",
       "ru": "Топливный вопрос"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/A_Fuel_Matter",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Na_palivu_z%C3%A1le%C5%BE%C3%AD",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Eine_Frage_des_Treibstoffs",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Une_affaire_de_carburant",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A2%D0%BE%D0%BF%D0%BB%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81"
@@ -70,16 +72,18 @@
   "BOOZE": {
     "name": {
       "en": "Booze",
+      "cs": "Chlast",
       "fr": "Picole",
       "ru": "Выпивка"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Booze",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Chlast",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Booze",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Picole",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%92%D1%8B%D0%BF%D0%B8%D0%B2%D0%BA%D0%B0"
     },
-    "kappa": false,
+    "kappa": true,
     "dealer": "RAGMAN"
   },
   "CARGO_X_PART_2": {
@@ -133,7 +137,7 @@
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Le_placard_du_chimiste",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9A%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82_%D1%85%D0%B8%D0%BC%D0%B8%D0%B8"
     },
-    "kappa": false,
+    "kappa": true,
     "dealer": "MECHANIC"
   },
   "CHUMMING": {
@@ -169,7 +173,7 @@
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Coll%C3%A8gues_-_Partie_2",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%B3%D0%B8._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_2"
     },
-    "kappa": false,
+    "kappa": true,
     "dealer": "THERAPIST"
   },
   "COLLEAGUES_PART_3": {
@@ -513,19 +517,19 @@
   "HUNTING_TRIP": {
     "name": {
       "en": "Hunting Trip",
-      "cs": "Lov",
+      "cs": "Lovecká výprava",
       "de": "Jagdausflug",
       "fr": "Partie de chasse",
       "ru": "На охоту"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Hunting_Trip",
-      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Lov",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Loveck%C3%A1_v%C3%BDprava",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Jagdausflug",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Partie_de_chasse",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9D%D0%B0_%D0%BE%D1%85%D0%BE%D1%82%D1%83"
     },
-    "kappa": false,
+    "kappa": true,
     "dealer": "JAEGER"
   },
   "ICE_CREAM_CONES": {
@@ -561,7 +565,7 @@
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Importation",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%98%D0%BC%D0%BF%D0%BE%D1%80%D1%82"
     },
-    "kappa": false,
+    "kappa": true,
     "dealer": "MECHANIC"
   },
   "LEND_LEASE_PART_2": {
@@ -595,7 +599,7 @@
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_richesse_n%27est_pas_un_crime_-_Partie_1",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%BE_%D0%B6%D0%B8%D1%82%D1%8C_%D0%BD%D0%B5_%D0%B7%D0%B0%D0%BF%D1%80%D0%B5%D1%82%D0%B8%D1%88%D1%8C._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_1"
     },
-    "kappa": false,
+    "kappa": true,
     "dealer": "RAGMAN"
   },
   "LIVING_HIGH_IS_NOT_A_CRIME_PART_2": {
@@ -699,7 +703,7 @@
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Maintien_de_la_paix",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9C%D0%B8%D1%80%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BC%D0%B8%D1%81%D1%81%D0%B8%D1%8F"
     },
-    "kappa": false,
+    "kappa": true,
     "dealer": "PEACEKEEPER"
   },
   "PRIVATE_CLINIC": {
@@ -735,7 +739,7 @@
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Articles_r%C3%A9glement%C3%A9s",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D1%89%D0%B8%D0%BA"
     },
-    "kappa": false,
+    "kappa": true,
     "dealer": "PRAPOR"
   },
   "SAMPLES": {
@@ -753,7 +757,7 @@
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/%C3%89chantillons",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D1%86%D1%8B"
     },
-    "kappa": false,
+    "kappa": true,
     "dealer": "PEACEKEEPER"
   },
   "SANITARY_STANDARDS_PART_1": {
@@ -939,11 +943,13 @@
   "SPECIAL_EQUIPMENT": {
     "name": {
       "en": "Special Equipment",
+      "cs": "Speciální vybavení",
       "fr": "Équipement spécial",
       "ru": "Заказ"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Special_Equipment",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Speci%C3%A1ln%C3%AD_vybaven%C3%AD",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Special_Equipment",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/%C3%89quipement_sp%C3%A9cial",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%97%D0%B0%D0%BA%D0%B0%D0%B7"
@@ -1002,7 +1008,7 @@
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Textile_-_Partie_1",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%B8%D0%BB%D1%8C._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_1"
     },
-    "kappa": false,
+    "kappa": true,
     "dealer": "RAGMAN"
   },
   "TEXTILE_PART_2": {
@@ -1056,17 +1062,19 @@
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_Gardien_mal%C3%A9fique",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%97%D0%BB%D0%BE%D0%B9_%D0%B2%D0%B0%D1%85%D1%82%D1%91%D1%80"
     },
-    "kappa": false,
+    "kappa": true,
     "dealer": "JAEGER"
   },
   "THE_HUNTSMAN_PATH_FACTORY_CHIEF": {
     "name": {
       "en": "The Huntsman Path - Factory Chief",
+      "cs": "Cesta lovce - Šéf továrny",
       "fr": "La voie du chasseur - Chef de l'usine",
       "ru": "Путь охотника. Начальник завода"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/The_Huntsman_Path_-_Factory_Chief",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Cesta_lovce_-_%C5%A0%C3%A9f_tov%C3%A1rny",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_Chef_de_l%27usine",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D0%B0"
     },
@@ -1088,7 +1096,7 @@
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/La_voie_du_chasseur_-_Justice",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B0._%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%B5%D0%B4%D0%BB%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D1%8C"
     },
-    "kappa": false,
+    "kappa": true,
     "dealer": "JAEGER"
   },
   "THE_HUNTSMAN_PATH_SECURED_PERIMETER": {
@@ -1288,13 +1296,13 @@
   "TROPHIES": {
     "name": {
       "en": "Trophies",
-      "cs": "Čistič",
+      "cs": "Trofeje",
       "fr": "Trophées",
       "ru": "Трофеи"
     },
     "link": {
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Trophies",
-      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/%C4%8Cisti%C4%8D",
+      "cs": "https://escapefromtarkov.fandom.com/cs/wiki/Trofeje",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/Trophies",
       "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Troph%C3%A9es",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%A2%D1%80%D0%BE%D1%84%D0%B5%D0%B8"
@@ -1314,7 +1322,7 @@
       "en": "https://escapefromtarkov.gamepedia.com/wiki/Vitamins_-_Part_2",
       "cs": "https://escapefromtarkov.fandom.com/cs/wiki/%22Vitam%C3%ADny%22_-_%C4%8C%C3%A1st_2",
       "de": "https://escapefromtarkov.fandom.com/de/wiki/%22Vitamine%22_-_Teil_2",
-      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/%22Vitamines%22_-_Partie_2",
+      "fr": "https://escapefromtarkov.fandom.com/fr/wiki/Vitamines_-_Partie_2",
       "ru": "https://escapefromtarkov.fandom.com/ru/wiki/%D0%92%D0%B8%D1%82%D0%B0%D0%BC%D0%B8%D0%BD%D1%8B._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_2"
     },
     "kappa": true,

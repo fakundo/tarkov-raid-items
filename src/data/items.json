@@ -18,11 +18,13 @@
     "type": "Other",
     "name": {
       "en": "42 Signature Blend English Tea",
+      "de": "Englische Tee-Mischung \"42nd Signature Blend\"",
       "fr": "Thé Anglais 42nd Signature Blend",
       "ru": "Коробка с чаем"
     },
     "nameShort": {
       "en": "42",
+      "de": "Tee",
       "fr": "Thé",
       "ru": "Чай"
     },
@@ -34,6 +36,7 @@
     "type": "Flammable material",
     "name": {
       "en": "Propane tank (5L)",
+      "cs": "Propanová lahev (5L)",
       "de": "5 l Propan-Tank",
       "fr": "Bonbonne de propane de 5L",
       "ru": "5-ти литровый баллон пропана"
@@ -55,6 +58,7 @@
     "type": "Magazine",
     "name": {
       "en": "AK-74 5.45x39 6L31 60-round magazine",
+      "cs": "60-ranný zásobník 6L31 pro AK-74 5.45x39",
       "de": "60-Schuss 6L31 5,45 x 39 Magazin für AK-74 und baugleiche Systeme",
       "ru": "Магазин 6Л31 5.45x39 для АК-74 и совместимых на 60 патронов"
     },
@@ -73,6 +77,7 @@
     "type": "Energy element",
     "name": {
       "en": "6-STEN-140-M military battery",
+      "cs": "Vojenská baterie 6-STEN-140-M",
       "de": "6-STEN-140-M Militär-Batterie",
       "fr": "Batterie militaire 6-STEN-140-M",
       "ru": "Военный аккумулятор 6-СТЭН-140-М"
@@ -91,6 +96,7 @@
     "type": "Injector",
     "name": {
       "en": "AHF1-M stimulant injector",
+      "cs": "Injektor stimulantu AHF1-M",
       "fr": "AHF1-M",
       "ru": "Препарат AHF1-M"
     },
@@ -145,6 +151,7 @@
     "type": "Valuable",
     "name": {
       "en": "Antique teapot",
+      "cs": "Starožitná konvice",
       "de": "Antike Teekanne",
       "fr": "Théière antique",
       "ru": "Антикварный чайник"
@@ -163,6 +170,7 @@
     "type": "Valuable",
     "name": {
       "en": "Antique vase",
+      "cs": "Starožitná váza",
       "de": "Antike Vase",
       "fr": "Vase antique",
       "ru": "Антикварная ваза"
@@ -198,20 +206,23 @@
     "type": "Valuable",
     "name": {
       "en": "Axel parrot figurine",
+      "fr": "Figurine d'Axel le perroquet",
       "ru": "Статуэтка попугая Axel"
     },
     "nameShort": {
       "en": "Axel"
     },
     "quest": {
-      "LIVING_HIGH_IS_NOT_A_CRIME_PART_2": 1,
-      "COLLECTOR": 1
+      "COLLECTOR": 1,
+      "LIVING_HIGH_IS_NOT_A_CRIME_PART_2": 1
     }
   },
   "BADDIES_RED_BEARD": {
     "type": "Valuable",
     "name": {
       "en": "Baddie's red beard",
+      "cs": "Baddieho zrzavý plnovous",
+      "fr": "Barbe rousse de Baddie",
       "ru": "Рыжая накладная борода Baddie"
     },
     "nameShort": {
@@ -224,7 +235,9 @@
   "BAKEEZY_COOK_BOOK": {
     "type": "Valuable",
     "name": {
-      "en": "BakeEzy Cook Book",
+      "en": "BakeEzy cook book",
+      "cs": "Kuchařka BakeEzy",
+      "fr": "Livre de cuisine BakeEzy",
       "ru": "Книга рецептов BakeEzy"
     },
     "nameShort": {
@@ -238,6 +251,7 @@
     "type": "Melee weapon",
     "name": {
       "en": "Bars A-2607 95H18 knife",
+      "cs": "Nůž Bars A-2607 95H18",
       "de": "Bars A-2607 – 95 x 18",
       "ru": "Барс А-2607 95Х18"
     },
@@ -270,6 +284,7 @@
     "type": "Valuable",
     "name": {
       "en": "BEAR Buddy plush toy",
+      "fr": "Peluche copain BEAR",
       "ru": "Мягкая игрушка \"BEAR Buddy\""
     },
     "nameShort": {
@@ -328,6 +343,41 @@
     },
     "quest": {
       "BOOZE": 10
+    },
+    "craft": {
+      "NUTRITION_UNIT": 3
+    }
+  },
+  "BOTTLE_OF_OLOLO_MULTIVITAMINS": {
+    "type": "Medical supply",
+    "name": {
+      "en": "Bottle of OLOLO Multivitamins",
+      "cs": "Láhev vitamínů OLOLO",
+      "ru": "Банка с витаминами OLOLO"
+    },
+    "nameShort": {
+      "en": "Vitam.",
+      "ru": "Витам."
+    },
+    "quest": {
+      "CRISIS": 10
+    }
+  },
+  "BOTTLE_OF_PEVKO_LIGHT_BEER": {
+    "type": "Drink",
+    "name": {
+      "en": "Bottle of \"Pevko Light\" beer",
+      "cs": "Láhev piva \"Pevko Light\"",
+      "de": "Bottle of beer \"Pevko Light\"",
+      "fr": "Bouteille de bière \"Pevko Light\"",
+      "ru": "Бутылка пива \"Певко светлое\""
+    },
+    "nameShort": {
+      "en": "Pevko",
+      "ru": "Певко"
+    },
+    "quest": {
+      "BOOZE": 20
     },
     "craft": {
       "NUTRITION_UNIT": 3
@@ -449,7 +499,7 @@
     "name": {
       "en": "Can of RatCola soda",
       "cs": "RatCola",
-      "fr": "RatCola",
+      "fr": "Cannette de RatCola",
       "ru": "Банка RatCola"
     },
     "nameShort": {
@@ -488,7 +538,7 @@
     "nameShort": {
       "en": "Caps",
       "de": "Kond.",
-      "fr": "Cond.",
+      "fr": "Condens.",
       "ru": "Конд."
     },
     "quest": {
@@ -744,7 +794,9 @@
   "DRD_BODY_ARMOR": {
     "type": "Armor vest",
     "name": {
-      "en": "DRD Body Armor",
+      "en": "DRD body armor",
+      "cs": "Balistická vesta DRD",
+      "fr": "Gilet pare-balles DRD",
       "ru": "Бронежилет DRD Body Armor"
     },
     "nameShort": {
@@ -758,7 +810,6 @@
     "type": "Food",
     "name": {
       "en": "Emelya rye croutons",
-      "cs": "Negativní Efekty:",
       "de": "Emelya Roggen Croutons",
       "fr": "Croûtons de seigle Emelya",
       "ru": "Ржаные сухарики «Емеля»"
@@ -841,6 +892,7 @@
     "type": "Flammable material",
     "name": {
       "en": "Fuel conditioner",
+      "cs": "Palivový kondicionér",
       "de": "Kraftstoffzusatz",
       "fr": "Additif pour carburant",
       "ru": "Присадка для диз.топлива"
@@ -881,7 +933,8 @@
   "GINGY_KEYCHAIN": {
     "type": "Container",
     "name": {
-      "en": "Gingy Keychain",
+      "en": "Gingy keychain",
+      "fr": "Porte-clés Gingy",
       "ru": "Ключница Gingy"
     },
     "nameShort": {
@@ -895,6 +948,7 @@
     "type": "Valuable",
     "name": {
       "en": "Glorious E lightweight armored mask",
+      "fr": "Masque blindé léger de Glorious E",
       "ru": "Легкая армированная маска \"Glorious E\""
     },
     "nameShort": {
@@ -933,20 +987,22 @@
       "ru": "Яйцо"
     },
     "quest": {
-      "LIVING_HIGH_IS_NOT_A_CRIME_PART_1": 1,
-      "COLLECTOR": 1
+      "COLLECTOR": 1,
+      "LIVING_HIGH_IS_NOT_A_CRIME_PART_1": 1
     }
   },
   "GOLDEN_ROOSTER": {
     "type": "Valuable",
     "name": {
       "en": "Golden rooster",
+      "cs": "Zlatý kohout",
       "de": "Goldener Hahn",
       "fr": "Coq doré",
       "ru": "Золотой петух"
     },
     "nameShort": {
       "en": "Rooster",
+      "cs": "Kohout",
       "de": "Hahn",
       "fr": "Coq",
       "ru": "Петух"
@@ -1045,6 +1101,7 @@
     "type": "Food",
     "name": {
       "en": "Jar of DevilDog mayo",
+      "cs": "Sklenice majonézy DevilDog",
       "de": "DevilDog Mayonnaise-Glas",
       "fr": "Pot de mayonnaise DevilDog",
       "ru": "Банка майонеза DevilDog"
@@ -1061,6 +1118,8 @@
     "type": "Valuable",
     "name": {
       "en": "JohnB Liquid DNB glasses",
+      "cs": "Brýle JohnB Liquid DNB",
+      "fr": "Lunettes JohnB \"Liquid DNB\"",
       "ru": "Очки JohnB \"Liquid DNB\""
     },
     "nameShort": {
@@ -1149,7 +1208,7 @@
     "name": {
       "en": "Loot Lord plushie",
       "fr": "Peluche Loot Lord",
-      "ru": "Плюшевая игрушка \"Loot Lord\""
+      "ru": "Плюшевая игрушка Loot Lord"
     },
     "nameShort": {
       "en": "Loot Lord"
@@ -1307,10 +1366,32 @@
       "INTELLIGENCE_CENTER": 2
     }
   },
+  "MILITARY_FLASH_DRIVE": {
+    "type": "Info item",
+    "name": {
+      "en": "Military flash drive",
+      "cs": "Vojenský flash disk",
+      "fr": "Clé USB militaire",
+      "ru": "Военный флеш-накопитель"
+    },
+    "nameShort": {
+      "en": "MFD",
+      "fr": "USB",
+      "ru": "В. Флешка"
+    },
+    "quest": {
+      "SPECIAL_EQUIPMENT": 4
+    },
+    "craft": {
+      "INTELLIGENCE_CENTER": 3
+    }
+  },
   "MISSAM_FORKLIFT_KEY": {
     "type": "Valuable",
     "name": {
       "en": "Missam forklift key",
+      "cs": "Klíč k vysokozdvižnému vozíku Missam",
+      "fr": "Clé d'un chariot élévateur Missam",
       "ru": "Ключ от погрузчика Missam"
     },
     "nameShort": {
@@ -1408,6 +1489,7 @@
     "type": "Tool",
     "name": {
       "en": "Old firesteel",
+      "cs": "Staré křesadlo",
       "de": "Alter Feuerstahl",
       "fr": "Vieille pierre à feu",
       "ru": "Древнее кресало"
@@ -1430,13 +1512,14 @@
       "ru": "Офтальмоскоп"
     },
     "nameShort": {
-      "en": "Ophthalmoscope",
+      "en": "OScope",
       "de": "Ophthalmoskop",
-      "ru": "Офтальмоскоп"
+      "fr": "Ophthalmoscope",
+      "ru": "ОСкоп"
     },
     "quest": {
       "CRISIS": 5,
-      "PRIVATE_CLINIC": 2
+      "PRIVATE_CLINIC": 1
     }
   },
   "OX_BLEACH": {
@@ -1464,6 +1547,7 @@
     "type": "Other",
     "name": {
       "en": "Paracord",
+      "cs": "Lano",
       "fr": "Paracorde",
       "ru": "Моток паракорда"
     },
@@ -1504,7 +1588,9 @@
       "ru": "Маска Pestily"
     },
     "nameShort": {
-      "en": "Pestily"
+      "en": "Plague mask",
+      "de": "Pest-Maske",
+      "fr": "Pestily"
     },
     "quest": {
       "COLLECTOR": 1
@@ -1593,6 +1679,7 @@
     "type": "Medical supply",
     "name": {
       "en": "Portable defibrillator",
+      "cs": "Přenosný defibrilátor",
       "de": "Mobiler Defibrillator",
       "fr": "Défibrillateur portable",
       "ru": "Портативный дефибриллятор"
@@ -1636,6 +1723,8 @@
     "type": "Other",
     "name": {
       "en": "Press pass (issued for NoiceGuy)",
+      "cs": "Novinářský průkaz (vydaný pro NoiceGuy)",
+      "fr": "Pass de presse (au nom de NoiceGuy)",
       "ru": "Пропуск для прессы (выписан на NoiceGuy)"
     },
     "nameShort": {
@@ -1691,7 +1780,7 @@
     "type": "Injector",
     "name": {
       "en": "P22 stimulant injector",
-      "fr": "P22",
+      "fr": "Injecteur de stimulant P22",
       "ru": "P22 (Препарат 22)"
     },
     "nameShort": {
@@ -1718,8 +1807,8 @@
       "ru": "Ворон"
     },
     "quest": {
-      "LIVING_HIGH_IS_NOT_A_CRIME_PART_2": 2,
-      "COLLECTOR": 1
+      "COLLECTOR": 1,
+      "LIVING_HIGH_IS_NOT_A_CRIME_PART_2": 2
     }
   },
   "RECHARGEABLE_BATTERY": {
@@ -1767,6 +1856,7 @@
     "type": "Cloth",
     "name": {
       "en": "Ripstop fabric",
+      "cs": "Ripstopová tkanina",
       "fr": "Tissu Ripstop",
       "ru": "Ткань рипстоп"
     },
@@ -1822,6 +1912,7 @@
     "type": "Info item",
     "name": {
       "en": "Secure Flash drive",
+      "cs": "Zabezpečený Flash disk",
       "de": "Sicherer USB-Stick",
       "fr": "Clé USB sécurisée",
       "ru": "Защищенный флеш-накопитель"
@@ -1847,6 +1938,8 @@
     "type": "Face cover",
     "name": {
       "en": "Shroud half-mask",
+      "cs": "Šátek Shroud",
+      "de": "Shrouds Halbmaske",
       "fr": "Bandana Shroud",
       "ru": "Полумаска Shroud"
     },
@@ -1970,12 +2063,15 @@
     "type": "Keycard",
     "name": {
       "en": "TerraGroup Labs access keycard",
-      "fr": "Carte d'accès aux laboratoires Terragroup",
+      "cs": "Vstupní karta TerraGroup Labs",
+      "de": "TerraGroup Labs Schlüsselkarte",
+      "fr": "Carte d'accès TerraGroup Labs",
       "ru": "Карта доступа в лаборатории Terragroup"
     },
     "nameShort": {
       "en": "Access",
-      "fr": "Carte acc.",
+      "cs": "Přístup",
+      "fr": "Accès",
       "ru": "Лаб.ключ"
     },
     "quest": {
@@ -2098,6 +2194,8 @@
     "type": "Valuables",
     "name": {
       "en": "Video cassette with the Cyborg Killer movie",
+      "cs": "Videokazeta s filmem Cyborg Killer",
+      "fr": "Cassette vidéo avec le film Cyborg Killer",
       "ru": "Видеокассета с фильмом \"Киборг-убийца\""
     },
     "nameShort": {
@@ -2156,11 +2254,14 @@
     "name": {
       "en": "WARTECH TV-109 + TV-106 chest rig",
       "cs": "Nosný systém Wartech (TV-109, TV-106)",
+      "de": "Wartech Koppeltragesystem (TV-109, TV-106)",
       "fr": "Gilet tactique Wartech (TV-109, TV-106)",
       "ru": "Ременно-плечевая система Wartech (TV-109, TV-106)"
     },
     "nameShort": {
-      "en": "WTRig",
+      "en": "TV-106 + TV-109",
+      "de": "WTRig",
+      "fr": "WTRig",
       "ru": "РПС"
     },
     "quest": {
