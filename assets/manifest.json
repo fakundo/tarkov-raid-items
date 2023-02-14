@@ -6,7 +6,7 @@
   "lang": "en-US",
   "display": "standalone",
   "orientation": "any",
-  "start_url": "/?homescreen=1",
+  "start_url": "https://fakundo.github.io/tarkov-raid-items/",
   "background_color": "#FFFFFF",
   "theme_color": "#000000",
   "icons": [
