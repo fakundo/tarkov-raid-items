@@ -69,6 +69,7 @@ module.exports = {
         background: '#FFFFFF',
         theme_color: '#000000',
         start_url: publicPath,
+        path: `${publicPath}assets/`,
       },
     }),
     new WorkboxPlugin.GenerateSW({
