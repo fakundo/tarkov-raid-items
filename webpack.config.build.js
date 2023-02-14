@@ -6,6 +6,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const { default: SitemapWebpackPlugin } = require('sitemap-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 const createPages = require('./createPages')
 
 const publicPath = 'https://fakundo.github.io/tarkov-raid-items/'
@@ -22,25 +23,26 @@ module.exports = {
   mode: 'production',
   devtool: 'source-map',
   plugins: [
-    ...pages.map((pageOptions) => new HtmlWebpackPlugin({
-      ...pageOptions,
-      alternatives: _.reject(pages, { lang: pageOptions.lang }),
-      minify: { collapseWhitespace: true, minifyJS: true, minifyCSS: true },
-      inject: 'body',
-      hash: true,
-      template: path.resolve(__dirname, 'src/template.ejs'),
-      poster: {
-        url: `${publicPath}poster.png`,
-        width: '144',
-        height: '144',
-      },
-      googleTagKey: 'G-SVCPTV948J',
-      buildTime: new Date(),
-    })),
+    ...pages.map(
+      pageOptions =>
+        new HtmlWebpackPlugin({
+          ...pageOptions,
+          alternatives: _.reject(pages, { lang: pageOptions.lang }),
+          minify: { collapseWhitespace: true, minifyJS: true, minifyCSS: true },
+          inject: 'body',
+          hash: true,
+          template: path.resolve(__dirname, 'src/template.ejs'),
+          poster: {
+            url: `${publicPath}poster.jpg`,
+            width: '600',
+            height: '600',
+          },
+          googleTagKey: 'G-SVCPTV948J',
+          buildTime: new Date(),
+        }),
+    ),
     new CopyWebpackPlugin({
-      patterns: [
-        { from: 'src/assets/poster.png', force: true },
-      ],
+      patterns: [{ from: 'src/assets/poster.jpg', force: true }],
     }),
     new CleanWebpackPlugin(),
     new SitemapWebpackPlugin({
@@ -59,13 +61,20 @@ module.exports = {
       publicPath,
       favicons: {
         appName: 'Tarkov Raid Items',
-        appDescription: 'Interactive list of quest items in Escape from Tarkov (EFT) game needed to be found in raid. Progress tracker.',
+        appDescription:
+          'Interactive list of quest items in Escape from Tarkov (EFT) game needed to be found in raid. Progress tracker.',
         version: null,
         developerURL: null,
         developerName: null,
         background: '#FFFFFF',
         theme_color: '#000000',
+        start_url: publicPath,
       },
+    }),
+    new WorkboxPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true,
+      maximumFileSizeToCacheInBytes: 1024 * 1024 * 3,
     }),
   ],
   module: {
@@ -81,10 +90,7 @@ module.exports = {
       },
       {
         test: /\.png$/,
-        use: [
-          'url-loader?limit=1',
-          'image-webpack-loader',
-        ],
+        use: ['url-loader?limit=1', 'image-webpack-loader'],
       },
       {
         test: /\.svg$/,

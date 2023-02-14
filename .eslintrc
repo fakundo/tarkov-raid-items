@@ -1,9 +1,11 @@
 {
-  "extends": "airbnb",
+  "extends": ["airbnb",  "prettier"],
+  "plugins": ["prettier"],
   "parser": "@babel/eslint-parser",
   "globals": {
     "window": true,
-    "document": true
+    "document": true,
+    "navigator": true
   },
   "rules": {
     "import/no-extraneous-dependencies": 0,
