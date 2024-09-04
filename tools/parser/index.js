@@ -1,235 +1,195 @@
-/* eslint-disable no-multi-assign, no-restricted-syntax, no-await-in-loop, max-len  */
-
+/* eslint-disable no-continue */
+/* eslint-disable prefer-destructuring */
+/* eslint-disable guard-for-in */
+/* eslint-disable no-await-in-loop */
+/* eslint-disable no-restricted-syntax */
+const jsdom = require('jsdom')
+const _ = require('lodash')
 const fs = require('fs')
 const path = require('path')
-const http = require('http')
-const _ = require('lodash')
-const rename = require('./rename.json')
+const renameJson = require('./rename.json')
 
-const host = 'escapefromtarkov.gamepedia.com'
-const dataPath = path.resolve(__dirname, '../../src/data')
+const WIKI_URL = 'https://escapefromtarkov.fandom.com'
+const ALLOWED_LOCALES = ['ru', 'en', 'fr', 'de']
+const OUTPUT_PATH = path.resolve(__dirname, '../../src/data')
 
-const makeKey = (name) => (
-  _.upperCase(name).replace(/\s+/g, '_')
-)
+const writeFile = (filename, content) => {
+  fs.writeFileSync(path.resolve(OUTPUT_PATH, filename), JSON.stringify(content, null, '  '))
+}
 
-const retrievePage = (options) => new Promise((resolve) => {
-  setTimeout(() => {
-    http.request(options, (res) => {
-      let data = ''
-      res.on('data', (chunk) => { data += chunk })
-      res.on('end', () => {
-        if (!data && res.headers.location) {
-          const { hostname, pathname } = new URL(res.headers.location)
-          retrievePage({ hostname, path: pathname }).then(resolve)
-        } else {
-          resolve(data)
-        }
-      })
-    }).end()
-  }, 0)
-})
+// const makeKey = name => _.upperCase(name).replace(/\s+/g, '_')
+const makeKey = name => {
+  const key = _.snakeCase(name).toUpperCase()
+  return renameJson[key] || key
+}
 
-const findLanguages = (content) => {
-  const langEntries = content.match(/<li>\s+<a\shref="\S+?"\s+data-tracking-label="lang-.+?"/gs) || []
-  return langEntries.map((langEntry) => {
-    const [, url, lang] = langEntry.match(/href="(.+?)".+"lang-(.+?)"/s)
-    const langUrl = new URL(url)
-    return { lang, langUrl }
+const normalizeUrl = url => (url.startsWith('/') ? `${WIKI_URL}${url}` : url)
+
+const normalizeList = list =>
+  Object.keys(list)
+    .sort()
+    .reduce((acc, key) => {
+      acc[key] = list[key]
+      return acc
+    }, {})
+
+const fetchPageDocument = async pageUrl =>
+  new Promise((resolve, reject) => {
+    setTimeout(async () => {
+      try {
+        console.log('Processing page:', pageUrl)
+        const res = await fetch(normalizeUrl(pageUrl)) // eslint-disable-line
+        const content = await res.text()
+        resolve(new jsdom.JSDOM(content).window.document)
+      } catch (error) {
+        reject(error)
+      }
+    }, 10)
   })
-}
 
-const retrieveItemList = async () => {
-  const pathname = '/Found_in_raid'
-  console.log(`[.] Retrieve item list: ${pathname}`)
-  const content = await retrievePage({ host, path: pathname })
-  const items = []
-  const rows = content.match(/<tr>.+?<\/tr>/sg)
-  rows.forEach((row) => {
-    const item = {}
-    const cols = row.match(/<td>.+?<\/td>/sg)
-    item.image = cols?.[0].match(/src="(.+?)"/)?.[1]
-    if (!item.image) return
-    item.name = _.unescape(cols[1].match(/">(.+?)</)?.[1])
-    item.path = cols[1].match(/href="(.+?)"/)?.[1]
-    item.craft = cols[2].match(/">(.+?)</)?.[1]
-    item.reward = cols[3].match(/href=".+?".+?\)/g)?.map((entry) => {
-      const [, link, amount] = entry.match(/href="(.+?)".+?\((.+?)\)/)
-      return [link, amount]
-    })
-    item.kappa = cols[4].match(/>(\w+)/)?.[1]
-    item.amount = cols[5].match(/>(\w+)/)?.[1]
-    item.quest = cols[6].match(/href="(.+?)"/)?.[1]
-    items.push(item)
-  })
-  return items
-}
-
-const retrieveQuest = async (pathname) => {
-  console.log(`[.] Retrieve quest: ${pathname}`)
-  const content = await retrievePage({ host, path: pathname })
-  const quest = { name: {}, link: {} }
-  quest.name.en = _.unescape(content.match(/id="firstHeading">([^<]+)<\/h1>/s)?.[1]?.trim())
-  quest.link.en = `https://${host}${pathname}`
-  quest.dealer = content.match(/Given By.+?href="(.+?)"/)?.[1]
-  quest.kappa = content.match(/Required for.+?<font.+?>(\w+)/)?.[1]
-  const languages = findLanguages(content)
-  for (const { lang, langUrl } of languages) {
-    const langContent = await retrievePage({ host: langUrl.hostname, path: langUrl.pathname })
-    quest.name[lang] = _.unescape(langContent.match(/id="firstHeading">([^<]+)<\/h1>/s)?.[1]?.trim())
-    quest.link[lang] = langUrl
-    if (!quest.name[lang] || quest.name[lang] === quest.name.en) {
-      delete quest.name[lang]
+const fetchMultiLangDocs = async url => {
+  const doc = await fetchPageDocument(url)
+  const pages = { en: { url, doc } }
+  for (const localeAnchor of doc.querySelectorAll('.page-header__languages .wds-list > li > a')) {
+    const langUrl = localeAnchor.getAttribute('href')
+    const lang = new URL(langUrl).pathname.split('/')[1]
+    if (ALLOWED_LOCALES.includes(lang)) {
+      const localePage = await fetchPageDocument(langUrl)
+      pages[lang] = { url: langUrl, doc: localePage }
     }
   }
-  return quest
+  return pages
 }
 
-const retrieveDealer = async (pathname) => {
-  console.log(`[.] Retrieve dealer: ${pathname}`)
-  const content = await retrievePage({ host, path: pathname })
-  const dealer = { name: {} }
-  dealer.name.en = _.unescape(content.match(/id="firstHeading">([^<]+)<\/h1>/s)?.[1]?.trim())
-  const languages = findLanguages(content)
-  for (const { lang, langUrl } of languages) {
-    const langContent = await retrievePage({ host: langUrl.hostname, path: langUrl.pathname })
-    dealer.name[lang] = _.unescape(langContent.match(/id="firstHeading">([^<]+)<\/h1>/s)?.[1]?.trim())
-    if (!dealer.name[lang] || dealer.name[lang] === dealer.name.en) {
-      delete dealer.name[lang]
-    }
-  }
-  return dealer
-}
-
-const retrieveItem = async (pathname) => {
-  console.log(`[.] Retrieve item: ${pathname}`)
-  const content = await retrievePage({ host, path: pathname })
-  const item = { name: {}, nameShort: {} }
-  const namesMatch = content.match(/<b>(.+?)<\/b>.+?\((.+?)\)\s/) || content.match(/<b>(.+?)<\/b>\s/) || []
-  const [, name, nameShort] = namesMatch
-  item.name.en = _.unescape(name)
-  item.nameShort.en = _.unescape(nameShort)
-  item.type = content.match(/Type.+?va-infobox-content.+?><a.+?>(.+?)</)?.[1]
-    || content.match(/Type.+?va-infobox-content.+?>(.+?)</)?.[1]
-  const languages = findLanguages(content)
-  for (const { lang, langUrl } of languages) {
-    const langContent = await retrievePage({ host: langUrl.hostname, path: langUrl.pathname })
-    const [, nameLang, nameShortLang] = langContent.match(/<b>(.+?)<\/b>.+?\((.+?)\)\s/) || langContent.match(/<b>(.+?)<\/b>\s/) || []
-    item.name[lang] = _.unescape(nameLang)
-    item.nameShort[lang] = _.unescape(nameShortLang)
-    if (!item.name[lang] || item.name[lang] === item.name.en) {
-      delete item.name[lang]
-    }
-    if (!item.nameShort[lang] || item.nameShort[lang] === item.nameShort.en) {
-      delete item.nameShort[lang]
-    }
-  }
-  return item
-}
-
-const makeData = async () => {
-  const itemList = await retrieveItemList()
-  const cache = {}
+const parseData = async () => {
+  const questsPage = await fetchPageDocument('/wiki/Quests')
   const dealers = {}
-  const hideout = {}
   const quests = {}
   const items = {}
-
-  const addDealer = async (pathname) => {
-    const data = cache[pathname] = cache[pathname] || await retrieveDealer(pathname)
-    const key = makeKey(data.name.en)
-    dealers[key] = {
-      ...data,
-    }
-    return key
-  }
-
-  const addQuest = async (pathname) => {
-    const data = cache[pathname] = cache[pathname] || await retrieveQuest(pathname)
-    const key = makeKey(data.name.en)
-    quests[key] = {
-      name: data.name,
-      link: data.link,
-      kappa: data.kappa === 'Yes',
-      dealer: await addDealer(data.dealer),
-    }
-    return key
-  }
-
-  const addModule = async (name) => {
-    const key = makeKey(name)
-    hideout[key] = {
-      name: {
-        en: name,
-      },
-      link: {
-        en: `https://${host}/Hideout`,
-      },
-    }
-    return key
-  }
-
-  for (let i = 0; i < itemList.length; i++) {
-    console.log(`[.] Processing item: ${i + 1} / ${itemList.length}`)
-
-    const rawItem = itemList[i]
-    const rawKey = makeKey(rawItem.name)
-    const key = rename[rawKey] || rawKey
-    const item = items[key] = items[key] || {}
-
-    const data = cache[rawItem.path] = cache[rawItem.path] || await retrieveItem(rawItem.path)
-    item.type = data.type
-    item.name = data.name
-    item.nameShort = data.nameShort
-
-    item.quest = {
-      ...item.quest || {},
-      [await addQuest(rawItem.quest)]: _.toInteger(rawItem.amount),
-    }
-
-    const [modName, modLevel] = rawItem.craft.split('lv.').map(_.trim)
-    if (modLevel) {
-      item.craft = {
-        [await addModule(modName)]: _.toInteger(modLevel),
+  const hideout = {}
+  for (const table of questsPage.querySelectorAll('.questtable')) {
+    const dealerAnchor = table.querySelector('th a')
+    const dealerPages = await fetchMultiLangDocs(dealerAnchor.getAttribute('href'))
+    const dealerName = {}
+    for (const lang in dealerPages) {
+      const name = dealerPages[lang].doc.querySelector('.mw-page-title-main').innerHTML
+      if (name !== dealerName.en) {
+        dealerName[lang] = name
       }
     }
-
-    for (const [rewardQuest, rewardAmount] of rawItem.reward || []) {
-      item.reward = {
-        ...item.reward || {},
-        [await addQuest(rewardQuest)]: _.toInteger(rewardAmount),
+    const dealerKey = makeKey(dealerName.en)
+    dealers[dealerKey] = {
+      name: dealerName,
+    }
+    for (const questRow of table.querySelectorAll('tr:not(:first-child):not(:nth-child(2))')) {
+      const questAnchor = questRow.querySelector('a')
+      const questPages = await fetchMultiLangDocs(questAnchor.getAttribute('href'))
+      const questName = {}
+      for (const lang in questPages) {
+        const name = questPages[lang].doc.querySelector('.mw-page-title-main').innerHTML
+        if (name !== questName.en) {
+          questName[lang] = name
+        }
+      }
+      const questKey = makeKey(questName.en)
+      quests[questKey] = {
+        name: questName,
+        link: _.mapValues(questPages, questPage => normalizeUrl(questPage.url)),
+        kappa: !!questRow.querySelector('th:last-child [color="red"]'),
+        dealer: dealerKey,
+      }
+      for (const objectiveLi of questRow.querySelectorAll('td:nth-child(2) ul li')) {
+        if (!objectiveLi.querySelector('[color="red"]')) continue
+        const itemAnchor = objectiveLi.querySelector('a:not(*:has([color="red"]))')
+        if (!itemAnchor) continue
+        const itemPages = await fetchMultiLangDocs(itemAnchor.getAttribute('href'))
+        const itemName = {}
+        const itemNameShort = {}
+        for (const lang in itemPages) {
+          const name = (
+            itemPages[lang].doc.querySelector('.mw-page-title-main') ||
+            itemPages[lang].doc.querySelector('.page-header__title')
+          ).innerHTML
+          if (name !== itemName.en) {
+            itemName[lang] = name
+          }
+          const shortNameP = itemPages[lang].doc.querySelector('.mw-parser-output > p')
+          if (!shortNameP) continue
+          const match = shortNameP.innerHTML.match(/\([^)]+/g)
+          if (!match) continue
+          const matchName = match.pop().substring(1)
+          if (matchName !== itemNameShort.en) {
+            itemNameShort[lang] = matchName
+          }
+        }
+        const itemKey = makeKey(itemName.en)
+        if (!items[itemKey]) {
+          const typeEl =
+            itemPages.en.doc.querySelector('.va-infobox-content a') ||
+            itemPages.en.doc.querySelector('.va-infobox-content')
+          items[itemKey] = {
+            type: typeEl ? typeEl.innerHTML : 'Other',
+            name: itemName,
+            nameShort: itemNameShort,
+            quest: {},
+          }
+          for (const hideoutRow of itemPages.en.doc.querySelectorAll(
+            'h2:has(#Crafting) + table tr',
+          )) {
+            if (!hideoutRow.querySelector('th:last-child .mw-selflink')) continue
+            const hideoutAnchor = hideoutRow.querySelector('[title="Hideout"]')
+            const level = parseInt(hideoutAnchor.innerHTML.match(/\d+/)[0], 10)
+            const hideoutName = {
+              en: hideoutAnchor.innerHTML.match(/(.*?)\slevel/)[1],
+            }
+            const hideoutLink = {
+              en: normalizeUrl(hideoutAnchor.getAttribute('href')),
+            }
+            const hideoutKey = makeKey(hideoutName.en)
+            hideout[hideoutKey] = hideout[hideoutKey] || {
+              name: hideoutName,
+              link: hideoutLink,
+            }
+            items[itemKey].craft = items[itemKey].craft || {}
+            items[itemKey].craft[hideoutKey] = level
+          }
+          for (const rewardLi of itemPages.en.doc.querySelectorAll(
+            'h2:has(#Quest_rewards) + ul li',
+          )) {
+            const amount = parseInt(rewardLi.innerHTML.match(/\d+/)[0], 10)
+            const rewardAnchor = rewardLi.querySelector('a')
+            const rewardPages = await fetchMultiLangDocs(rewardAnchor.getAttribute('href'))
+            const rewardKey = makeKey(
+              rewardPages.en.doc.querySelector('.mw-page-title-main').innerHTML,
+            )
+            items[itemKey].reward = items[itemKey].reward || {}
+            items[itemKey].reward[rewardKey] = amount
+          }
+        }
+        const amountMatch = objectiveLi.innerHTML.match(/\d+/)
+        items[itemKey].quest[questKey] = amountMatch ? parseInt(amountMatch[0], 10) : 1
       }
     }
   }
 
-  return { hideout, dealers, quests, items }
+  return {
+    dealers: normalizeList(dealers),
+    hideout: normalizeList(hideout),
+    items: normalizeList(items),
+    quests: normalizeList(
+      _.pickBy(quests, (quest, key) =>
+        _.some(items, item => item.quest[key] || (item.reward && item.reward[key])),
+      ),
+    ),
+  }
 }
 
-const normalizeList = (list) => (
-  Object.keys(list).sort().reduce((acc, key) => {
-    acc[key] = list[key]
-    return acc
-  }, {})
-)
-
 const run = async () => {
-  const data = await makeData()
-  fs.writeFileSync(
-    path.resolve(dataPath, 'hideout.json'),
-    JSON.stringify(normalizeList(data.hideout), null, '  '),
-  )
-  fs.writeFileSync(
-    path.resolve(dataPath, 'dealers.json'),
-    JSON.stringify(normalizeList(data.dealers), null, '  '),
-  )
-  fs.writeFileSync(
-    path.resolve(dataPath, 'quests.json'),
-    JSON.stringify(normalizeList(data.quests), null, '  '),
-  )
-  fs.writeFileSync(
-    path.resolve(dataPath, 'items.json'),
-    JSON.stringify(normalizeList(data.items), null, '  '),
-  )
+  const data = await parseData()
+  writeFile('hideout.json', data.hideout)
+  writeFile('dealers.json', data.dealers)
+  writeFile('quests.json', data.quests)
+  writeFile('items.json', data.items)
 }
 
 run()

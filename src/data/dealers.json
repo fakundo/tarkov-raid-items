@@ -10,10 +10,15 @@
       "en": "Jaeger"
     }
   },
+  "LIGHTKEEPER": {
+    "name": {
+      "en": "Lightkeeper",
+      "ru": "Смотритель"
+    }
+  },
   "MECHANIC": {
     "name": {
       "en": "Mechanic",
-      "cs": "Mechanik",
       "fr": "Le Mécano",
       "ru": "Механик"
     }
@@ -27,7 +32,6 @@
   "PRAPOR": {
     "name": {
       "en": "Prapor",
-      "ko": "프라퍼(Prapor)",
       "ru": "Прапор"
     }
   },
@@ -37,10 +41,15 @@
       "ru": "Барахольщик"
     }
   },
+  "REF": {
+    "name": {
+      "en": "Ref",
+      "ru": "Реф"
+    }
+  },
   "SKIER": {
     "name": {
       "en": "Skier",
-      "ko": "스키어(Skier)",
       "ru": "Лыжник"
     }
   },

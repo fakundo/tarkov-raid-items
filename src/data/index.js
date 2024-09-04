@@ -7,29 +7,29 @@ import hideoutJson from './hideout.json'
 import questsJson from './quests.json'
 import itemsJson from './items.json'
 
-export const quests = mapValues(questsJson, (quest) => ({
-  getName: (locale) => quest.name[locale] || quest.name.en,
-  getLink: (locale) => quest.link[locale] || quest.link.en,
+export const quests = mapValues(questsJson, quest => ({
+  getName: locale => quest.name[locale] || quest.name.en,
+  getLink: locale => quest.link[locale] || quest.link.en,
   ...quest,
 }))
 
 export const hideout = mapValues(hideoutJson, (module, key) => ({
-  image: require(`assets/hideout/${key}.png`).default,
-  getName: (locale) => module.name[locale] || module.name.en,
-  getLink: (locale) => module.link[locale] || module.link.en,
+  image: require(`assets/hideout/${key}.png?as=webp`).default,
+  getName: locale => module.name[locale] || module.name.en,
+  getLink: locale => module.link[locale] || module.link.en,
   ...module,
 }))
 
 export const dealers = mapValues(dealersJson, (dealer, key) => ({
-  image: require(`assets/dealers/${key}.png`).default,
-  getName: (locale) => dealer.name[locale] || dealer.name.en,
+  image: require(`assets/dealers/${key}.png?as=webp`).default,
+  getName: locale => dealer.name[locale] || dealer.name.en,
   ...dealer,
 }))
 
 export const items = mapValues(itemsJson, (item, key) => ({
-  getNameShort: (locale) => item.nameShort[locale] || item.nameShort.en,
-  getName: (locale) => item.name[locale] || item.name.en,
-  image: require(`assets/items/${key}.png`).default,
+  getNameShort: locale => item.nameShort[locale] || item.nameShort.en,
+  getName: locale => item.name[locale] || item.name.en,
+  image: require(`assets/items/${key}.png?as=webp`).default,
   ...item,
 }))
 

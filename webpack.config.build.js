@@ -7,9 +7,11 @@ const { default: SitemapWebpackPlugin } = require('sitemap-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const WorkboxPlugin = require('workbox-webpack-plugin')
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 const createPages = require('./createPages')
 
 const publicPath = 'https://fakundo.github.io/tarkov-raid-items/'
+const outputPath = path.resolve(__dirname, 'build')
 const pages = createPages(publicPath)
 
 module.exports = {
@@ -17,7 +19,7 @@ module.exports = {
   output: {
     publicPath,
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'build'),
+    path: outputPath,
   },
   target: 'web',
   mode: 'production',
@@ -59,6 +61,7 @@ module.exports = {
     new FaviconsWebpackPlugin({
       logo: path.resolve(__dirname, 'src/assets/favicon.png'),
       publicPath,
+      outputPath,
       favicons: {
         appName: 'Tarkov Raid Items',
         appDescription:
@@ -69,7 +72,7 @@ module.exports = {
         background: '#FFFFFF',
         theme_color: '#000000',
         start_url: publicPath,
-        path: `${publicPath}assets/`,
+        path: publicPath,
       },
     }),
     new WorkboxPlugin.GenerateSW({
@@ -86,12 +89,8 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.otf$/,
-        use: 'url-loader?limit=1',
-      },
-      {
-        test: /\.png$/,
-        use: ['url-loader?limit=1', 'image-webpack-loader'],
+        test: /\.(png|otf)$/,
+        use: 'file-loader',
       },
       {
         test: /\.svg$/,
@@ -114,5 +113,20 @@ module.exports = {
       providers: path.resolve(__dirname, 'src/providers'),
       utils: path.resolve(__dirname, 'src/utils'),
     },
+  },
+  optimization: {
+    minimizer: [
+      new ImageMinimizerPlugin({
+        minimizer: { implementation: ImageMinimizerPlugin.sharpMinify },
+        generator: [
+          {
+            // You can apply generator using `?as=webp`, you can use any name and provide more options
+            preset: 'webp',
+            implementation: ImageMinimizerPlugin.sharpGenerate,
+            options: { encodeOptions: { webp: { quality: 90 } } },
+          },
+        ],
+      }),
+    ],
   },
 }

@@ -5,10 +5,7 @@ const host = '0.0.0.0'
 const port = 3000
 
 module.exports = {
-  entry: [
-    `webpack-dev-server/client?http://${host}:${port}`,
-    path.resolve(__dirname, 'src/index'),
-  ],
+  entry: [`webpack-dev-server/client?http://${host}:${port}`, path.resolve(__dirname, 'src/index')],
   plugins: [
     new HtmlWebpackPlugin({
       inject: 'body',
@@ -25,7 +22,7 @@ module.exports = {
       },
       {
         test: /\.(png|otf)$/,
-        use: 'url-loader?limit=1',
+        use: 'file-loader',
       },
       {
         test: /\.svg$/,

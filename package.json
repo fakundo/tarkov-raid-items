@@ -36,7 +36,7 @@
     "favicons-webpack-plugin": "^5.0.2",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
-    "image-webpack-loader": "^8.1.0",
+    "image-minimizer-webpack-plugin": "^4.1.0",
     "prettier": "^2.8.4",
     "react-localized-extractor": "^2.1.0",
     "react-localized-loader": "^1.1.0",
